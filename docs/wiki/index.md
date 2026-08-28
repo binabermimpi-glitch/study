@@ -1,6 +1,6 @@
 ---
 type: index
-last_updated: 2026-08-27
+last_updated: 2026-08-29
 ---
 
 # 개발 공부 위키 인덱스
@@ -95,7 +95,7 @@ last_updated: 2026-08-27
 
 ### Linux
 
-<!-- 파일 시스템, 권한, 프로세스와 서버 운영 -->
+- [리눅스마스터 2급](</wiki/04%20%EC%9E%90%EA%B2%A9%EC%A6%9D/%EB%A6%AC%EB%88%85%EC%8A%A4%EB%A7%88%EC%8A%A4%ED%84%B0%202%EA%B8%89>) — Linux 기초, 명령어, 저장장치와 시험 학습 기록
 
 ### Software Engineering
 
@@ -119,6 +119,7 @@ last_updated: 2026-08-27
 - [2026-08-23 정보처리기사 데이터 모델링과 정규화](</wiki/03%20%EC%B6%9C%EC%B2%98%20%EB%85%B8%ED%8A%B8/2026-08-23%20%EC%A0%95%EB%B3%B4%EC%B2%98%EB%A6%AC%EA%B8%B0%EC%82%AC%20%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EB%AA%A8%EB%8D%B8%EB%A7%81%EA%B3%BC%20%EC%A0%95%EA%B7%9C%ED%99%94>)
 - [2026-08-26 Java 객체 생성자 캡슐화 복습](</wiki/03%20%EC%B6%9C%EC%B2%98%20%EB%85%B8%ED%8A%B8/2026-08-26%20Java%20%EA%B0%9D%EC%B2%B4%20%EC%83%9D%EC%84%B1%EC%9E%90%20%EC%BA%A1%EC%8A%90%ED%99%94%20%EB%B3%B5%EC%8A%B5>)
 - [2026-08-27 자바 메소드와 객체 생성](</wiki/03%20%EC%B6%9C%EC%B2%98%20%EB%85%B8%ED%8A%B8/2026-08-27%20%EC%9E%90%EB%B0%94%20%EB%A9%94%EC%86%8C%EB%93%9C%EC%99%80%20%EA%B0%9D%EC%B2%B4%20%EC%83%9D%EC%84%B1>)
+- [2026-08-29 리눅스마스터 2급 기초 정리](</wiki/03%20%EC%B6%9C%EC%B2%98%20%EB%85%B8%ED%8A%B8/2026-08-29%20%EB%A6%AC%EB%88%85%EC%8A%A4%EB%A7%88%EC%8A%A4%ED%84%B0%202%EA%B8%89%20%EA%B8%B0%EC%B4%88%20%EC%A0%95%EB%A6%AC>)
 
 ## 자격증 학습
 
