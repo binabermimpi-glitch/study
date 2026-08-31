@@ -97,6 +97,10 @@ export default {
                   "link": "/wiki/01 개념/Java/반환형과 return"
                 },
                 {
+                  "text": "배열과 2차원 배열",
+                  "link": "/wiki/01 개념/Java/배열과 2차원 배열"
+                },
+                {
                   "text": "변수의 종류와 생명주기",
                   "link": "/wiki/01 개념/Java/변수의 종류와 생명주기"
                 },
@@ -123,6 +127,10 @@ export default {
                 {
                   "text": "표준 입출력",
                   "link": "/wiki/01 개념/Java/표준 입출력"
+                },
+                {
+                  "text": "향상된 for문과 반복 제어",
+                  "link": "/wiki/01 개념/Java/향상된 for문과 반복 제어"
                 },
                 {
                   "text": "형변환과 연산 프로모션",
@@ -159,6 +167,10 @@ export default {
                 {
                   "text": "String과 참조 자료형",
                   "link": "/wiki/01 개념/Java/String과 참조 자료형"
+                },
+                {
+                  "text": "switch 표현식과 패턴 매칭",
+                  "link": "/wiki/01 개념/Java/switch 표현식과 패턴 매칭"
                 },
                 {
                   "text": "this 참조",
@@ -252,6 +264,10 @@ export default {
                   "link": "/wiki/02 주제/Java/객체 생성자 캡슐화 학습 지도"
                 },
                 {
+                  "text": "배열 반복문 패턴 매칭 학습 지도",
+                  "link": "/wiki/02 주제/Java/배열 반복문 패턴 매칭 학습 지도"
+                },
+                {
                   "text": "자바 메서드와 연산자 학습 지도",
                   "link": "/wiki/02 주제/Java/자바 메서드와 연산자 학습 지도"
                 },
@@ -291,6 +307,10 @@ export default {
             {
               "text": "2026-08-29 리눅스마스터 2급 기초 정리",
               "link": "/wiki/03 출처 노트/2026-08-29 리눅스마스터 2급 기초 정리"
+            },
+            {
+              "text": "2026-08-31 Java 배열 반복문 패턴 매칭 복습",
+              "link": "/wiki/03 출처 노트/2026-08-31 Java 배열 반복문 패턴 매칭 복습"
             },
             {
               "text": "백엔드 개발과 취업 준비 — 출처 노트",
@@ -470,6 +490,10 @@ export default {
             {
               "text": "Java 객체·생성자·캡슐화 복습 정리",
               "link": "/sources/자바 백엔드 수업/2026-08-26 Java 객체 생성자 캡슐화 복습"
+            },
+            {
+              "text": "Java 복습 — 내가 헷갈렸던 부분 총정리",
+              "link": "/sources/자바 백엔드 수업/2026-08-31 Java 배열 반복문 패턴 매칭 복습"
             }
           ]
         }
