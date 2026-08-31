@@ -122,3 +122,11 @@
 - 기존 instanceof, String, 변수 생명주기 문서에 패턴 변수·isBlank·블록 스코프 보강
 - 배열 참조 → 반복 → 타입 검사 → Java 21 switch로 이어지는 학습 지도 생성
 - 향상된 for의 참조형 요소 주의점과 패턴 매칭 적용 Java 버전을 명시
+
+## [2026-08-31] ingest | 2020년 2회 정보처리기사 실기 정리
+
+- 기출 학습 원문을 보존하고 정보처리기사 대표 문서와 출처 노트에 반영
+- 데이터베이스 설계 단계, 인덱스, SQL Injection은 중복 없이 반복 이력 갱신
+- 애자일, SOAP, 형상 관리, AJAX, UI와 소프트웨어 테스트 분류 추가
+- SQL IN·ROLLBACK, IPSec, Linux 권한, RTO/RPO, Observer, LOD와 REST 추가
+- GitHub 위키 배포를 형상 관리 사례로, REST·AJAX·SQL·Observer를 Java/Spring 백엔드 학습과 연결
