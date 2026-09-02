@@ -7,9 +7,9 @@ difficulty: 초급
 status: growing
 prerequisites: ["[배열과 2차원 배열](</wiki/01%20%EA%B0%9C%EB%85%90/Java/%EB%B0%B0%EC%97%B4%EA%B3%BC%202%EC%B0%A8%EC%9B%90%20%EB%B0%B0%EC%97%B4>)", "[변수의 종류와 생명주기](</wiki/01%20%EA%B0%9C%EB%85%90/Java/%EB%B3%80%EC%88%98%EC%9D%98%20%EC%A2%85%EB%A5%98%EC%99%80%20%EC%83%9D%EB%AA%85%EC%A3%BC%EA%B8%B0>)"]
 related: ["[반환형과 return](</wiki/01%20%EA%B0%9C%EB%85%90/Java/%EB%B0%98%ED%99%98%ED%98%95%EA%B3%BC%20return>)"]
-sources: ["[2026-08-31 Java 배열 반복문 패턴 매칭 복습](</wiki/03%20%EC%B6%9C%EC%B2%98%20%EB%85%B8%ED%8A%B8/2026-08-31%20Java%20%EB%B0%B0%EC%97%B4%20%EB%B0%98%EB%B3%B5%EB%AC%B8%20%ED%8C%A8%ED%84%B4%20%EB%A7%A4%EC%B9%AD%20%EB%B3%B5%EC%8A%B5>)"]
+sources: ["[2026-08-31 Java 배열 반복문 패턴 매칭 복습](</wiki/03%20%EC%B6%9C%EC%B2%98%20%EB%85%B8%ED%8A%B8/2026-08-31%20Java%20%EB%B0%B0%EC%97%B4%20%EB%B0%98%EB%B3%B5%EB%AC%B8%20%ED%8C%A8%ED%84%B4%20%EB%A7%A4%EC%B9%AD%20%EB%B3%B5%EC%8A%B5>)", "[2026-09-03 자바 배열과 객체지향 핵심](</wiki/03%20%EC%B6%9C%EC%B2%98%20%EB%85%B8%ED%8A%B8/2026-09-03%20%EC%9E%90%EB%B0%94%20%EB%B0%B0%EC%97%B4%EA%B3%BC%20%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%20%ED%95%B5%EC%8B%AC>)"]
 created: 2026-08-31
-updated: 2026-08-31
+updated: 2026-09-03
 ---
 
 # 향상된 for문과 반복 제어
@@ -75,7 +75,12 @@ while (i < 5) {
 
 DTO 목록 변환, 검증, 합계 계산 등에서 배열과 `List`를 순회할 때 사용한다. 다만 `continue`가 너무 많아 흐름이 복잡해지면 조건을 메서드로 분리하는 편이 읽기 쉽다.
 
+## 반복 학습 이력
+
+- 2026-08-31 — 일반 `for`와 향상된 `for`, 반복 변수와 원본 요소의 차이 최초 정리
+- 2026-09-03 — 인덱스 제어가 필요할 때 일반 `for`, 전체 값을 읽을 때 향상된 `for` 사용 재확인
+
 ## 출처
 
 - [2026-08-31 Java 배열 반복문 패턴 매칭 복습](</wiki/03%20%EC%B6%9C%EC%B2%98%20%EB%85%B8%ED%8A%B8/2026-08-31%20Java%20%EB%B0%B0%EC%97%B4%20%EB%B0%98%EB%B3%B5%EB%AC%B8%20%ED%8C%A8%ED%84%B4%20%EB%A7%A4%EC%B9%AD%20%EB%B3%B5%EC%8A%B5>)
-
+- [2026-09-03 자바 배열과 객체지향 핵심](</wiki/03%20%EC%B6%9C%EC%B2%98%20%EB%85%B8%ED%8A%B8/2026-09-03%20%EC%9E%90%EB%B0%94%20%EB%B0%B0%EC%97%B4%EA%B3%BC%20%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%20%ED%95%B5%EC%8B%AC>)

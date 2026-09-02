@@ -1,6 +1,6 @@
 ---
 type: index
-last_updated: 2026-08-31
+last_updated: 2026-09-03
 ---
 
 # 개발 공부 위키 인덱스
@@ -50,6 +50,9 @@ last_updated: 2026-08-31
 - [DTO와 record](</wiki/01%20%EA%B0%9C%EB%85%90/Java/DTO%EC%99%80%20record>) — 백엔드 계층과 API 사이의 데이터 전달
 - [향상된 for문과 반복 제어](</wiki/01%20%EA%B0%9C%EB%85%90/Java/%ED%96%A5%EC%83%81%EB%90%9C%20for%EB%AC%B8%EA%B3%BC%20%EB%B0%98%EB%B3%B5%20%EC%A0%9C%EC%96%B4>) — 배열·컬렉션 순회와 흐름 제어
 - [switch 표현식과 패턴 매칭](</wiki/01%20%EA%B0%9C%EB%85%90/Java/switch%20%ED%91%9C%ED%98%84%EC%8B%9D%EA%B3%BC%20%ED%8C%A8%ED%84%B4%20%EB%A7%A4%EC%B9%AD>) — Java 21 타입 분기와 결과값
+- [배열 복사와 방어적 복사](</wiki/01%20%EA%B0%9C%EB%85%90/Java/%EB%B0%B0%EC%97%B4%20%EB%B3%B5%EC%82%AC%EC%99%80%20%EB%B0%A9%EC%96%B4%EC%A0%81%20%EB%B3%B5%EC%82%AC>) — 얕은·깊은 복사와 상태 보호
+- [상속 오버라이딩 다형성](</wiki/01%20%EA%B0%9C%EB%85%90/Java/%EC%83%81%EC%86%8D%20%EC%98%A4%EB%B2%84%EB%9D%BC%EC%9D%B4%EB%94%A9%20%EB%8B%A4%ED%98%95%EC%84%B1>) — 부모 타입과 실제 객체의 동적 동작
+- [추상 클래스와 추상 메서드](</wiki/01%20%EA%B0%9C%EB%85%90/Java/%EC%B6%94%EC%83%81%20%ED%81%B4%EB%9E%98%EC%8A%A4%EC%99%80%20%EC%B6%94%EC%83%81%20%EB%A9%94%EC%84%9C%EB%93%9C>) — 공통 구현과 자식 구현 계약
 
 ## 제한적 활용 지식
 
@@ -68,6 +71,7 @@ last_updated: 2026-08-31
 - [자바 메서드와 연산자 학습 지도](</wiki/02%20%EC%A3%BC%EC%A0%9C/Java/%EC%9E%90%EB%B0%94%20%EB%A9%94%EC%84%9C%EB%93%9C%EC%99%80%20%EC%97%B0%EC%82%B0%EC%9E%90%20%ED%95%99%EC%8A%B5%20%EC%A7%80%EB%8F%84>)
 - [객체 생성자 캡슐화 학습 지도](</wiki/02%20%EC%A3%BC%EC%A0%9C/Java/%EA%B0%9D%EC%B2%B4%20%EC%83%9D%EC%84%B1%EC%9E%90%20%EC%BA%A1%EC%8A%90%ED%99%94%20%ED%95%99%EC%8A%B5%20%EC%A7%80%EB%8F%84>)
 - [배열 반복문 패턴 매칭 학습 지도](</wiki/02%20%EC%A3%BC%EC%A0%9C/Java/%EB%B0%B0%EC%97%B4%20%EB%B0%98%EB%B3%B5%EB%AC%B8%20%ED%8C%A8%ED%84%B4%20%EB%A7%A4%EC%B9%AD%20%ED%95%99%EC%8A%B5%20%EC%A7%80%EB%8F%84>)
+- [배열 복사와 객체지향 학습 지도](</wiki/02%20%EC%A3%BC%EC%A0%9C/Java/%EB%B0%B0%EC%97%B4%20%EB%B3%B5%EC%82%AC%EC%99%80%20%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%20%ED%95%99%EC%8A%B5%20%EC%A7%80%EB%8F%84>)
 
 ### Spring
 
@@ -127,6 +131,7 @@ last_updated: 2026-08-31
 - [2026-08-29 2020년 1회 정보처리기사 실기 정리](</wiki/03%20%EC%B6%9C%EC%B2%98%20%EB%85%B8%ED%8A%B8/2026-08-29%202020%EB%85%84%201%ED%9A%8C%20%EC%A0%95%EB%B3%B4%EC%B2%98%EB%A6%AC%EA%B8%B0%EC%82%AC%20%EC%8B%A4%EA%B8%B0%20%EC%A0%95%EB%A6%AC>)
 - [2026-08-31 Java 배열 반복문 패턴 매칭 복습](</wiki/03%20%EC%B6%9C%EC%B2%98%20%EB%85%B8%ED%8A%B8/2026-08-31%20Java%20%EB%B0%B0%EC%97%B4%20%EB%B0%98%EB%B3%B5%EB%AC%B8%20%ED%8C%A8%ED%84%B4%20%EB%A7%A4%EC%B9%AD%20%EB%B3%B5%EC%8A%B5>)
 - [2026-08-31 2020년 2회 정보처리기사 실기 정리](</wiki/03%20%EC%B6%9C%EC%B2%98%20%EB%85%B8%ED%8A%B8/2026-08-31%202020%EB%85%84%202%ED%9A%8C%20%EC%A0%95%EB%B3%B4%EC%B2%98%EB%A6%AC%EA%B8%B0%EC%82%AC%20%EC%8B%A4%EA%B8%B0%20%EC%A0%95%EB%A6%AC>)
+- [2026-09-03 자바 배열과 객체지향 핵심](</wiki/03%20%EC%B6%9C%EC%B2%98%20%EB%85%B8%ED%8A%B8/2026-09-03%20%EC%9E%90%EB%B0%94%20%EB%B0%B0%EC%97%B4%EA%B3%BC%20%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%20%ED%95%B5%EC%8B%AC>)
 
 ## 자격증 학습
 
