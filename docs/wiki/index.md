@@ -140,6 +140,8 @@ last_updated: 2026-09-03
 ## 자격증 학습
 
 - [정보처리기사](</wiki/04%20%EC%9E%90%EA%B2%A9%EC%A6%9D/%EC%A0%95%EB%B3%B4%EC%B2%98%EB%A6%AC%EA%B8%B0%EC%82%AC>) — 정보처리기사 누적 학습 내용과 반복 기록
+- [정보처리기사 기출문제](</wiki/04%20%EC%9E%90%EA%B2%A9%EC%A6%9D/%EC%A0%95%EB%B3%B4%EC%B2%98%EB%A6%AC%EA%B8%B0%EC%82%AC%20%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C>) — 회차별 문제·정답·해설 전체
+- [정보처리기사 어플 공부](</wiki/04%20%EC%9E%90%EA%B2%A9%EC%A6%9D/%EC%A0%95%EB%B3%B4%EC%B2%98%EB%A6%AC%EA%B8%B0%EC%82%AC%20%EC%96%B4%ED%94%8C%20%EA%B3%B5%EB%B6%80>) — 어플 문제 학습 기록
 - [SQLD](</wiki/04%20%EC%9E%90%EA%B2%A9%EC%A6%9D/SQLD>) — SQLD 누적 학습 내용과 반복 기록
 - [리눅스마스터 2급](</wiki/04%20%EC%9E%90%EA%B2%A9%EC%A6%9D/%EB%A6%AC%EB%88%85%EC%8A%A4%EB%A7%88%EC%8A%A4%ED%84%B0%202%EA%B8%89>) — 리눅스마스터 2급 누적 학습 내용과 반복 기록
 
