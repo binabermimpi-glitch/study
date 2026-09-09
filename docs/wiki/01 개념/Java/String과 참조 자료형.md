@@ -9,7 +9,7 @@ prerequisites: ["[기본 자료형과 리터럴](</wiki/01%20%EA%B0%9C%EB%85%90/
 related: ["[가변 객체와 불변 객체](</wiki/01%20%EA%B0%9C%EB%85%90/Java/%EA%B0%80%EB%B3%80%20%EA%B0%9D%EC%B2%B4%EC%99%80%20%EB%B6%88%EB%B3%80%20%EA%B0%9D%EC%B2%B4>)"]
 sources: ["[2026-08-23 자바 참조와 자료형 기초](</wiki/03%20%EC%B6%9C%EC%B2%98%20%EB%85%B8%ED%8A%B8/2026-08-23%20%EC%9E%90%EB%B0%94%20%EC%B0%B8%EC%A1%B0%EC%99%80%20%EC%9E%90%EB%A3%8C%ED%98%95%20%EA%B8%B0%EC%B4%88>)", "[2026-08-31 Java 배열 반복문 패턴 매칭 복습](</wiki/03%20%EC%B6%9C%EC%B2%98%20%EB%85%B8%ED%8A%B8/2026-08-31%20Java%20%EB%B0%B0%EC%97%B4%20%EB%B0%98%EB%B3%B5%EB%AC%B8%20%ED%8C%A8%ED%84%B4%20%EB%A7%A4%EC%B9%AD%20%EB%B3%B5%EC%8A%B5>)"]
 created: 2026-08-23
-updated: 2026-08-31
+updated: 2026-09-10
 ---
 
 # String과 참조 자료형
@@ -52,8 +52,17 @@ System.out.println(" ".isBlank()); // true
 
 HTTP 요청값, JSON 데이터, 로그, 데이터베이스의 문자 데이터 등 거의 모든 백엔드 작업에서 사용된다.
 
+## String Pool과 비교
+
+동일한 문자열 리터럴은 String Pool의 같은 객체를 공유할 수 있지만 `new String("ABC")`는 별도 객체를 만든다. 따라서 `==` 결과를 내용 비교의 근거로 삼지 않고 `equals()`를 사용한다. 상수 표현식의 문자열 결합은 컴파일 과정에서 합쳐질 수 있지만 변수가 포함된 결합의 참조 동일성은 전제하지 않는다.
+
+## 반복 학습 이력
+
+- 2026-09-10 — String Pool, `new String()`, `==`와 `equals()` 차이 재확인
+
 ## 출처
 
 - [2026-08-23 자바 참조와 자료형 기초](</wiki/03%20%EC%B6%9C%EC%B2%98%20%EB%85%B8%ED%8A%B8/2026-08-23%20%EC%9E%90%EB%B0%94%20%EC%B0%B8%EC%A1%B0%EC%99%80%20%EC%9E%90%EB%A3%8C%ED%98%95%20%EA%B8%B0%EC%B4%88>)
 - [2026-08-26 Java 객체 생성자 캡슐화 복습](</wiki/03%20%EC%B6%9C%EC%B2%98%20%EB%85%B8%ED%8A%B8/2026-08-26%20Java%20%EA%B0%9D%EC%B2%B4%20%EC%83%9D%EC%84%B1%EC%9E%90%20%EC%BA%A1%EC%8A%90%ED%99%94%20%EB%B3%B5%EC%8A%B5>)
 - [2026-08-31 Java 배열 반복문 패턴 매칭 복습](</wiki/03%20%EC%B6%9C%EC%B2%98%20%EB%85%B8%ED%8A%B8/2026-08-31%20Java%20%EB%B0%B0%EC%97%B4%20%EB%B0%98%EB%B3%B5%EB%AC%B8%20%ED%8C%A8%ED%84%B4%20%EB%A7%A4%EC%B9%AD%20%EB%B3%B5%EC%8A%B5>)
+- [2026-09-10 자바 상속과 객체 설계](</wiki/03%20%EC%B6%9C%EC%B2%98%20%EB%85%B8%ED%8A%B8/2026-09-10%20%EC%9E%90%EB%B0%94%20%EC%83%81%EC%86%8D%EA%B3%BC%20%EA%B0%9D%EC%B2%B4%20%EC%84%A4%EA%B3%84>)

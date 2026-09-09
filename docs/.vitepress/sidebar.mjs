@@ -121,6 +121,14 @@ export default {
                   "link": "/wiki/01 개념/Java/연산자와 우선순위"
                 },
                 {
+                  "text": "인터페이스",
+                  "link": "/wiki/01 개념/Java/인터페이스"
+                },
+                {
+                  "text": "중첩 클래스",
+                  "link": "/wiki/01 개념/Java/중첩 클래스"
+                },
+                {
                   "text": "참조와 점 연산자",
                   "link": "/wiki/01 개념/Java/참조와 점 연산자"
                 },
@@ -171,6 +179,10 @@ export default {
                 {
                   "text": "Object 클래스",
                   "link": "/wiki/01 개념/Java/Object 클래스"
+                },
+                {
+                  "text": "sealed 클래스",
+                  "link": "/wiki/01 개념/Java/sealed 클래스"
                 },
                 {
                   "text": "static과 인스턴스 멤버",
@@ -284,6 +296,10 @@ export default {
                   "link": "/wiki/02 주제/Java/배열 복사와 객체지향 학습 지도"
                 },
                 {
+                  "text": "상속과 객체 설계 학습 지도",
+                  "link": "/wiki/02 주제/Java/상속과 객체 설계 학습 지도"
+                },
+                {
                   "text": "자바 메서드와 연산자 학습 지도",
                   "link": "/wiki/02 주제/Java/자바 메서드와 연산자 학습 지도"
                 },
@@ -363,6 +379,10 @@ export default {
             {
               "text": "자바 메소드와 객체 생성 — 출처 노트",
               "link": "/wiki/03 출처 노트/2026-08-27 자바 메소드와 객체 생성"
+            },
+            {
+              "text": "자바 상속과 객체 설계",
+              "link": "/wiki/03 출처 노트/2026-09-10 자바 상속과 객체 설계"
             },
             {
               "text": "자바 실행 구조와 기초 문법 — 출처 노트",
@@ -566,6 +586,10 @@ export default {
             {
               "text": "자바 배열과 객체지향 핵심",
               "link": "/sources/자바 백엔드 수업/2026-09-03 자바 배열과 객체지향 핵심"
+            },
+            {
+              "text": "자바 상속과 객체 설계",
+              "link": "/sources/자바 백엔드 수업/2026-09-10 자바 상속과 객체 설계"
             },
             {
               "text": "Java 객체·생성자·캡슐화 복습 정리",
