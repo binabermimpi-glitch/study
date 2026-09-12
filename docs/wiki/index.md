@@ -1,19 +1,11 @@
 ---
 type: index
-last_updated: 2026-09-03
+last_updated: 2026-09-12
 ---
 
 # 개발 공부 위키 인덱스
 
 > 현재 위키의 모든 지식을 찾는 시작점입니다. 새 자료를 처리할 때마다 갱신합니다.
-
-## 추천 학습 흐름
-
-1. [백엔드 개발 학습 로드맵](</wiki/02%20%EC%A3%BC%EC%A0%9C/Backend/%EB%B0%B1%EC%97%94%EB%93%9C%20%EA%B0%9C%EB%B0%9C%20%ED%95%99%EC%8A%B5%20%EB%A1%9C%EB%93%9C%EB%A7%B5>)
-2. [자바 참조와 자료형 기초 학습 지도](</wiki/02%20%EC%A3%BC%EC%A0%9C/Java/%EC%9E%90%EB%B0%94%20%EC%B0%B8%EC%A1%B0%EC%99%80%20%EC%9E%90%EB%A3%8C%ED%98%95%20%EA%B8%B0%EC%B4%88%20%ED%95%99%EC%8A%B5%20%EC%A7%80%EB%8F%84>)
-3. [자바 실행 구조와 기초 문법 학습 지도](</wiki/02%20%EC%A3%BC%EC%A0%9C/Java/%EC%9E%90%EB%B0%94%20%EC%8B%A4%ED%96%89%20%EA%B5%AC%EC%A1%B0%EC%99%80%20%EA%B8%B0%EC%B4%88%20%EB%AC%B8%EB%B2%95%20%ED%95%99%EC%8A%B5%20%EC%A7%80%EB%8F%84>)
-4. [자바 메서드와 연산자 학습 지도](</wiki/02%20%EC%A3%BC%EC%A0%9C/Java/%EC%9E%90%EB%B0%94%20%EB%A9%94%EC%84%9C%EB%93%9C%EC%99%80%20%EC%97%B0%EC%82%B0%EC%9E%90%20%ED%95%99%EC%8A%B5%20%EC%A7%80%EB%8F%84>)
-5. [객체 생성자 캡슐화 학습 지도](</wiki/02%20%EC%A3%BC%EC%A0%9C/Java/%EA%B0%9D%EC%B2%B4%20%EC%83%9D%EC%84%B1%EC%9E%90%20%EC%BA%A1%EC%8A%90%ED%99%94%20%ED%95%99%EC%8A%B5%20%EC%A7%80%EB%8F%84>)
 
 ## 기초 배경지식
 
@@ -38,7 +30,6 @@ last_updated: 2026-09-03
 ## 실무 핵심지식
 
 - [String과 참조 자료형](</wiki/01%20%EA%B0%9C%EB%85%90/Java/String%EA%B3%BC%20%EC%B0%B8%EC%A1%B0%20%EC%9E%90%EB%A3%8C%ED%98%95>) — 백엔드 전반에서 사용하는 문자열 객체
-- [백엔드 개발 학습 로드맵](</wiki/02%20%EC%A3%BC%EC%A0%9C/Backend/%EB%B0%B1%EC%97%94%EB%93%9C%20%EA%B0%9C%EB%B0%9C%20%ED%95%99%EC%8A%B5%20%EB%A1%9C%EB%93%9C%EB%A7%B5>) — 학습과 프로젝트의 전체 흐름
 - [래퍼 클래스와 박싱](</wiki/01%20%EA%B0%9C%EB%85%90/Java/%EB%9E%98%ED%8D%BC%20%ED%81%B4%EB%9E%98%EC%8A%A4%EC%99%80%20%EB%B0%95%EC%8B%B1>) — 기본형을 객체로 다루는 방법
 - [IntelliJ Java 프로젝트 구조](</wiki/01%20%EA%B0%9C%EB%85%90/Tools/IntelliJ%20Java%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%EA%B5%AC%EC%A1%B0>) — Java 프로젝트 개발 환경 설정
 - [메서드 선언과 호출](</wiki/01%20%EA%B0%9C%EB%85%90/Java/%EB%A9%94%EC%84%9C%EB%93%9C%20%EC%84%A0%EC%96%B8%EA%B3%BC%20%ED%98%B8%EC%B6%9C>) — Java 기능을 구성하는 기본 단위
@@ -64,62 +55,6 @@ last_updated: 2026-09-03
 ## 분류 대기
 
 <!-- knowledge_type: unclassified 문서 -->
-
-## 주제별 학습 지도
-
-### Java
-
-- [자바 참조와 자료형 기초 학습 지도](</wiki/02%20%EC%A3%BC%EC%A0%9C/Java/%EC%9E%90%EB%B0%94%20%EC%B0%B8%EC%A1%B0%EC%99%80%20%EC%9E%90%EB%A3%8C%ED%98%95%20%EA%B8%B0%EC%B4%88%20%ED%95%99%EC%8A%B5%20%EC%A7%80%EB%8F%84>)
-- [자바 실행 구조와 기초 문법 학습 지도](</wiki/02%20%EC%A3%BC%EC%A0%9C/Java/%EC%9E%90%EB%B0%94%20%EC%8B%A4%ED%96%89%20%EA%B5%AC%EC%A1%B0%EC%99%80%20%EA%B8%B0%EC%B4%88%20%EB%AC%B8%EB%B2%95%20%ED%95%99%EC%8A%B5%20%EC%A7%80%EB%8F%84>)
-- [자바 메서드와 연산자 학습 지도](</wiki/02%20%EC%A3%BC%EC%A0%9C/Java/%EC%9E%90%EB%B0%94%20%EB%A9%94%EC%84%9C%EB%93%9C%EC%99%80%20%EC%97%B0%EC%82%B0%EC%9E%90%20%ED%95%99%EC%8A%B5%20%EC%A7%80%EB%8F%84>)
-- [객체 생성자 캡슐화 학습 지도](</wiki/02%20%EC%A3%BC%EC%A0%9C/Java/%EA%B0%9D%EC%B2%B4%20%EC%83%9D%EC%84%B1%EC%9E%90%20%EC%BA%A1%EC%8A%90%ED%99%94%20%ED%95%99%EC%8A%B5%20%EC%A7%80%EB%8F%84>)
-- [배열 반복문 패턴 매칭 학습 지도](</wiki/02%20%EC%A3%BC%EC%A0%9C/Java/%EB%B0%B0%EC%97%B4%20%EB%B0%98%EB%B3%B5%EB%AC%B8%20%ED%8C%A8%ED%84%B4%20%EB%A7%A4%EC%B9%AD%20%ED%95%99%EC%8A%B5%20%EC%A7%80%EB%8F%84>)
-- [배열 복사와 객체지향 학습 지도](</wiki/02%20%EC%A3%BC%EC%A0%9C/Java/%EB%B0%B0%EC%97%B4%20%EB%B3%B5%EC%82%AC%EC%99%80%20%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%20%ED%95%99%EC%8A%B5%20%EC%A7%80%EB%8F%84>)
-- [상속과 객체 설계 학습 지도](</wiki/02%20%EC%A3%BC%EC%A0%9C/Java/%EC%83%81%EC%86%8D%EA%B3%BC%20%EA%B0%9D%EC%B2%B4%20%EC%84%A4%EA%B3%84%20%ED%95%99%EC%8A%B5%20%EC%A7%80%EB%8F%84>)
-
-### Spring
-
-<!-- Spring Boot, MVC, Data JPA, Security, 테스트 -->
-
-### Web
-
-<!-- HTTP, REST, 인증과 인가 -->
-
-### Database
-
-- [데이터 모델링과 정규화 학습 지도](</wiki/02%20%EC%A3%BC%EC%A0%9C/Database/%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EB%AA%A8%EB%8D%B8%EB%A7%81%EA%B3%BC%20%EC%A0%95%EA%B7%9C%ED%99%94%20%ED%95%99%EC%8A%B5%20%EC%A7%80%EB%8F%84>)
-- [데이터 모델링 단계](</wiki/01%20%EA%B0%9C%EB%85%90/Database/%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EB%AA%A8%EB%8D%B8%EB%A7%81%20%EB%8B%A8%EA%B3%84>)
-- [ER 모델과 ER 다이어그램](</wiki/01%20%EA%B0%9C%EB%85%90/Database/ER%20%EB%AA%A8%EB%8D%B8%EA%B3%BC%20ER%20%EB%8B%A4%EC%9D%B4%EC%96%B4%EA%B7%B8%EB%9E%A8>)
-- [관계 데이터 모델 기본 용어](</wiki/01%20%EA%B0%9C%EB%85%90/Database/%EA%B4%80%EA%B3%84%20%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EB%AA%A8%EB%8D%B8%20%EA%B8%B0%EB%B3%B8%20%EC%9A%A9%EC%96%B4>)
-- [관계대수와 관계해석](</wiki/01%20%EA%B0%9C%EB%85%90/Database/%EA%B4%80%EA%B3%84%EB%8C%80%EC%88%98%EC%99%80%20%EA%B4%80%EA%B3%84%ED%95%B4%EC%84%9D>)
-- [데이터베이스 키](</wiki/01%20%EA%B0%9C%EB%85%90/Database/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4%20%ED%82%A4>)
-- [무결성 제약조건](</wiki/01%20%EA%B0%9C%EB%85%90/Database/%EB%AC%B4%EA%B2%B0%EC%84%B1%20%EC%A0%9C%EC%95%BD%EC%A1%B0%EA%B1%B4>)
-- [정규화와 이상 현상](</wiki/01%20%EA%B0%9C%EB%85%90/Database/%EC%A0%95%EA%B7%9C%ED%99%94%EC%99%80%20%EC%9D%B4%EC%83%81%20%ED%98%84%EC%83%81>)
-- [반정규화와 물리 설계](</wiki/01%20%EA%B0%9C%EB%85%90/Database/%EB%B0%98%EC%A0%95%EA%B7%9C%ED%99%94%EC%99%80%20%EB%AC%BC%EB%A6%AC%20%EC%84%A4%EA%B3%84>)
-
-### CS
-
-<!-- 자료구조, 알고리즘, 운영체제, 네트워크 -->
-
-### Tools
-
-<!-- Git, Gradle, IntelliJ, Docker -->
-
-### Linux
-
-- [리눅스마스터 2급](</wiki/04%20%EC%9E%90%EA%B2%A9%EC%A6%9D/%EB%A6%AC%EB%88%85%EC%8A%A4%EB%A7%88%EC%8A%A4%ED%84%B0%202%EA%B8%89>) — Linux 기초, 명령어, 저장장치와 시험 학습 기록
-
-### Software Engineering
-
-<!-- 요구사항, 설계, 테스트와 개발 방법론 -->
-
-### Security
-
-<!-- 인증, 인가, 암호화와 보안 -->
-
-### Backend 통합
-
-- [백엔드 개발 학습 로드맵](</wiki/02%20%EC%A3%BC%EC%A0%9C/Backend/%EB%B0%B1%EC%97%94%EB%93%9C%20%EA%B0%9C%EB%B0%9C%20%ED%95%99%EC%8A%B5%20%EB%A1%9C%EB%93%9C%EB%A7%B5>)
 
 ## 출처 노트
 
