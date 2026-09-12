@@ -483,6 +483,23 @@ export default {
               ]
             }
           ]
+        },
+        {
+          "text": "나만의 요약",
+          "link": "/wiki/06 나만의 요약/",
+          "collapsed": false,
+          "items": [
+            {
+              "text": "Java",
+              "collapsed": true,
+              "items": [
+                {
+                  "text": "나만의 자바 한두 줄 정리",
+                  "link": "/wiki/06 나만의 요약/Java/나만의 자바 한두 줄 정리"
+                }
+              ]
+            }
+          ]
         }
       ]
     }
@@ -511,6 +528,16 @@ export default {
         {
           "text": "main 메서드 학습 회고",
           "link": "/sources/2026-08-24 main 메서드 학습 회고"
+        },
+        {
+          "text": "나만의 요약",
+          "collapsed": false,
+          "items": [
+            {
+              "text": "Java 핵심 개념 — 나만의 한두 줄 정리",
+              "link": "/sources/나만의 요약/2026-09-12 Java 핵심 개념 한두 줄 정리"
+            }
+          ]
         },
         {
           "text": "자격증",
