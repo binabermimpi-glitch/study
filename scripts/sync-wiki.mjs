@@ -167,7 +167,12 @@ function sidebarItemsFor(section) {
       const remainder = relative.slice(prefix.length)
       if (!remainder.includes('/')) return []
       return [remainder.split('/')[0]]
-    }))].sort((a, b) => a.localeCompare(b, 'ko'))
+    }))].sort((a, b) => {
+      const aIsSources = cleanLabel(a) === '출처 노트'
+      const bIsSources = cleanLabel(b) === '출처 노트'
+      if (aIsSources !== bIsSources) return aIsSources ? 1 : -1
+      return a.localeCompare(b, 'ko')
+    })
 
     const directoryItems = childDirectories.map(directory => {
       const childRelative = relativeDirectory ? `${relativeDirectory}/${directory}` : directory
@@ -210,4 +215,3 @@ if (unresolvedLinks.length > 0) {
   console.warn(`Converted ${unresolvedLinks.length} unresolved Obsidian links to inline text:`)
   for (const link of unresolvedLinks) console.warn(`- ${link}`)
 }
-
