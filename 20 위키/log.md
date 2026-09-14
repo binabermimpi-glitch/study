@@ -233,3 +233,10 @@
 - 상위 타입 배열과 동적 바인딩, 인터페이스 default 메서드, equals·hashCode 계약을 보강
 - switch 패턴, sealed, record 문서에 2026-09-14 반복 학습 이력과 출처 연결
 - 중복 개념 문서를 새로 만들지 않고 기존 Java 문서 8개를 갱신
+
+## [2026-09-15] ingest | 정보처리기사 실기 앱 추가 정리 ②
+
+- 어플 학습 문제 15개를 정보처리기사 어플 공부 문서에 반영
+- DFD·일관성 검사 오라클·동등 분할·Adapter·LRU·Checkstyle·Facade·Tamper Proofing은 반복 날짜와 횟수만 갱신
+- 객체·배치 다이어그램, SSH, UML static 표기, EAI Workflow, Clearing House, Spoofing 7개를 새 문제로 추가
+- 배치·컴포넌트 다이어그램과 static·접근제어자처럼 혼동하기 쉬운 차이를 함께 기록
