@@ -10,7 +10,7 @@ prerequisites:
 related: ["[switch 표현식과 패턴 매칭](</wiki/01%20%EA%B0%9C%EB%85%90/Java/switch%20%ED%91%9C%ED%98%84%EC%8B%9D%EA%B3%BC%20%ED%8C%A8%ED%84%B4%20%EB%A7%A4%EC%B9%AD>)", "[상속 오버라이딩 다형성](</wiki/01%20%EA%B0%9C%EB%85%90/Java/%EC%83%81%EC%86%8D%20%EC%98%A4%EB%B2%84%EB%9D%BC%EC%9D%B4%EB%94%A9%20%EB%8B%A4%ED%98%95%EC%84%B1>)"]
 sources: ["[2026-08-26 Java 객체 생성자 캡슐화 복습](</wiki/03%20%EC%B6%9C%EC%B2%98%20%EB%85%B8%ED%8A%B8/2026-08-26%20Java%20%EA%B0%9D%EC%B2%B4%20%EC%83%9D%EC%84%B1%EC%9E%90%20%EC%BA%A1%EC%8A%90%ED%99%94%20%EB%B3%B5%EC%8A%B5>)", "[2026-08-31 Java 배열 반복문 패턴 매칭 복습](</wiki/03%20%EC%B6%9C%EC%B2%98%20%EB%85%B8%ED%8A%B8/2026-08-31%20Java%20%EB%B0%B0%EC%97%B4%20%EB%B0%98%EB%B3%B5%EB%AC%B8%20%ED%8C%A8%ED%84%B4%20%EB%A7%A4%EC%B9%AD%20%EB%B3%B5%EC%8A%B5>)", "[2026-09-03 자바 배열과 객체지향 핵심](</wiki/03%20%EC%B6%9C%EC%B2%98%20%EB%85%B8%ED%8A%B8/2026-09-03%20%EC%9E%90%EB%B0%94%20%EB%B0%B0%EC%97%B4%EA%B3%BC%20%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%20%ED%95%B5%EC%8B%AC>)"]
 created: 2026-08-26
-updated: 2026-09-03
+updated: 2026-09-14
 ---
 
 # instanceof와 타입 검사
@@ -54,9 +54,11 @@ if (obj instanceof String text) {
 - 2026-08-26 — 실제 객체 타입 검사 최초 정리
 - 2026-08-31 — 패턴 변수와 선언 타입·실제 타입 차이 재확인
 - 2026-09-03 — 배열 타입 판별과 `getClass()` 차이 재확인
+- 2026-09-14 — 안전한 다운캐스팅과 `타입 검사 + 패턴 변수 생성` 흐름 재확인
 
 ## 출처
 
 - [2026-08-26 Java 객체 생성자 캡슐화 복습](</wiki/03%20%EC%B6%9C%EC%B2%98%20%EB%85%B8%ED%8A%B8/2026-08-26%20Java%20%EA%B0%9D%EC%B2%B4%20%EC%83%9D%EC%84%B1%EC%9E%90%20%EC%BA%A1%EC%8A%90%ED%99%94%20%EB%B3%B5%EC%8A%B5>)
 - [2026-08-31 Java 배열 반복문 패턴 매칭 복습](</wiki/03%20%EC%B6%9C%EC%B2%98%20%EB%85%B8%ED%8A%B8/2026-08-31%20Java%20%EB%B0%B0%EC%97%B4%20%EB%B0%98%EB%B3%B5%EB%AC%B8%20%ED%8C%A8%ED%84%B4%20%EB%A7%A4%EC%B9%AD%20%EB%B3%B5%EC%8A%B5>)
 - [2026-09-03 자바 배열과 객체지향 핵심](</wiki/03%20%EC%B6%9C%EC%B2%98%20%EB%85%B8%ED%8A%B8/2026-09-03%20%EC%9E%90%EB%B0%94%20%EB%B0%B0%EC%97%B4%EA%B3%BC%20%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%20%ED%95%B5%EC%8B%AC>)
+- [2026-09-14 자바 상속과 다형성 핵심 정리](</wiki/03%20%EC%B6%9C%EC%B2%98%20%EB%85%B8%ED%8A%B8/2026-09-14%20%EC%9E%90%EB%B0%94%20%EC%83%81%EC%86%8D%EA%B3%BC%20%EB%8B%A4%ED%98%95%EC%84%B1%20%ED%95%B5%EC%8B%AC%20%EC%A0%95%EB%A6%AC>)

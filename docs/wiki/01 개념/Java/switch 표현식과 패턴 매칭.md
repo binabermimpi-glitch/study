@@ -9,7 +9,7 @@ prerequisites: ["[instanceof와 타입 검사](</wiki/01%20%EA%B0%9C%EB%85%90/Ja
 related: ["[변수의 종류와 생명주기](</wiki/01%20%EA%B0%9C%EB%85%90/Java/%EB%B3%80%EC%88%98%EC%9D%98%20%EC%A2%85%EB%A5%98%EC%99%80%20%EC%83%9D%EB%AA%85%EC%A3%BC%EA%B8%B0>)"]
 sources: ["[2026-08-31 Java 배열 반복문 패턴 매칭 복습](</wiki/03%20%EC%B6%9C%EC%B2%98%20%EB%85%B8%ED%8A%B8/2026-08-31%20Java%20%EB%B0%B0%EC%97%B4%20%EB%B0%98%EB%B3%B5%EB%AC%B8%20%ED%8C%A8%ED%84%B4%20%EB%A7%A4%EC%B9%AD%20%EB%B3%B5%EC%8A%B5>)"]
 created: 2026-08-31
-updated: 2026-08-31
+updated: 2026-09-14
 ---
 
 # switch 표현식과 패턴 매칭
@@ -69,4 +69,8 @@ static String describe(Object obj) {
 ## 출처
 
 - [2026-08-31 Java 배열 반복문 패턴 매칭 복습](</wiki/03%20%EC%B6%9C%EC%B2%98%20%EB%85%B8%ED%8A%B8/2026-08-31%20Java%20%EB%B0%B0%EC%97%B4%20%EB%B0%98%EB%B3%B5%EB%AC%B8%20%ED%8C%A8%ED%84%B4%20%EB%A7%A4%EC%B9%AD%20%EB%B3%B5%EC%8A%B5>)
+- [2026-09-14 자바 상속과 다형성 핵심 정리](</wiki/03%20%EC%B6%9C%EC%B2%98%20%EB%85%B8%ED%8A%B8/2026-09-14%20%EC%9E%90%EB%B0%94%20%EC%83%81%EC%86%8D%EA%B3%BC%20%EB%8B%A4%ED%98%95%EC%84%B1%20%ED%95%B5%EC%8B%AC%20%EC%A0%95%EB%A6%AC>)
 
+## 반복 학습 이력
+
+- 2026-09-14 — `instanceof 타입 변수`와 `case 타입 변수`의 공통 원리 재확인

@@ -9,7 +9,7 @@ prerequisites: ["[상속 오버라이딩 다형성](</wiki/01%20%EA%B0%9C%EB%85%
 related: ["[인터페이스](</wiki/01%20%EA%B0%9C%EB%85%90/Java/%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4>)"]
 sources: ["[2026-09-10 자바 상속과 객체 설계](</wiki/03%20%EC%B6%9C%EC%B2%98%20%EB%85%B8%ED%8A%B8/2026-09-10%20%EC%9E%90%EB%B0%94%20%EC%83%81%EC%86%8D%EA%B3%BC%20%EA%B0%9D%EC%B2%B4%20%EC%84%A4%EA%B3%84>)"]
 created: 2026-09-10
-updated: 2026-09-10
+updated: 2026-09-14
 ---
 
 # sealed 클래스
@@ -36,3 +36,8 @@ sealed 클래스는 Java 17에서 정식 기능이 되었다. 국비수업이나
 ## 출처
 
 - [2026-09-10 자바 상속과 객체 설계](</wiki/03%20%EC%B6%9C%EC%B2%98%20%EB%85%B8%ED%8A%B8/2026-09-10%20%EC%9E%90%EB%B0%94%20%EC%83%81%EC%86%8D%EA%B3%BC%20%EA%B0%9D%EC%B2%B4%20%EC%84%A4%EA%B3%84>)
+- [2026-09-14 자바 상속과 다형성 핵심 정리](</wiki/03%20%EC%B6%9C%EC%B2%98%20%EB%85%B8%ED%8A%B8/2026-09-14%20%EC%9E%90%EB%B0%94%20%EC%83%81%EC%86%8D%EA%B3%BC%20%EB%8B%A4%ED%98%95%EC%84%B1%20%ED%95%B5%EC%8B%AC%20%EC%A0%95%EB%A6%AC>)
+
+## 반복 학습 이력
+
+- 2026-09-14 — permits와 `final`·`sealed`·`non-sealed`, switch 타입 분기 연결 재확인
