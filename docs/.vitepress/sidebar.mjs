@@ -350,6 +350,10 @@ export default {
                 {
                   "text": "나만의 자바 한두 줄 정리",
                   "link": "/wiki/06 나만의 요약/Java/나만의 자바 한두 줄 정리"
+                },
+                {
+                  "text": "Java API 선언문 읽기",
+                  "link": "/wiki/06 나만의 요약/Java/Java API 선언문 읽기"
                 }
               ]
             }
