@@ -165,7 +165,7 @@ const javaCurriculumGroups = [
   },
   {
     text: '5단계 — 객체지향 확장',
-    titles: ['상속 오버라이딩 다형성', 'instanceof와 타입 검사', '추상 클래스와 추상 메서드', '인터페이스']
+    titles: ['상속 오버라이딩 다형성', 'instanceof와 타입 검사', '추상 클래스와 추상 메서드', '인터페이스', '예외 처리']
   },
   {
     text: '6단계 — 현대 Java와 응용',

@@ -240,3 +240,10 @@
 - DFD·일관성 검사 오라클·동등 분할·Adapter·LRU·Checkstyle·Facade·Tamper Proofing은 반복 날짜와 횟수만 갱신
 - 객체·배치 다이어그램, SSH, UML static 표기, EAI Workflow, Clearing House, Spoofing 7개를 새 문제로 추가
 - 배치·컴포넌트 다이어그램과 static·접근제어자처럼 혼동하기 쉬운 차이를 함께 기록
+
+## [2026-09-15] ingest | 자바 예외 처리 진행상황 및 핵심 복습
+
+- 국비수업 복습 원문과 출처 노트를 보존하고 Java 예외 처리 개념 문서 생성
+- Throwable 계층, try-catch-finally, catch 순서와 throw·throws 차이 정리
+- 사용자 정의 예외의 super(message)·getMessage() 연결과 예외 재던지기 흐름 추가
+- Java 커리큘럼 5단계 마지막에 예외 처리를 배치하고 전체 개념 수를 35개로 갱신

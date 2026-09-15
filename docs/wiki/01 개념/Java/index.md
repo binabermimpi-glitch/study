@@ -54,15 +54,16 @@ Java를 처음 배우는 순서에 맞춰 실행 구조와 기초 문법부터 �
 28. [instanceof와 타입 검사](</wiki/01%20%EA%B0%9C%EB%85%90/Java/instanceof%EC%99%80%20%ED%83%80%EC%9E%85%20%EA%B2%80%EC%82%AC>)
 29. [추상 클래스와 추상 메서드](</wiki/01%20%EA%B0%9C%EB%85%90/Java/%EC%B6%94%EC%83%81%20%ED%81%B4%EB%9E%98%EC%8A%A4%EC%99%80%20%EC%B6%94%EC%83%81%20%EB%A9%94%EC%84%9C%EB%93%9C>)
 30. [인터페이스](</wiki/01%20%EA%B0%9C%EB%85%90/Java/%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4>)
+31. [예외 처리](</wiki/01%20%EA%B0%9C%EB%85%90/Java/%EC%98%88%EC%99%B8%20%EC%B2%98%EB%A6%AC>)
 
 이 단계의 목표는 하나의 상위 타입으로 여러 구현 객체를 다루고 실제 객체에 맞는 동작이 실행되는 과정을 이해하는 것입니다.
 
 ## 6단계 — 현대 Java와 응용
 
-31. [switch 표현식과 패턴 매칭](</wiki/01%20%EA%B0%9C%EB%85%90/Java/switch%20%ED%91%9C%ED%98%84%EC%8B%9D%EA%B3%BC%20%ED%8C%A8%ED%84%B4%20%EB%A7%A4%EC%B9%AD>)
-32. [DTO와 record](</wiki/01%20%EA%B0%9C%EB%85%90/Java/DTO%EC%99%80%20record>)
-33. [sealed 클래스](</wiki/01%20%EA%B0%9C%EB%85%90/Java/sealed%20%ED%81%B4%EB%9E%98%EC%8A%A4>)
-34. [중첩 클래스](</wiki/01%20%EA%B0%9C%EB%85%90/Java/%EC%A4%91%EC%B2%A9%20%ED%81%B4%EB%9E%98%EC%8A%A4>)
+32. [switch 표현식과 패턴 매칭](</wiki/01%20%EA%B0%9C%EB%85%90/Java/switch%20%ED%91%9C%ED%98%84%EC%8B%9D%EA%B3%BC%20%ED%8C%A8%ED%84%B4%20%EB%A7%A4%EC%B9%AD>)
+33. [DTO와 record](</wiki/01%20%EA%B0%9C%EB%85%90/Java/DTO%EC%99%80%20record>)
+34. [sealed 클래스](</wiki/01%20%EA%B0%9C%EB%85%90/Java/sealed%20%ED%81%B4%EB%9E%98%EC%8A%A4>)
+35. [중첩 클래스](</wiki/01%20%EA%B0%9C%EB%85%90/Java/%EC%A4%91%EC%B2%A9%20%ED%81%B4%EB%9E%98%EC%8A%A4>)
 
 이 단계는 앞선 문법과 객체지향을 이해한 뒤 학습합니다. Java 버전에 따라 사용할 수 있는 문법이 다르므로 각 문서의 적용 버전을 확인합니다.
 
@@ -71,7 +72,6 @@ Java를 처음 배우는 순서에 맞춰 실행 구조와 기초 문법부터 �
 다음 내용은 실제 수업 자료가 들어올 때 알맞은 단계에 추가합니다.
 
 - 조건문과 반복문 기초
-- 예외 처리
 - 컬렉션
 - 제네릭
 - 람다와 스트림
