@@ -146,20 +146,68 @@ function titleForRecord(record) {
   return heading || cleanLabel(path.posix.basename(record.destinationRelative))
 }
 
+const javaCurriculumGroups = [
+  {
+    text: '1단계 — Java 실행과 첫 코드',
+    titles: ['JDK, JRE, JVM', 'main 메서드 선언 읽기', '기본 자료형과 리터럴', '변수의 종류와 생명주기', '형변환과 연산 프로모션', '연산자와 우선순위', '표준 입출력']
+  },
+  {
+    text: '2단계 — 메서드',
+    titles: ['메서드 선언과 호출', '매개변수와 인수', '반환형과 return', 'static과 인스턴스 멤버', '메서드 오버로딩']
+  },
+  {
+    text: '3단계 — 참조 타입과 배열',
+    titles: ['참조와 점 연산자', 'String과 참조 자료형', '래퍼 클래스와 박싱', '배열과 2차원 배열', '향상된 for문과 반복 제어', '배열 복사와 방어적 복사']
+  },
+  {
+    text: '4단계 — 클래스와 객체',
+    titles: ['클래스와 접근 제한자', '객체 생성과 초기화 순서', '생성자와 생성자 오버로딩', 'this 참조', '캡슐화와 Getter·Setter', '가변 객체와 불변 객체', 'Object 클래스', 'JVM 메모리와 가비지 컬렉션']
+  },
+  {
+    text: '5단계 — 객체지향 확장',
+    titles: ['상속 오버라이딩 다형성', 'instanceof와 타입 검사', '추상 클래스와 추상 메서드', '인터페이스']
+  },
+  {
+    text: '6단계 — 현대 Java와 응용',
+    titles: ['switch 표현식과 패턴 매칭', 'DTO와 record', 'sealed 클래스', '중첩 클래스']
+  }
+]
+
 function sidebarItemsFor(section) {
   const sectionRecords = records.filter(record => record.section === section)
   const rootRecord = sectionRecords.find(record => record.destinationRelative === `${section.destination}/index.md`)
 
   const makeTree = relativeDirectory => {
     const prefix = relativeDirectory ? `${relativeDirectory}/` : ''
-    const directFiles = sectionRecords
+    const directRecords = sectionRecords
       .filter(record => {
         const relative = record.destinationRelative.slice(section.destination.length + 1)
         return path.posix.dirname(relative) === (relativeDirectory || '.')
           && path.posix.basename(relative) !== 'index.md'
       })
       .sort((a, b) => titleForRecord(a).localeCompare(titleForRecord(b), 'ko'))
+
+    const directFiles = directRecords
       .map(record => ({ text: titleForRecord(record), link: record.routePath }))
+
+    if (section.destination === 'wiki' && relativeDirectory === '01 개념/Java') {
+      const recordsByTitle = new Map(directRecords.map(record => [titleForRecord(record), record]))
+      const listedTitles = new Set(javaCurriculumGroups.flatMap(group => group.titles))
+      const groups = javaCurriculumGroups.map(group => ({
+        text: group.text,
+        collapsed: true,
+        items: group.titles.flatMap(title => {
+          const record = recordsByTitle.get(title)
+          return record ? [{ text: title, link: record.routePath }] : []
+        })
+      }))
+      const unlisted = directRecords
+        .filter(record => !listedTitles.has(titleForRecord(record)))
+        .map(record => ({ text: titleForRecord(record), link: record.routePath }))
+
+      if (unlisted.length > 0) groups.push({ text: '추가 개념', collapsed: true, items: unlisted })
+      return groups
+    }
 
     const childDirectories = [...new Set(sectionRecords.flatMap(record => {
       const relative = record.destinationRelative.slice(section.destination.length + 1)
