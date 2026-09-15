@@ -363,6 +363,10 @@ export default {
               "collapsed": true,
               "items": [
                 {
+                  "text": "람다 ↔ 익명 클래스 + Files.list/filter/forEach 정리",
+                  "link": "/wiki/05 문제 풀이/코드 작성 연습/2026-09-16 람다 익명 클래스와 Files Stream API"
+                },
+                {
                   "text": "메서드 작성 1~4 오답과 교정",
                   "link": "/wiki/05 문제 풀이/코드 작성 연습/2026-09-13 메서드 작성 1-4 오답과 교정"
                 },
