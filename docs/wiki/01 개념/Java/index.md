@@ -64,6 +64,7 @@ Java를 처음 배우는 순서에 맞춰 실행 구조와 기초 문법부터 �
 33. [DTO와 record](</wiki/01%20%EA%B0%9C%EB%85%90/Java/DTO%EC%99%80%20record>)
 34. [sealed 클래스](</wiki/01%20%EA%B0%9C%EB%85%90/Java/sealed%20%ED%81%B4%EB%9E%98%EC%8A%A4>)
 35. [중첩 클래스](</wiki/01%20%EA%B0%9C%EB%85%90/Java/%EC%A4%91%EC%B2%A9%20%ED%81%B4%EB%9E%98%EC%8A%A4>)
+36. [IO와 NIO 파일 처리](</wiki/01%20%EA%B0%9C%EB%85%90/Java/IO%EC%99%80%20NIO%20%ED%8C%8C%EC%9D%BC%20%EC%B2%98%EB%A6%AC>)
 
 이 단계는 앞선 문법과 객체지향을 이해한 뒤 학습합니다. Java 버전에 따라 사용할 수 있는 문법이 다르므로 각 문서의 적용 버전을 확인합니다.
 

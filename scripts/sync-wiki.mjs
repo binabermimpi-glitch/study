@@ -169,7 +169,7 @@ const javaCurriculumGroups = [
   },
   {
     text: '6단계 — 현대 Java와 응용',
-    titles: ['switch 표현식과 패턴 매칭', 'DTO와 record', 'sealed 클래스', '중첩 클래스']
+    titles: ['switch 표현식과 패턴 매칭', 'DTO와 record', 'sealed 클래스', '중첩 클래스', '자바 IO와 NIO 파일 처리']
   }
 ]
 
