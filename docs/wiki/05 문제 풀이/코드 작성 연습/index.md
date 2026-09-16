@@ -19,6 +19,10 @@ last_updated: 2026-09-13
 
 - [2026-09-16 람다 익명 클래스와 Files Stream API](</wiki/05%20%EB%AC%B8%EC%A0%9C%20%ED%92%80%EC%9D%B4/%EC%BD%94%EB%93%9C%20%EC%9E%91%EC%84%B1%20%EC%97%B0%EC%8A%B5/2026-09-16%20%EB%9E%8C%EB%8B%A4%20%EC%9D%B5%EB%AA%85%20%ED%81%B4%EB%9E%98%EC%8A%A4%EC%99%80%20Files%20Stream%20API>) — 함수형 인터페이스 4개, 람다와 익명 클래스 변환, `Files.list()`·`filter()`·`forEach()` 흐름
 
+### 2026-09-17 — 익명 클래스와 람다의 this
+
+- [2026-09-17 익명 클래스와 람다의 this](</wiki/05%20%EB%AC%B8%EC%A0%9C%20%ED%92%80%EC%9D%B4/%EC%BD%94%EB%93%9C%20%EC%9E%91%EC%84%B1%20%EC%97%B0%EC%8A%B5/2026-09-17%20%EC%9D%B5%EB%AA%85%20%ED%81%B4%EB%9E%98%EC%8A%A4%EC%99%80%20%EB%9E%8C%EB%8B%A4%EC%9D%98%20this>) — 익명 객체의 `this`와 외부 객체를 가리키는 람다의 `this` 차이
+
 ## 반복되는 약점
 
 - 문법 기억: 세미콜론, API 이름, println 철자와 printf 형식
