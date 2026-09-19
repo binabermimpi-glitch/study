@@ -15,6 +15,17 @@ export default {
           "collapsed": false,
           "items": [
             {
+              "text": "네트워크 공부",
+              "link": "/wiki/01 개념/네트워크 공부/",
+              "collapsed": true,
+              "items": [
+                {
+                  "text": "네트워크 공부 01",
+                  "link": "/wiki/01 개념/네트워크 공부/네트워크 공부 01"
+                }
+              ]
+            },
+            {
               "text": "CS",
               "link": "/wiki/01 개념/CS/",
               "collapsed": true,
@@ -489,6 +500,10 @@ export default {
               "link": "/wiki/03 출처 노트/2026-09-17 정보처리기사 실기 앱 추가 정리 3"
             },
             {
+              "text": "2026-09-19 네트워크 공부 01",
+              "link": "/wiki/03 출처 노트/2026-09-19 네트워크 공부 01"
+            },
+            {
               "text": "메서드 작성 1~4 오답과 교정",
               "link": "/wiki/03 출처 노트/2026-09-13 메서드 작성 1-4 오답과 교정"
             },
@@ -569,6 +584,16 @@ export default {
             {
               "text": "Java 핵심 개념 — 나만의 한두 줄 정리",
               "link": "/sources/나만의 요약/2026-09-12 Java 핵심 개념 한두 줄 정리"
+            }
+          ]
+        },
+        {
+          "text": "네트워크 공부",
+          "collapsed": false,
+          "items": [
+            {
+              "text": "-09-19 네트워크 공부 01",
+              "link": "/sources/네트워크 공부/2026-09-19 네트워크 공부 01"
             }
           ]
         },
