@@ -1,7 +1,7 @@
 ---
 type: index
 area: 네트워크 공부
-last_updated: 2026-09-19
+last_updated: 2026-09-20
 ---
 
 # 네트워크 공부
@@ -11,3 +11,4 @@ last_updated: 2026-09-19
 ## 학습 순서
 
 1. [네트워크 공부 01](</wiki/01%20%EA%B0%9C%EB%85%90/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%20%EA%B3%B5%EB%B6%80/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%20%EA%B3%B5%EB%B6%80%2001>) — 네트워크 기초, 교환 방식, 주소, OSI·TCP/IP, 캡슐화와 성능 지표
+2. [네트워크 공부 02](</wiki/01%20%EA%B0%9C%EB%85%90/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%20%EA%B3%B5%EB%B6%80/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%20%EA%B3%B5%EB%B6%80%2002>) — 이더넷, 프레임, MAC 주소, NIC와 유선 케이블
