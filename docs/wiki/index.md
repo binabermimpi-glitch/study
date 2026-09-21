@@ -1,6 +1,6 @@
 ---
 type: index
-last_updated: 2026-09-13
+last_updated: 2026-09-22
 ---
 
 # 개발 공부 위키 인덱스
@@ -49,6 +49,9 @@ last_updated: 2026-09-13
 - [중첩 클래스](</wiki/01%20%EA%B0%9C%EB%85%90/Java/%EC%A4%91%EC%B2%A9%20%ED%81%B4%EB%9E%98%EC%8A%A4>) — 정적 중첩·내부·로컬·익명 클래스
 - [예외 처리](</wiki/01%20%EA%B0%9C%EB%85%90/Java/%EC%98%88%EC%99%B8%20%EC%B2%98%EB%A6%AC>) — 예외 계층, 처리·전파와 사용자 정의 예외
 - [IO와 NIO 파일 처리](</wiki/01%20%EA%B0%9C%EB%85%90/Java/IO%EC%99%80%20NIO%20%ED%8C%8C%EC%9D%BC%20%EC%B2%98%EB%A6%AC>) — 경로, 스트림, 인코딩, 직렬화, 버퍼와 디렉터리 탐색
+- [List와 ListIterator](</wiki/01%20%EA%B0%9C%EB%85%90/Java/List%EC%99%80%20ListIterator>) — List의 양방향 순회와 커서 위치
+- [Set 구현체와 중복 판단](</wiki/01%20%EA%B0%9C%EB%85%90/Java/Set%20%EA%B5%AC%ED%98%84%EC%B2%B4%EC%99%80%20%EC%A4%91%EB%B3%B5%20%ED%8C%90%EB%8B%A8>) — HashSet·LinkedHashSet·TreeSet의 순서와 중복 기준
+- [Comparator와 정렬](</wiki/01%20%EA%B0%9C%EB%85%90/Java/Comparator%EC%99%80%20%EC%A0%95%EB%A0%AC>) — 객체 비교, 자연 정렬과 TreeSet의 비교 규칙
 
 ## 제한적 활용 지식
 
@@ -81,6 +84,7 @@ last_updated: 2026-09-13
 
 - [index](</wiki/06%20%EB%82%98%EB%A7%8C%EC%9D%98%20%EC%9A%94%EC%95%BD/>) — 내가 이해한 말로 짧게 정리한 복습 문서
 - [나만의 자바 한두 줄 정리](</wiki/06%20%EB%82%98%EB%A7%8C%EC%9D%98%20%EC%9A%94%EC%95%BD/Java/%EB%82%98%EB%A7%8C%EC%9D%98%20%EC%9E%90%EB%B0%94%20%ED%95%9C%EB%91%90%20%EC%A4%84%20%EC%A0%95%EB%A6%AC>) — Java 핵심 개념 24개
+- [Java API 선언문 읽기](</wiki/06%20%EB%82%98%EB%A7%8C%EC%9D%98%20%EC%9A%94%EC%95%BD/Java/Java%20API%20%EC%84%A0%EC%96%B8%EB%AC%B8%20%EC%9D%BD%EA%B8%B0>) — API 선언, 와일드카드와 람다 표현 읽기
 
 ## 출처 노트
 
@@ -117,3 +121,4 @@ last_updated: 2026-09-13
 - [2026-09-20 2022년 1회 정보처리기사 실기 17-20번 정리](</wiki/03%20%EC%B6%9C%EC%B2%98%20%EB%85%B8%ED%8A%B8/2026-09-20%202022%EB%85%84%201%ED%9A%8C%20%EC%A0%95%EB%B3%B4%EC%B2%98%EB%A6%AC%EA%B8%B0%EC%82%AC%20%EC%8B%A4%EA%B8%B0%2017-20%EB%B2%88%20%EC%A0%95%EB%A6%AC>)
 - [2026-09-20 2022년 1회 정보처리기사 실기 전체 정리](</wiki/03%20%EC%B6%9C%EC%B2%98%20%EB%85%B8%ED%8A%B8/2026-09-20%202022%EB%85%84%201%ED%9A%8C%20%EC%A0%95%EB%B3%B4%EC%B2%98%EB%A6%AC%EA%B8%B0%EC%82%AC%20%EC%8B%A4%EA%B8%B0%20%EC%A0%84%EC%B2%B4%20%EC%A0%95%EB%A6%AC>)
 - [2026-09-20 네트워크 공부 02](</wiki/03%20%EC%B6%9C%EC%B2%98%20%EB%85%B8%ED%8A%B8/2026-09-20%20%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%20%EA%B3%B5%EB%B6%80%2002>)
+- [2026-09-22 Java 컬렉션 다형성 Comparator 정리](</wiki/03%20%EC%B6%9C%EC%B2%98%20%EB%85%B8%ED%8A%B8/2026-09-22%20Java%20%EC%BB%AC%EB%A0%89%EC%85%98%20%EB%8B%A4%ED%98%95%EC%84%B1%20Comparator%20%EC%A0%95%EB%A6%AC>)

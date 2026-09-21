@@ -258,6 +258,24 @@ export default {
                       "link": "/wiki/01 개념/Java/IO와 NIO 파일 처리"
                     }
                   ]
+                },
+                {
+                  "text": "7단계 — 컬렉션과 정렬",
+                  "collapsed": true,
+                  "items": [
+                    {
+                      "text": "List와 ListIterator",
+                      "link": "/wiki/01 개념/Java/List와 ListIterator"
+                    },
+                    {
+                      "text": "Set 구현체와 중복 판단",
+                      "link": "/wiki/01 개념/Java/Set 구현체와 중복 판단"
+                    },
+                    {
+                      "text": "Comparator와 정렬",
+                      "link": "/wiki/01 개념/Java/Comparator와 정렬"
+                    }
+                  ]
                 }
               ]
             },
@@ -520,6 +538,10 @@ export default {
               "link": "/wiki/03 출처 노트/2026-09-20 네트워크 공부 02"
             },
             {
+              "text": "2026-09-22 Java 컬렉션·다형성·Comparator 정리",
+              "link": "/wiki/03 출처 노트/2026-09-22 Java 컬렉션 다형성 Comparator 정리"
+            },
+            {
               "text": "메서드 작성 1~4 오답과 교정",
               "link": "/wiki/03 출처 노트/2026-09-13 메서드 작성 1-4 오답과 교정"
             },
@@ -588,6 +610,10 @@ export default {
         {
           "text": "자바 참조와 자료형 기초",
           "link": "/sources/2026-08-23 자바 참조와 자료형 기초"
+        },
+        {
+          "text": "Java 컬렉션 · 다형성 · Comparator 정리",
+          "link": "/sources/2026-09-22 Java 컬렉션 다형성 Comparator 정리"
         },
         {
           "text": "main 메서드 학습 회고",

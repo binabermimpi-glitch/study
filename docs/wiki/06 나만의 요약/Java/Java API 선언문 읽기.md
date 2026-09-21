@@ -6,7 +6,7 @@ classification_reason: Java API의 복잡한 메서드 선언을 입력과 반�
 difficulty: 초급
 status: growing
 created: 2026-09-14
-updated: 2026-09-14
+updated: 2026-09-22
 ---
 
 # Java API 선언문 읽기
@@ -306,3 +306,72 @@ U = Integer
 
 String → Optional<Integer> → 최종 결과 Optional<Integer>
 ```
+
+## 11. Java 문서의 구현 관계 영어 표현
+
+```text
+All Known Implementing Classes
+→ 이 인터페이스를 구현하는 것으로 알려진 모든 클래스
+→ NavigableSet 문서에서 TreeSet 등을 보여준다.
+
+All Implemented Interfaces
+→ 이 클래스가 구현한 모든 인터페이스
+→ TreeSet 문서에서 NavigableSet, SortedSet, Set 등을 보여준다.
+
+Implementing Classes
+→ 구현하는 클래스들
+
+Implemented Interfaces
+→ 구현된 인터페이스들
+```
+
+- Implemented는 여기서 “구현했다”가 아니라 “구현된”이라는 뜻이다.
+- 뒤의 Interfaces를 꾸며준다.
+- 직접 구현뿐 아니라 간접적인 구현 관계도 포함된다.
+
+## 12. Comparator: 메서드 참조 → 람다 → 익명 클래스
+
+아래 네 코드는 같은 비교 동작을 한다. 같은 변수명이므로 각각 따로 사용하는 예제다.
+
+```java
+// ① 메서드 참조
+Comparator<String> byLength =
+        Comparator.comparingInt(String::length);
+
+// ② 길이 추출 부분을 람다로 변경
+Comparator<String> byLength =
+        Comparator.comparingInt(s -> s.length());
+
+// ③ Comparator 자체를 람다로 작성
+Comparator<String> byLength =
+        (s1, s2) -> Integer.compare(s1.length(), s2.length());
+
+// ④ 익명 클래스로 작성
+Comparator<String> byLength = new Comparator<String>() {
+    @Override
+    public int compare(String s1, String s2) {
+        return Integer.compare(s1.length(), s2.length());
+    }
+};
+```
+
+차이:
+
+- `String::length`와 `s -> s.length()`
+  - 문자열 하나를 받아 길이를 반환한다.
+- `(s1, s2) -> Integer.compare(s1.length(), s2.length())`
+  - 문자열 두 개를 받아 길이를 비교한 결과를 반환한다.
+- `Comparator.comparingInt()`
+  - 정수를 추출하는 함수를 받아 Comparator를 만들어준다.
+
+사용 예:
+
+```java
+byLength.compare("DB", "Java");   // 음수
+byLength.compare("Java", "Ruby"); // 0
+byLength.compare("Python", "DB"); // 양수
+```
+
+## 반복 학습 이력
+
+- 2026-09-22 — Java API의 구현 관계 영어 표현과 Comparator의 메서드 참조·람다·익명 클래스 변환 학습
