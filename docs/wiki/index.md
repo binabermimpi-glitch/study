@@ -1,6 +1,6 @@
 ---
 type: index
-last_updated: 2026-09-22
+last_updated: 2026-09-23
 ---
 
 # 개발 공부 위키 인덱스
@@ -71,6 +71,7 @@ last_updated: 2026-09-22
 
 - [정보처리기사](</wiki/04%20%EC%9E%90%EA%B2%A9%EC%A6%9D/%EC%A0%95%EB%B3%B4%EC%B2%98%EB%A6%AC%EA%B8%B0%EC%82%AC>) — 정보처리기사 누적 학습 내용과 반복 기록
 - [정보처리기사 기출문제](</wiki/04%20%EC%9E%90%EA%B2%A9%EC%A6%9D/%EC%A0%95%EB%B3%B4%EC%B2%98%EB%A6%AC%EA%B8%B0%EC%82%AC%20%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C>) — 회차별 문제·정답·해설 전체
+- [2022년 2회 정보처리기사 실기](</wiki/04%20%EC%9E%90%EA%B2%A9%EC%A6%9D/2022%EB%85%84%202%ED%9A%8C%20%EC%A0%95%EB%B3%B4%EC%B2%98%EB%A6%AC%EA%B8%B0%EC%82%AC%20%EC%8B%A4%EA%B8%B0>) — 2022년 2회 문제·정답·해설 전체
 - [정보처리기사 어플 공부](</wiki/04%20%EC%9E%90%EA%B2%A9%EC%A6%9D/%EC%A0%95%EB%B3%B4%EC%B2%98%EB%A6%AC%EA%B8%B0%EC%82%AC%20%EC%96%B4%ED%94%8C%20%EA%B3%B5%EB%B6%80>) — 어플 문제 학습 기록
 - [SQLD](</wiki/04%20%EC%9E%90%EA%B2%A9%EC%A6%9D/SQLD>) — SQLD 누적 학습 내용과 반복 기록
 - [리눅스마스터 2급](</wiki/04%20%EC%9E%90%EA%B2%A9%EC%A6%9D/%EB%A6%AC%EB%88%85%EC%8A%A4%EB%A7%88%EC%8A%A4%ED%84%B0%202%EA%B8%89>) — 리눅스마스터 2급 누적 학습 내용과 반복 기록
@@ -122,3 +123,4 @@ last_updated: 2026-09-22
 - [2026-09-20 2022년 1회 정보처리기사 실기 전체 정리](</wiki/03%20%EC%B6%9C%EC%B2%98%20%EB%85%B8%ED%8A%B8/2026-09-20%202022%EB%85%84%201%ED%9A%8C%20%EC%A0%95%EB%B3%B4%EC%B2%98%EB%A6%AC%EA%B8%B0%EC%82%AC%20%EC%8B%A4%EA%B8%B0%20%EC%A0%84%EC%B2%B4%20%EC%A0%95%EB%A6%AC>)
 - [2026-09-20 네트워크 공부 02](</wiki/03%20%EC%B6%9C%EC%B2%98%20%EB%85%B8%ED%8A%B8/2026-09-20%20%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%20%EA%B3%B5%EB%B6%80%2002>)
 - [2026-09-22 Java 컬렉션 다형성 Comparator 정리](</wiki/03%20%EC%B6%9C%EC%B2%98%20%EB%85%B8%ED%8A%B8/2026-09-22%20Java%20%EC%BB%AC%EB%A0%89%EC%85%98%20%EB%8B%A4%ED%98%95%EC%84%B1%20Comparator%20%EC%A0%95%EB%A6%AC>)
+- [2026-09-23 2022년 2회 정보처리기사 실기 정리](</wiki/03%20%EC%B6%9C%EC%B2%98%20%EB%85%B8%ED%8A%B8/2026-09-23%202022%EB%85%84%202%ED%9A%8C%20%EC%A0%95%EB%B3%B4%EC%B2%98%EB%A6%AC%EA%B8%B0%EC%82%AC%20%EC%8B%A4%EA%B8%B0%20%EC%A0%95%EB%A6%AC>)
