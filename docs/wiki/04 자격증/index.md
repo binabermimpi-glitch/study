@@ -2,9 +2,10 @@
 
 자격증마다 하나의 문서에 공부한 내용을 날짜순으로 누적합니다.
 
-- [정보처리기사](</wiki/04%20%EC%9E%90%EA%B2%A9%EC%A6%9D/%EC%A0%95%EB%B3%B4%EC%B2%98%EB%A6%AC%EA%B8%B0%EC%82%AC>)
-- [SQLD](</wiki/04%20%EC%9E%90%EA%B2%A9%EC%A6%9D/SQLD>)
 - [리눅스마스터 2급](</wiki/04%20%EC%9E%90%EA%B2%A9%EC%A6%9D/%EB%A6%AC%EB%88%85%EC%8A%A4%EB%A7%88%EC%8A%A4%ED%84%B0%202%EA%B8%89>)
+- [정보처리기사](</wiki/04%20%EC%9E%90%EA%B2%A9%EC%A6%9D/%EC%A0%95%EB%B3%B4%EC%B2%98%EB%A6%AC%EA%B8%B0%EC%82%AC>)
+- [정보처리기사 기출문제](</wiki/04%20%EC%9E%90%EA%B2%A9%EC%A6%9D/%EC%A0%95%EB%B3%B4%EC%B2%98%EB%A6%AC%EA%B8%B0%EC%82%AC%20%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C>)
+- [정보처리기사 어플 공부](</wiki/04%20%EC%9E%90%EA%B2%A9%EC%A6%9D/%EC%A0%95%EB%B3%B4%EC%B2%98%EB%A6%AC%EA%B8%B0%EC%82%AC%20%EC%96%B4%ED%94%8C%20%EA%B3%B5%EB%B6%80>)
+- [SQLD](</wiki/04%20%EC%9E%90%EA%B2%A9%EC%A6%9D/SQLD>)
 
 같은 개념을 다시 공부하면 설명을 복제하지 않고 기존 항목의 `반복 확인 날짜`와 `반복 횟수`를 갱신합니다. 이렇게 반복해서 헷갈리는 부분을 바로 확인할 수 있습니다.
-

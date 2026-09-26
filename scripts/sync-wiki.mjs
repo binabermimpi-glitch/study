@@ -194,6 +194,21 @@ function sidebarItemsFor(section) {
     const directFiles = directRecords
       .map(record => ({ text: titleForRecord(record), link: record.routePath }))
 
+    if (section.destination === 'wiki' && relativeDirectory === '04 자격증') {
+      const certificationOrder = [
+        '리눅스마스터 2급',
+        '정보처리기사',
+        '정보처리기사 기출문제',
+        '정보처리기사 어플 공부',
+        'SQLD'
+      ]
+      const filesByTitle = new Map(directFiles.map(item => [item.text, item]))
+      return certificationOrder.flatMap(title => {
+        const item = filesByTitle.get(title)
+        return item ? [item] : []
+      })
+    }
+
     if (section.destination === 'wiki' && relativeDirectory === '01 개념/Java') {
       const recordsByTitle = new Map(directRecords.map(record => [titleForRecord(record), record]))
       const listedTitles = new Set(javaCurriculumGroups.flatMap(group => group.titles))
