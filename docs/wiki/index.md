@@ -1,6 +1,6 @@
 ---
 type: index
-last_updated: 2026-09-26
+last_updated: 2026-09-27
 ---
 
 # 개발 공부 위키 인덱스
@@ -52,6 +52,7 @@ last_updated: 2026-09-26
 - [List와 ListIterator](</wiki/01%20%EA%B0%9C%EB%85%90/Java/List%EC%99%80%20ListIterator>) — List의 양방향 순회와 커서 위치
 - [Set 구현체와 중복 판단](</wiki/01%20%EA%B0%9C%EB%85%90/Java/Set%20%EA%B5%AC%ED%98%84%EC%B2%B4%EC%99%80%20%EC%A4%91%EB%B3%B5%20%ED%8C%90%EB%8B%A8>) — HashSet·LinkedHashSet·TreeSet의 순서와 중복 기준
 - [Comparator와 정렬](</wiki/01%20%EA%B0%9C%EB%85%90/Java/Comparator%EC%99%80%20%EC%A0%95%EB%A0%AC>) — 객체 비교, 자연 정렬과 TreeSet의 비교 규칙
+- [자바 스트림과 IO 핵심](</wiki/01%20%EA%B0%9C%EB%85%90/Java/%EC%9E%90%EB%B0%94%20%EC%8A%A4%ED%8A%B8%EB%A6%BC%EA%B3%BC%20IO%20%ED%95%B5%EC%8B%AC>) — 정렬 알고리즘, 기본형 스트림, reduce·collect와 파일 입출력
 
 ## 제한적 활용 지식
 
@@ -132,3 +133,4 @@ last_updated: 2026-09-26
 - [2026-09-26 2022년 3회 정보처리기사 실기 정리](</wiki/03%20%EC%B6%9C%EC%B2%98%20%EB%85%B8%ED%8A%B8/2026-09-26%202022%EB%85%84%203%ED%9A%8C%20%EC%A0%95%EB%B3%B4%EC%B2%98%EB%A6%AC%EA%B8%B0%EC%82%AC%20%EC%8B%A4%EA%B8%B0%20%EC%A0%95%EB%A6%AC>)
 - [2026-09-26 2023년 1회 정보처리기사 실기 정리](</wiki/03%20%EC%B6%9C%EC%B2%98%20%EB%85%B8%ED%8A%B8/2026-09-26%202023%EB%85%84%201%ED%9A%8C%20%EC%A0%95%EB%B3%B4%EC%B2%98%EB%A6%AC%EA%B8%B0%EC%82%AC%20%EC%8B%A4%EA%B8%B0%20%EC%A0%95%EB%A6%AC>)
 - [2026-09-26 네트워크 공부 03 네트워크 계층](</wiki/03%20%EC%B6%9C%EC%B2%98%20%EB%85%B8%ED%8A%B8/2026-09-26%20%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%20%EA%B3%B5%EB%B6%80%2003%20%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%20%EA%B3%84%EC%B8%B5>)
+- [2026-09-27 자바 스트림과 IO 핵심](</wiki/03%20%EC%B6%9C%EC%B2%98%20%EB%85%B8%ED%8A%B8/2026-09-27%20%EC%9E%90%EB%B0%94%20%EC%8A%A4%ED%8A%B8%EB%A6%BC%EA%B3%BC%20IO%20%ED%95%B5%EC%8B%AC>)

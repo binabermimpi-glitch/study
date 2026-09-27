@@ -174,6 +174,10 @@ const javaCurriculumGroups = [
   {
     text: '7단계 — 컬렉션과 정렬',
     titles: ['List와 ListIterator', 'Set 구현체와 중복 판단', 'Comparator와 정렬']
+  },
+  {
+    text: '8단계 — 스트림과 IO 심화',
+    titles: ['자바 스트림과 IO 핵심']
   }
 ]
 
