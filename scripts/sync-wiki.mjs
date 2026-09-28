@@ -203,14 +203,26 @@ function sidebarItemsFor(section) {
         '리눅스마스터 2급',
         '정보처리기사',
         '정보처리기사 기출문제',
-        '정보처리기사 어플 공부',
-        'SQLD'
+        '정보처리기사 어플 공부'
       ]
       const filesByTitle = new Map(directFiles.map(item => [item.text, item]))
-      return certificationOrder.flatMap(title => {
+      const mainItems = certificationOrder.flatMap(title => {
         const item = filesByTitle.get(title)
         return item ? [item] : []
       })
+      const codeBase = '04 자격증/정보처리기사 코드 문제'
+      const codeIndex = sectionRecords.find(record => record.destinationRelative === `wiki/${codeBase}/index.md`)
+      const languages = ['Python', 'Java', 'C언어'].map(language => {
+        const languageBase = `${codeBase}/${language}`
+        const languageIndex = sectionRecords.find(record => record.destinationRelative === `wiki/${languageBase}/index.md`)
+        const items = sectionRecords
+          .filter(record => record.destinationRelative.startsWith(`wiki/${languageBase}/`) && !record.destinationRelative.endsWith('/index.md'))
+          .map(record => ({ text: titleForRecord(record), link: record.routePath }))
+        return { text: language, ...(languageIndex ? { link: languageIndex.routePath } : {}), collapsed: true, items }
+      })
+      const codeItem = { text: '정보처리기사 코드 문제', ...(codeIndex ? { link: codeIndex.routePath } : {}), collapsed: false, items: languages }
+      const sqld = filesByTitle.get('SQLD')
+      return [...mainItems, codeItem, ...(sqld ? [sqld] : [])]
     }
 
     if (section.destination === 'wiki' && relativeDirectory === '01 개념/Java') {

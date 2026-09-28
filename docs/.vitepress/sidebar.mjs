@@ -362,6 +362,36 @@ export default {
               "link": "/wiki/04 자격증/정보처리기사 어플 공부"
             },
             {
+              "text": "정보처리기사 코드 문제",
+              "link": "/wiki/04 자격증/정보처리기사 코드 문제/",
+              "collapsed": false,
+              "items": [
+                {
+                  "text": "Python",
+                  "link": "/wiki/04 자격증/정보처리기사 코드 문제/Python/",
+                  "collapsed": true,
+                  "items": []
+                },
+                {
+                  "text": "Java",
+                  "link": "/wiki/04 자격증/정보처리기사 코드 문제/Java/",
+                  "collapsed": true,
+                  "items": [
+                    {
+                      "text": "Java 상속·오버라이딩·필드 숨김 문제 3개",
+                      "link": "/wiki/04 자격증/정보처리기사 코드 문제/Java/2026-09-29 Java 상속 오버라이딩 필드 숨김 문제 3개"
+                    }
+                  ]
+                },
+                {
+                  "text": "C언어",
+                  "link": "/wiki/04 자격증/정보처리기사 코드 문제/C언어/",
+                  "collapsed": true,
+                  "items": []
+                }
+              ]
+            },
+            {
               "text": "SQLD",
               "link": "/wiki/04 자격증/SQLD"
             }
