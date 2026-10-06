@@ -1,7 +1,7 @@
 ---
 type: index
 area: 네트워크 공부
-last_updated: 2026-10-05
+last_updated: 2026-10-06
 ---
 
 # 네트워크 공부
@@ -17,3 +17,4 @@ last_updated: 2026-10-05
 5. [네트워크 공부 03-2 IP 주소와 라우팅](</wiki/01%20%EA%B0%9C%EB%85%90/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%20%EA%B3%B5%EB%B6%80/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%20%EA%B3%B5%EB%B6%80%2003-2%20IP%20%EC%A3%BC%EC%86%8C%EC%99%80%20%EB%9D%BC%EC%9A%B0%ED%8C%85>) — 클래스풀·CIDR·서브네팅·NAT·DHCP와 정적·동적 라우팅
 6. [네트워크 공부 04-1 전송 계층 개요와 포트](</wiki/01%20%EA%B0%9C%EB%85%90/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%20%EA%B3%B5%EB%B6%80/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%20%EA%B3%B5%EB%B6%80%2004-1%20%EC%A0%84%EC%86%A1%20%EA%B3%84%EC%B8%B5%20%EA%B0%9C%EC%9A%94%EC%99%80%20%ED%8F%AC%ED%8A%B8>) — IP의 한계, TCP·UDP, 포트, NAPT·포트 포워딩과 ICMP
 7. [네트워크 공부 04-2 TCP와 UDP](</wiki/01%20%EA%B0%9C%EB%85%90/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%20%EA%B3%B5%EB%B6%80/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%20%EA%B3%B5%EB%B6%80%2004-2%20TCP%EC%99%80%20UDP>) — TCP 세그먼트와 상태, 3·4-way handshake, UDP 구조와 활용
+8. [네트워크 공부 04-3 TCP 제어](</wiki/01%20%EA%B0%9C%EB%85%90/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%20%EA%B3%B5%EB%B6%80/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%20%EA%B3%B5%EB%B6%80%2004-3%20TCP%20%EC%A0%9C%EC%96%B4>) — 오류·흐름·혼잡 제어와 슬라이딩 윈도우·재전송
