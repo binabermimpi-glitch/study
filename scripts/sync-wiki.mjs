@@ -295,7 +295,7 @@ function sidebarItemsFor(section) {
       const listedTitles = new Set(javaCurriculumGroups.flatMap(group => group.titles))
       const groups = javaCurriculumGroups.map(group => ({
         text: group.text,
-        collapsed: true,
+        collapsed: !group.text.startsWith('8단계'),
         items: group.titles.flatMap(title => {
           const record = recordsByTitle.get(title)
           return record ? [{ text: title, link: record.routePath }] : []

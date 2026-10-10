@@ -307,7 +307,7 @@ export default {
                 },
                 {
                   "text": "8단계 — 컬렉션과 비교",
-                  "collapsed": true,
+                  "collapsed": false,
                   "items": [
                     {
                       "text": "List와 ListIterator",
