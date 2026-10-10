@@ -18,7 +18,7 @@ updated: 2026-10-10
 
 # Object 클래스
 
-## 2026-08-26 Java 객체 생성자 캡슐화 복습
+## Java 객체 생성자 캡슐화 복습
 
 ### 7. identityHashCode와 객체 주소
 
@@ -38,7 +38,7 @@ System.out.println(h1 == h2); // true
 ```
 
 
-## 2026-08-27 자바 메소드와 객체 생성
+## 자바 메소드와 객체 생성
 
 ### Object와 객체 생성
 
@@ -74,7 +74,7 @@ System.out.println(user.toString());
 `toString()`의 기본 구현은 일반적으로 클래스 이름과 해시 코드 기반의 식별 정보를 문자열로 반환합니다. 객체에 의미 있는 정보를 출력하려면 `toString()`을 오버라이딩하여 원하는 문자열 형식으로 재정의할 수 있습니다.
 
 
-## 2026-09-14 자바 상속과 다형성 핵심 정리
+## 자바 상속과 다형성 핵심 정리
 
 ### 6. Object의 equals(), hashCode(), toString()
 

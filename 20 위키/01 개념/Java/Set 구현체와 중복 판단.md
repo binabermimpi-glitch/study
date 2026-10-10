@@ -16,7 +16,7 @@ updated: 2026-10-10
 
 # Set 구현체와 중복 판단
 
-## 2026-09-22 Java 컬렉션 다형성 Comparator 정리
+## Java 컬렉션 다형성 Comparator 정리
 
 ### 2. HashSet / LinkedHashSet / TreeSet
 

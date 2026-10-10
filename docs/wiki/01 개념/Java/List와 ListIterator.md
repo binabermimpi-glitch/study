@@ -16,7 +16,7 @@ updated: 2026-10-10
 
 # List와 ListIterator
 
-## 2026-09-22 Java 컬렉션 다형성 Comparator 정리
+## Java 컬렉션 다형성 Comparator 정리
 
 ### Java 컬렉션 · 다형성 · Comparator 정리
 

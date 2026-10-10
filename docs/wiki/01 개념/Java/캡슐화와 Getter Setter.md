@@ -16,7 +16,7 @@ updated: 2026-10-10
 
 # 캡슐화와 Getter Setter
 
-## 2026-08-26 Java 객체 생성자 캡슐화 복습
+## Java 객체 생성자 캡슐화 복습
 
 ### 4. 캡슐화, private, Getter와 Setter
 

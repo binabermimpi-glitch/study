@@ -18,7 +18,7 @@ updated: 2026-10-10
 
 # instanceof와 타입 검사
 
-## 2026-08-26 Java 객체 생성자 캡슐화 복습
+## Java 객체 생성자 캡슐화 복습
 
 ### 5. instanceof
 
@@ -39,7 +39,7 @@ System.out.println(d instanceof Animal); // true
 ```
 
 
-## 2026-08-31 Java 배열 반복문 패턴 매칭 복습
+## Java 배열 반복문 패턴 매칭 복습
 
 ### 10. instanceof
 
@@ -140,7 +140,7 @@ obj instanceof String str
 ---
 
 
-## 2026-09-14 자바 상속과 다형성 핵심 정리
+## 자바 상속과 다형성 핵심 정리
 
 ### 5. 다운캐스팅과 instanceof
 
