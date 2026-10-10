@@ -1,27 +1,142 @@
 ---
 type: concept
-aliases: [switch 표현식, 패턴 매칭 switch, when, yield]
+aliases: []
 knowledge_type: practical-core
-classification_reason: 여러 조건을 값으로 매핑하고 런타임 타입별 처리를 간결하게 작성하는 현대 Java 문법이다.
+classification_reason: "제공된 수업 자료에서 객체 설계와 데이터 처리에 사용하는 주제다."
 difficulty: 초급
 status: growing
-prerequisites: ["[instanceof와 타입 검사](</wiki/01%20%EA%B0%9C%EB%85%90/Java/instanceof%EC%99%80%20%ED%83%80%EC%9E%85%20%EA%B2%80%EC%82%AC>)", "[반환형과 return](</wiki/01%20%EA%B0%9C%EB%85%90/Java/%EB%B0%98%ED%99%98%ED%98%95%EA%B3%BC%20return>)"]
-related: ["[변수의 종류와 생명주기](</wiki/01%20%EA%B0%9C%EB%85%90/Java/%EB%B3%80%EC%88%98%EC%9D%98%20%EC%A2%85%EB%A5%98%EC%99%80%20%EC%83%9D%EB%AA%85%EC%A3%BC%EA%B8%B0>)"]
-sources: ["[2026-08-31 Java 배열 반복문 패턴 매칭 복습](</wiki/03%20%EC%B6%9C%EC%B2%98%20%EB%85%B8%ED%8A%B8/2026-08-31%20Java%20%EB%B0%B0%EC%97%B4%20%EB%B0%98%EB%B3%B5%EB%AC%B8%20%ED%8C%A8%ED%84%B4%20%EB%A7%A4%EC%B9%AD%20%EB%B3%B5%EC%8A%B5>)"]
-created: 2026-08-31
-updated: 2026-09-14
+curriculum_stage: 6
+prerequisites: []
+related: []
+sources:
+  - "[2026-08-31 Java 배열 반복문 패턴 매칭 복습](</sources/%EC%9E%90%EB%B0%94%20%EB%B0%B1%EC%97%94%EB%93%9C%20%EC%88%98%EC%97%85/2026-08-31%20Java%20%EB%B0%B0%EC%97%B4%20%EB%B0%98%EB%B3%B5%EB%AC%B8%20%ED%8C%A8%ED%84%B4%20%EB%A7%A4%EC%B9%AD%20%EB%B3%B5%EC%8A%B5>)"
+  - "[2026-09-14 자바 상속과 다형성 핵심 정리](</sources/%EC%9E%90%EB%B0%94%20%EB%B0%B1%EC%97%94%EB%93%9C%20%EC%88%98%EC%97%85/2026-09-14%20%EC%9E%90%EB%B0%94%20%EC%83%81%EC%86%8D%EA%B3%BC%20%EB%8B%A4%ED%98%95%EC%84%B1%20%ED%95%B5%EC%8B%AC%20%EC%A0%95%EB%A6%AC>)"
+created: 2026-10-10
+updated: 2026-10-10
 ---
 
 # switch 표현식과 패턴 매칭
 
-## 한 문장 설명
+## 2026-08-31 Java 배열 반복문 패턴 매칭 복습
 
-`switch` 표현식은 분기 결과를 값으로 만들며, Java 21 이상의 패턴 매칭은 타입 검사와 변수 선언을 함께 수행할 수 있다.
-
-## switch 표현식과 yield
+### 13. 패턴 매칭 switch
 
 ```java
-String result = switch (1) {
+Object obj = "monkey";
+
+switch (obj) {
+    case Integer i ->
+        System.out.println(i);
+
+    case String s ->
+        System.out.println(s);
+
+    default ->
+        System.out.println("기타");
+}
+```
+
+여기서:
+
+```java
+case String s
+```
+
+뜻:
+
+```text
+obj가 String 객체인가?
+        ↓
+       맞음
+        ↓
+String 변수 s로 사용
+```
+
+즉 `case String s`는
+
+```text
+타입 검사 + 변수 생성
+```
+
+을 동시에 하는 것이라고 이해하면 된다.
+
+---
+
+
+### 14. switch의 when
+
+```java
+case String s when s.isEmpty() ->
+```
+
+실행 순서:
+
+```text
+① obj가 String인가?
+        ↓
+② String이면 s라는 변수로 받음
+        ↓
+③ s.isEmpty() 실행
+        ↓
+④ true이면 해당 case 실행
+```
+
+예:
+
+```java
+Object obj = "";
+```
+
+이면:
+
+```text
+String인가? → true
+
+s = ""
+
+s.isEmpty() → true
+
+case 실행
+```
+
+하지만:
+
+```java
+Object obj = "monkey";
+```
+
+이면:
+
+```text
+String인가? → true
+
+s = "monkey"
+
+s.isEmpty() → false
+
+다음 case로 이동
+```
+
+그래서 보통:
+
+```java
+case String s when s.isEmpty() -> ...
+case String s -> ...
+```
+
+순서로 작성한다.
+
+구체적인 조건을 먼저 써야 한다.
+
+---
+
+
+### 15. switch에서 yield와 return
+
+#### yield
+
+```java
+String result = switch (num) {
     case 1 -> {
         System.out.println("실행");
         yield "ONE";
@@ -30,47 +145,45 @@ String result = switch (1) {
 };
 ```
 
-- `yield`는 현재 `switch` 표현식 블록의 결과값을 전달한다.
-- `return`은 현재 메서드 전체를 종료한다.
-- 화살표 오른쪽이 단일 표현식이면 `yield` 없이 바로 값을 적을 수 있다.
+`yield "ONE"`은:
 
-## 타입 패턴과 when
+```text
+switch의 결과값을 ONE으로 결정
+        ↓
+result = "ONE"
+```
 
-다음 예제는 Java 21 이상 기준이다.
+한다.
+
+#### return
 
 ```java
-static String describe(Object obj) {
-    return switch (obj) {
-        case String s when s.isEmpty() -> "빈 문자열";
-        case String s                  -> "문자열: " + s;
-        case Integer i                 -> "정수: " + i;
-        default                        -> "기타";
-    };
+return "ONE";
+```
+
+은 **현재 메서드 전체를 종료한다.**
+
+따라서:
+
+```text
+yield  → switch 표현식에 값을 전달
+return → 메서드 자체 종료
+```
+
+---
+
+
+## 2026-09-14 자바 상속과 다형성 핵심 정리
+
+### 8. switch 타입 패턴 매칭
+
+```java
+switch (animal) {
+    case Dog dog -> System.out.println("강아지");
+    case Cat cat -> System.out.println("고양이");
 }
 ```
 
-`case String s`는 객체가 `String`인지 검사하고, 맞으면 그 분기 안에서 `s`로 사용한다. `when`은 타입이 맞은 뒤 추가 조건을 검사한다.
+`animal instanceof Dog dog`와 `case Dog dog ->`는 모두 타입 검사와 해당 타입 변수 생성을 수행한다.
 
-## 순서가 중요한 이유
 
-`case String s when s.isEmpty()`처럼 구체적인 조건을 일반적인 `case String s`보다 먼저 둔다. 일반 분기가 앞에서 모든 String을 처리하면 뒤의 구체적인 분기에 도달할 수 없다.
-
-## 흔한 실수
-
-- 프로젝트의 Java 버전을 확인하지 않고 Java 21 문법을 사용한다.
-- `yield`와 `return`의 종료 범위를 혼동한다.
-- 모든 가능한 값에 결과를 제공하지 않아 `switch` 표현식을 완성하지 못한다.
-- 타입 분기의 구체적인 조건과 일반 조건 순서를 뒤집는다.
-
-## 실무에서는 어떻게 쓰이나
-
-이벤트나 명령 객체의 타입별 결과를 값으로 만들 때 유용하다. 타입 분기가 계속 늘어난다면 다형성이나 설계 분리를 검토한다.
-
-## 출처
-
-- [2026-08-31 Java 배열 반복문 패턴 매칭 복습](</wiki/03%20%EC%B6%9C%EC%B2%98%20%EB%85%B8%ED%8A%B8/2026-08-31%20Java%20%EB%B0%B0%EC%97%B4%20%EB%B0%98%EB%B3%B5%EB%AC%B8%20%ED%8C%A8%ED%84%B4%20%EB%A7%A4%EC%B9%AD%20%EB%B3%B5%EC%8A%B5>)
-- [2026-09-14 자바 상속과 다형성 핵심 정리](</wiki/03%20%EC%B6%9C%EC%B2%98%20%EB%85%B8%ED%8A%B8/2026-09-14%20%EC%9E%90%EB%B0%94%20%EC%83%81%EC%86%8D%EA%B3%BC%20%EB%8B%A4%ED%98%95%EC%84%B1%20%ED%95%B5%EC%8B%AC%20%EC%A0%95%EB%A6%AC>)
-
-## 반복 학습 이력
-
-- 2026-09-14 — `instanceof 타입 변수`와 `case 타입 변수`의 공통 원리 재확인

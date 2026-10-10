@@ -7,52 +7,16 @@ last_updated: 2026-10-10
 
 > 현재 위키의 모든 지식을 찾는 시작점입니다. 새 자료를 처리할 때마다 갱신합니다.
 
+## Java 학습 커리큘럼
+
+- [Java](</wiki/01%20%EA%B0%9C%EB%85%90/Java/>) — 원문 기반 1~10단계 학습 순서
+
 ## 기초 배경지식
 
-- [JDK JRE JVM](</wiki/01%20%EA%B0%9C%EB%85%90/Java/JDK%20JRE%20JVM>) — Java 코드의 컴파일과 실행 구조
-- [기본 자료형과 리터럴](</wiki/01%20%EA%B0%9C%EB%85%90/Java/%EA%B8%B0%EB%B3%B8%20%EC%9E%90%EB%A3%8C%ED%98%95%EA%B3%BC%20%EB%A6%AC%ED%84%B0%EB%9F%B4>) — Java가 직접 표현하는 값의 종류
-- [형변환과 연산 프로모션](</wiki/01%20%EA%B0%9C%EB%85%90/Java/%ED%98%95%EB%B3%80%ED%99%98%EA%B3%BC%20%EC%97%B0%EC%82%B0%20%ED%94%84%EB%A1%9C%EB%AA%A8%EC%85%98>) — 숫자 타입 사이의 변환 규칙
-- [클래스와 접근 제한자](</wiki/01%20%EA%B0%9C%EB%85%90/Java/%ED%81%B4%EB%9E%98%EC%8A%A4%EC%99%80%20%EC%A0%91%EA%B7%BC%20%EC%A0%9C%ED%95%9C%EC%9E%90>) — 객체 설계와 공개 범위
-- [참조와 점 연산자](</wiki/01%20%EA%B0%9C%EB%85%90/Java/%EC%B0%B8%EC%A1%B0%EC%99%80%20%EC%A0%90%20%EC%97%B0%EC%82%B0%EC%9E%90>) — 객체의 멤버를 찾아 사용하는 법
-- [static과 인스턴스 멤버](</wiki/01%20%EA%B0%9C%EB%85%90/Java/static%EA%B3%BC%20%EC%9D%B8%EC%8A%A4%ED%84%B4%EC%8A%A4%20%EB%A9%A4%EB%B2%84>) — 클래스 소속과 객체 소속의 차이
-- [변수의 종류와 생명주기](</wiki/01%20%EA%B0%9C%EB%85%90/Java/%EB%B3%80%EC%88%98%EC%9D%98%20%EC%A2%85%EB%A5%98%EC%99%80%20%EC%83%9D%EB%AA%85%EC%A3%BC%EA%B8%B0>) — 필드·매개변수·지역 변수의 범위
-- [JVM 메모리와 가비지 컬렉션](</wiki/01%20%EA%B0%9C%EB%85%90/Java/JVM%20%EB%A9%94%EB%AA%A8%EB%A6%AC%EC%99%80%20%EA%B0%80%EB%B9%84%EC%A7%80%20%EC%BB%AC%EB%A0%89%EC%85%98>) — 객체의 메모리와 자동 회수
-- [표준 입출력](</wiki/01%20%EA%B0%9C%EB%85%90/Java/%ED%91%9C%EC%A4%80%20%EC%9E%85%EC%B6%9C%EB%A0%A5>) — 콘솔 입력과 출력
-- [매개변수와 인수](</wiki/01%20%EA%B0%9C%EB%85%90/Java/%EB%A7%A4%EA%B0%9C%EB%B3%80%EC%88%98%EC%99%80%20%EC%9D%B8%EC%88%98>) — 메서드에 값을 전달하는 원리
-- [연산자와 우선순위](</wiki/01%20%EA%B0%9C%EB%85%90/Java/%EC%97%B0%EC%82%B0%EC%9E%90%EC%99%80%20%EC%9A%B0%EC%84%A0%EC%88%9C%EC%9C%84>) — 계산과 조건식의 평가 규칙
-- [main 메서드 선언 읽기](</wiki/01%20%EA%B0%9C%EB%85%90/Java/main%20%EB%A9%94%EC%84%9C%EB%93%9C%20%EC%84%A0%EC%96%B8%20%EC%9D%BD%EA%B8%B0>) — Java 진입점 선언을 읽고 작성하는 연습
-- [객체 생성과 초기화 순서](</wiki/01%20%EA%B0%9C%EB%85%90/Java/%EA%B0%9D%EC%B2%B4%20%EC%83%9D%EC%84%B1%EA%B3%BC%20%EC%B4%88%EA%B8%B0%ED%99%94%20%EC%88%9C%EC%84%9C>) — new부터 참조 대입까지의 흐름
-- [this 참조](</wiki/01%20%EA%B0%9C%EB%85%90/Java/this%20%EC%B0%B8%EC%A1%B0>) — 현재 객체를 가리키는 참조
-- [instanceof와 타입 검사](</wiki/01%20%EA%B0%9C%EB%85%90/Java/instanceof%EC%99%80%20%ED%83%80%EC%9E%85%20%EA%B2%80%EC%82%AC>) — 런타임 객체 타입 확인
-- [반환형과 return](</wiki/01%20%EA%B0%9C%EB%85%90/Java/%EB%B0%98%ED%99%98%ED%98%95%EA%B3%BC%20return>) — 메소드 출력 계약과 종료 흐름
-- [배열과 2차원 배열](</wiki/01%20%EA%B0%9C%EB%85%90/Java/%EB%B0%B0%EC%97%B4%EA%B3%BC%202%EC%B0%A8%EC%9B%90%20%EB%B0%B0%EC%97%B4>) — 배열 객체, 참조와 행·열 길이
 
 ## 실무 핵심지식
 
-- [String과 참조 자료형](</wiki/01%20%EA%B0%9C%EB%85%90/Java/String%EA%B3%BC%20%EC%B0%B8%EC%A1%B0%20%EC%9E%90%EB%A3%8C%ED%98%95>) — 백엔드 전반에서 사용하는 문자열 객체
-- [래퍼 클래스와 박싱](</wiki/01%20%EA%B0%9C%EB%85%90/Java/%EB%9E%98%ED%8D%BC%20%ED%81%B4%EB%9E%98%EC%8A%A4%EC%99%80%20%EB%B0%95%EC%8B%B1>) — 기본형을 객체로 다루는 방법
 - [IntelliJ Java 프로젝트 구조](</wiki/01%20%EA%B0%9C%EB%85%90/Tools/IntelliJ%20Java%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%EA%B5%AC%EC%A1%B0>) — Java 프로젝트 개발 환경 설정
-- [메서드 선언과 호출](</wiki/01%20%EA%B0%9C%EB%85%90/Java/%EB%A9%94%EC%84%9C%EB%93%9C%20%EC%84%A0%EC%96%B8%EA%B3%BC%20%ED%98%B8%EC%B6%9C>) — Java 기능을 구성하는 기본 단위
-- [메서드 오버로딩](</wiki/01%20%EA%B0%9C%EB%85%90/Java/%EB%A9%94%EC%84%9C%EB%93%9C%20%EC%98%A4%EB%B2%84%EB%A1%9C%EB%94%A9>) — 같은 의미의 다양한 입력 처리
-- [생성자와 생성자 오버로딩](</wiki/01%20%EA%B0%9C%EB%85%90/Java/%EC%83%9D%EC%84%B1%EC%9E%90%EC%99%80%20%EC%83%9D%EC%84%B1%EC%9E%90%20%EC%98%A4%EB%B2%84%EB%A1%9C%EB%94%A9>) — 객체의 유효한 초기 상태 구성
-- [캡슐화와 Getter Setter](</wiki/01%20%EA%B0%9C%EB%85%90/Java/%EC%BA%A1%EC%8A%90%ED%99%94%EC%99%80%20Getter%20Setter>) — 객체 상태와 변경 규칙 보호
-- [가변 객체와 불변 객체](</wiki/01%20%EA%B0%9C%EB%85%90/Java/%EA%B0%80%EB%B3%80%20%EA%B0%9D%EC%B2%B4%EC%99%80%20%EB%B6%88%EB%B3%80%20%EA%B0%9D%EC%B2%B4>) — 상태 변경과 참조 재대입 구분
-- [Object 클래스](</wiki/01%20%EA%B0%9C%EB%85%90/Java/Object%20%ED%81%B4%EB%9E%98%EC%8A%A4>) — 모든 Java 클래스 계층의 최상위 기반
-- [DTO와 record](</wiki/01%20%EA%B0%9C%EB%85%90/Java/DTO%EC%99%80%20record>) — 백엔드 계층과 API 사이의 데이터 전달
-- [향상된 for문과 반복 제어](</wiki/01%20%EA%B0%9C%EB%85%90/Java/%ED%96%A5%EC%83%81%EB%90%9C%20for%EB%AC%B8%EA%B3%BC%20%EB%B0%98%EB%B3%B5%20%EC%A0%9C%EC%96%B4>) — 배열·컬렉션 순회와 흐름 제어
-- [switch 표현식과 패턴 매칭](</wiki/01%20%EA%B0%9C%EB%85%90/Java/switch%20%ED%91%9C%ED%98%84%EC%8B%9D%EA%B3%BC%20%ED%8C%A8%ED%84%B4%20%EB%A7%A4%EC%B9%AD>) — Java 21 타입 분기와 결과값
-- [배열 복사와 방어적 복사](</wiki/01%20%EA%B0%9C%EB%85%90/Java/%EB%B0%B0%EC%97%B4%20%EB%B3%B5%EC%82%AC%EC%99%80%20%EB%B0%A9%EC%96%B4%EC%A0%81%20%EB%B3%B5%EC%82%AC>) — 얕은·깊은 복사와 상태 보호
-- [상속 오버라이딩 다형성](</wiki/01%20%EA%B0%9C%EB%85%90/Java/%EC%83%81%EC%86%8D%20%EC%98%A4%EB%B2%84%EB%9D%BC%EC%9D%B4%EB%94%A9%20%EB%8B%A4%ED%98%95%EC%84%B1>) — 부모 타입과 실제 객체의 동적 동작
-- [추상 클래스와 추상 메서드](</wiki/01%20%EA%B0%9C%EB%85%90/Java/%EC%B6%94%EC%83%81%20%ED%81%B4%EB%9E%98%EC%8A%A4%EC%99%80%20%EC%B6%94%EC%83%81%20%EB%A9%94%EC%84%9C%EB%93%9C>) — 공통 구현과 자식 구현 계약
-- [인터페이스](</wiki/01%20%EA%B0%9C%EB%85%90/Java/%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4>) — 공통 규약과 다중 구현
-- [sealed 클래스](</wiki/01%20%EA%B0%9C%EB%85%90/Java/sealed%20%ED%81%B4%EB%9E%98%EC%8A%A4>) — 허용된 하위 타입 제한
-- [중첩 클래스](</wiki/01%20%EA%B0%9C%EB%85%90/Java/%EC%A4%91%EC%B2%A9%20%ED%81%B4%EB%9E%98%EC%8A%A4>) — 정적 중첩·내부·로컬·익명 클래스
-- [예외 처리](</wiki/01%20%EA%B0%9C%EB%85%90/Java/%EC%98%88%EC%99%B8%20%EC%B2%98%EB%A6%AC>) — 예외 계층, 처리·전파와 사용자 정의 예외
-- [IO와 NIO 파일 처리](</wiki/01%20%EA%B0%9C%EB%85%90/Java/IO%EC%99%80%20NIO%20%ED%8C%8C%EC%9D%BC%20%EC%B2%98%EB%A6%AC>) — 경로, 스트림, 인코딩, 직렬화, 버퍼와 디렉터리 탐색
-- [List와 ListIterator](</wiki/01%20%EA%B0%9C%EB%85%90/Java/List%EC%99%80%20ListIterator>) — List의 양방향 순회와 커서 위치
-- [Set 구현체와 중복 판단](</wiki/01%20%EA%B0%9C%EB%85%90/Java/Set%20%EA%B5%AC%ED%98%84%EC%B2%B4%EC%99%80%20%EC%A4%91%EB%B3%B5%20%ED%8C%90%EB%8B%A8>) — HashSet·LinkedHashSet·TreeSet의 순서와 중복 기준
-- [Comparator와 정렬](</wiki/01%20%EA%B0%9C%EB%85%90/Java/Comparator%EC%99%80%20%EC%A0%95%EB%A0%AC>) — 객체 비교, 자연 정렬과 TreeSet의 비교 규칙
-- [자바 스트림과 IO 핵심](</wiki/01%20%EA%B0%9C%EB%85%90/Java/%EC%9E%90%EB%B0%94%20%EC%8A%A4%ED%8A%B8%EB%A6%BC%EA%B3%BC%20IO%20%ED%95%B5%EC%8B%AC>) — 정렬 알고리즘, 기본형 스트림, reduce·collect와 파일 입출력
 
 ## 제한적 활용 지식
 

@@ -104,41 +104,63 @@ export default {
               "collapsed": true,
               "items": [
                 {
-                  "text": "1단계 — Java 실행과 첫 코드",
+                  "text": "1단계 — 실행 환경과 첫 코드",
                   "collapsed": true,
                   "items": [
                     {
-                      "text": "JDK, JRE, JVM",
+                      "text": "JDK JRE JVM",
                       "link": "/wiki/01 개념/Java/JDK JRE JVM"
+                    },
+                    {
+                      "text": "JDK 버전과 배포 정책",
+                      "link": "/wiki/01 개념/Java/JDK 버전과 배포 정책"
+                    },
+                    {
+                      "text": "IntelliJ 프로젝트와 Java API",
+                      "link": "/wiki/01 개념/Java/IntelliJ 프로젝트와 Java API"
+                    },
+                    {
+                      "text": "패키지와 식별자 규칙",
+                      "link": "/wiki/01 개념/Java/패키지와 식별자 규칙"
                     },
                     {
                       "text": "main 메서드 선언 읽기",
                       "link": "/wiki/01 개념/Java/main 메서드 선언 읽기"
-                    },
+                    }
+                  ]
+                },
+                {
+                  "text": "2단계 — 자료형·변수·연산자",
+                  "collapsed": true,
+                  "items": [
                     {
                       "text": "기본 자료형과 리터럴",
                       "link": "/wiki/01 개념/Java/기본 자료형과 리터럴"
-                    },
-                    {
-                      "text": "변수의 종류와 생명주기",
-                      "link": "/wiki/01 개념/Java/변수의 종류와 생명주기"
                     },
                     {
                       "text": "형변환과 연산 프로모션",
                       "link": "/wiki/01 개념/Java/형변환과 연산 프로모션"
                     },
                     {
-                      "text": "연산자와 우선순위",
-                      "link": "/wiki/01 개념/Java/연산자와 우선순위"
+                      "text": "래퍼 클래스와 박싱",
+                      "link": "/wiki/01 개념/Java/래퍼 클래스와 박싱"
+                    },
+                    {
+                      "text": "변수의 종류와 생명주기",
+                      "link": "/wiki/01 개념/Java/변수의 종류와 생명주기"
                     },
                     {
                       "text": "표준 입출력",
                       "link": "/wiki/01 개념/Java/표준 입출력"
+                    },
+                    {
+                      "text": "연산자와 우선순위",
+                      "link": "/wiki/01 개념/Java/연산자와 우선순위"
                     }
                   ]
                 },
                 {
-                  "text": "2단계 — 메서드",
+                  "text": "3단계 — 메서드와 참조",
                   "collapsed": true,
                   "items": [
                     {
@@ -150,23 +172,13 @@ export default {
                       "link": "/wiki/01 개념/Java/매개변수와 인수"
                     },
                     {
+                      "text": "메서드 오버로딩",
+                      "link": "/wiki/01 개념/Java/메서드 오버로딩"
+                    },
+                    {
                       "text": "반환형과 return",
                       "link": "/wiki/01 개념/Java/반환형과 return"
                     },
-                    {
-                      "text": "static과 인스턴스 멤버",
-                      "link": "/wiki/01 개념/Java/static과 인스턴스 멤버"
-                    },
-                    {
-                      "text": "메서드 오버로딩",
-                      "link": "/wiki/01 개념/Java/메서드 오버로딩"
-                    }
-                  ]
-                },
-                {
-                  "text": "3단계 — 참조 타입과 배열",
-                  "collapsed": true,
-                  "items": [
                     {
                       "text": "참조와 점 연산자",
                       "link": "/wiki/01 개념/Java/참조와 점 연산자"
@@ -174,11 +186,13 @@ export default {
                     {
                       "text": "String과 참조 자료형",
                       "link": "/wiki/01 개념/Java/String과 참조 자료형"
-                    },
-                    {
-                      "text": "래퍼 클래스와 박싱",
-                      "link": "/wiki/01 개념/Java/래퍼 클래스와 박싱"
-                    },
+                    }
+                  ]
+                },
+                {
+                  "text": "4단계 — 배열과 반복문",
+                  "collapsed": true,
+                  "items": [
                     {
                       "text": "배열과 2차원 배열",
                       "link": "/wiki/01 개념/Java/배열과 2차원 배열"
@@ -190,11 +204,15 @@ export default {
                     {
                       "text": "배열 복사와 방어적 복사",
                       "link": "/wiki/01 개념/Java/배열 복사와 방어적 복사"
+                    },
+                    {
+                      "text": "정렬 알고리즘과 값 교환",
+                      "link": "/wiki/01 개념/Java/정렬 알고리즘과 값 교환"
                     }
                   ]
                 },
                 {
-                  "text": "4단계 — 클래스와 객체",
+                  "text": "5단계 — 클래스와 객체",
                   "collapsed": true,
                   "items": [
                     {
@@ -214,7 +232,11 @@ export default {
                       "link": "/wiki/01 개념/Java/this 참조"
                     },
                     {
-                      "text": "캡슐화와 Getter·Setter",
+                      "text": "static과 인스턴스 멤버",
+                      "link": "/wiki/01 개념/Java/static과 인스턴스 멤버"
+                    },
+                    {
+                      "text": "캡슐화와 Getter Setter",
                       "link": "/wiki/01 개념/Java/캡슐화와 Getter Setter"
                     },
                     {
@@ -228,46 +250,40 @@ export default {
                     {
                       "text": "JVM 메모리와 가비지 컬렉션",
                       "link": "/wiki/01 개념/Java/JVM 메모리와 가비지 컬렉션"
+                    },
+                    {
+                      "text": "DTO와 record",
+                      "link": "/wiki/01 개념/Java/DTO와 record"
                     }
                   ]
                 },
                 {
-                  "text": "5단계 — 객체지향 확장",
+                  "text": "6단계 — 상속·다형성·타입 분기",
                   "collapsed": true,
                   "items": [
                     {
+                      "text": "객체지향 설계 복습",
+                      "link": "/wiki/01 개념/Java/객체지향 설계 복습"
+                    },
+                    {
                       "text": "상속 오버라이딩 다형성",
                       "link": "/wiki/01 개념/Java/상속 오버라이딩 다형성"
-                    },
-                    {
-                      "text": "instanceof와 타입 검사",
-                      "link": "/wiki/01 개념/Java/instanceof와 타입 검사"
-                    },
-                    {
-                      "text": "추상 클래스와 추상 메서드",
-                      "link": "/wiki/01 개념/Java/추상 클래스와 추상 메서드"
                     },
                     {
                       "text": "인터페이스",
                       "link": "/wiki/01 개념/Java/인터페이스"
                     },
                     {
-                      "text": "예외 처리",
-                      "link": "/wiki/01 개념/Java/예외 처리"
-                    }
-                  ]
-                },
-                {
-                  "text": "6단계 — 현대 Java와 응용",
-                  "collapsed": true,
-                  "items": [
+                      "text": "추상 클래스와 추상 메서드",
+                      "link": "/wiki/01 개념/Java/추상 클래스와 추상 메서드"
+                    },
+                    {
+                      "text": "instanceof와 타입 검사",
+                      "link": "/wiki/01 개념/Java/instanceof와 타입 검사"
+                    },
                     {
                       "text": "switch 표현식과 패턴 매칭",
                       "link": "/wiki/01 개념/Java/switch 표현식과 패턴 매칭"
-                    },
-                    {
-                      "text": "DTO와 record",
-                      "link": "/wiki/01 개념/Java/DTO와 record"
                     },
                     {
                       "text": "sealed 클래스",
@@ -276,15 +292,21 @@ export default {
                     {
                       "text": "중첩 클래스",
                       "link": "/wiki/01 개념/Java/중첩 클래스"
-                    },
-                    {
-                      "text": "자바 IO와 NIO 파일 처리",
-                      "link": "/wiki/01 개념/Java/IO와 NIO 파일 처리"
                     }
                   ]
                 },
                 {
-                  "text": "7단계 — 컬렉션과 정렬",
+                  "text": "7단계 — 예외 처리",
+                  "collapsed": true,
+                  "items": [
+                    {
+                      "text": "예외 처리",
+                      "link": "/wiki/01 개념/Java/예외 처리"
+                    }
+                  ]
+                },
+                {
+                  "text": "8단계 — 컬렉션과 비교",
                   "collapsed": true,
                   "items": [
                     {
@@ -302,12 +324,30 @@ export default {
                   ]
                 },
                 {
-                  "text": "8단계 — 스트림과 IO 심화",
+                  "text": "9단계 — 람다·메서드 참조·스트림",
                   "collapsed": true,
                   "items": [
                     {
-                      "text": "자바 스트림과 IO 핵심",
-                      "link": "/wiki/01 개념/Java/자바 스트림과 IO 핵심"
+                      "text": "람다와 메서드 참조",
+                      "link": "/wiki/01 개념/Java/람다와 메서드 참조"
+                    },
+                    {
+                      "text": "스트림 API와 리듀스",
+                      "link": "/wiki/01 개념/Java/스트림 API와 리듀스"
+                    }
+                  ]
+                },
+                {
+                  "text": "10단계 — IO·NIO·파일 처리",
+                  "collapsed": true,
+                  "items": [
+                    {
+                      "text": "IO와 NIO 파일 처리",
+                      "link": "/wiki/01 개념/Java/IO와 NIO 파일 처리"
+                    },
+                    {
+                      "text": "객체 직렬화와 역직렬화",
+                      "link": "/wiki/01 개념/Java/객체 직렬화와 역직렬화"
                     }
                   ]
                 }

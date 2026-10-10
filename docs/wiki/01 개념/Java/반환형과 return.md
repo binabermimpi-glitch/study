@@ -1,41 +1,49 @@
 ---
 type: concept
-aliases: [return, 반환형 메소드, void]
-knowledge_type: practical-core
-classification_reason: 메소드의 출력 계약과 실행 흐름을 정의하는 Java의 핵심 문법이다.
-difficulty: 입문
+aliases: []
+knowledge_type: foundation
+classification_reason: "Java 실행과 문법을 이해하기 위한 학습 토대다."
+difficulty: 초급
 status: growing
-prerequisites:
-  - "[메서드 선언과 호출](</wiki/01%20%EA%B0%9C%EB%85%90/Java/%EB%A9%94%EC%84%9C%EB%93%9C%20%EC%84%A0%EC%96%B8%EA%B3%BC%20%ED%98%B8%EC%B6%9C>)"
-related:
-  - "[형변환과 연산 프로모션](</wiki/01%20%EA%B0%9C%EB%85%90/Java/%ED%98%95%EB%B3%80%ED%99%98%EA%B3%BC%20%EC%97%B0%EC%82%B0%20%ED%94%84%EB%A1%9C%EB%AA%A8%EC%85%98>)"
-sources: ["[2026-08-27 자바 메소드와 객체 생성](</wiki/03%20%EC%B6%9C%EC%B2%98%20%EB%85%B8%ED%8A%B8/2026-08-27%20%EC%9E%90%EB%B0%94%20%EB%A9%94%EC%86%8C%EB%93%9C%EC%99%80%20%EA%B0%9D%EC%B2%B4%20%EC%83%9D%EC%84%B1>)"]
-created: 2026-08-27
-updated: 2026-08-27
+curriculum_stage: 3
+prerequisites: []
+related: []
+sources:
+  - "[2026-08-27 자바 메소드와 객체 생성](</sources/%EC%9E%90%EB%B0%94%20%EB%B0%B1%EC%97%94%EB%93%9C%20%EC%88%98%EC%97%85/2026-08-27%20%EC%9E%90%EB%B0%94%20%EB%A9%94%EC%86%8C%EB%93%9C%EC%99%80%20%EA%B0%9D%EC%B2%B4%20%EC%83%9D%EC%84%B1>)"
+created: 2026-10-10
+updated: 2026-10-10
 ---
 
 # 반환형과 return
 
-## 한 문장 설명
+## 2026-08-27 자바 메소드와 객체 생성
 
-메소드의 반환형은 호출 결과의 타입 계약이고, `return`은 메소드를 즉시 끝내면서 필요하면 값을 호출자에게 전달한다.
+### 반환형 메소드와 return
+
+> 반환형 메소드는 선언된 타입의 값을 호출 위치로 반환하며, `return`은 값을 반환하면서 해당 메소드를 즉시 종료합니다.
+
+`void` 메소드는 수행할 명령만 포함하며 호출 위치에 반환할 값이 없습니다. 반면 `int`, `double`, `String` 등 반환형이 선언된 메소드는 해당 타입과 호환되는 값을 `return`해야 합니다.
 
 ```java
-public static int add(int left, int right) {
-    return left + right;
+public static int getA() {
+    return 100;
 }
-
-int result = add(10, 20);
 ```
 
-## 규칙
+반환형 메소드는 선언부의 반환 타입, `return` 뒤 값의 타입, 호출 결과를 받는 위치의 타입이 서로 호환되어야 합니다. 이를 통해 메소드 호출 결과가 안전하게 다음 연산이나 대입에 사용됩니다.
 
-- 반환값은 선언한 반환형과 대입 호환되어야 한다.
-- `void` 메소드는 값을 반환하지 않지만 `return;`으로 조기 종료할 수 있다.
-- 반환형이 있는 메소드는 정상적으로 끝나는 모든 실행 경로에서 값을 반환해야 한다.
-- `return` 뒤의 도달 불가능한 문장은 컴파일 오류가 될 수 있다.
+```java
+int a = getA();
+System.out.println(a);
+```
 
-## 국비수업 연결
+- 메소드 선언의 반환형은 호출 결과의 데이터 타입을 결정합니다.
+- `return` 값은 선언된 반환형과 호환되어야 합니다.
+- 호출 결과를 변수에 대입할 경우 대입 대상의 타입도 호환되어야 합니다.
+- `return` 이후의 실행 불가능한 문장은 컴파일 오류가 됩니다.
 
-Controller가 응답 DTO를 반환하고 Service가 처리 결과를 반환하는 구조에서도 같은 입력·출력 계약을 사용한다.
+`return`은 메소드 내부에서만 사용할 수 있는 제어 키워드입니다. 값 없이 사용하면 메소드만 종료하고, 값과 함께 사용하면 값을 반환한 뒤 메소드를 종료합니다. `void` 메소드에서도 조기 종료 목적으로 값 없는 `return;`을 사용할 수 있습니다.
+
+같은 클래스 내부의 `static` 메소드는 메소드 이름만으로 호출할 수 있습니다. 이는 같은 클래스 범위에서 클래스 이름이 생략될 수 있기 때문이며, 필요하다면 `클래스명.메소드명()` 형태로 명시할 수도 있습니다.
+
 

@@ -148,36 +148,101 @@ function titleForRecord(record) {
 
 const javaCurriculumGroups = [
   {
-    text: '1단계 — Java 실행과 첫 코드',
-    titles: ['JDK, JRE, JVM', 'main 메서드 선언 읽기', '기본 자료형과 리터럴', '변수의 종류와 생명주기', '형변환과 연산 프로모션', '연산자와 우선순위', '표준 입출력']
+    "text": "1단계 — 실행 환경과 첫 코드",
+    "titles": [
+      "JDK JRE JVM",
+      "JDK 버전과 배포 정책",
+      "IntelliJ 프로젝트와 Java API",
+      "패키지와 식별자 규칙",
+      "main 메서드 선언 읽기"
+    ]
   },
   {
-    text: '2단계 — 메서드',
-    titles: ['메서드 선언과 호출', '매개변수와 인수', '반환형과 return', 'static과 인스턴스 멤버', '메서드 오버로딩']
+    "text": "2단계 — 자료형·변수·연산자",
+    "titles": [
+      "기본 자료형과 리터럴",
+      "형변환과 연산 프로모션",
+      "래퍼 클래스와 박싱",
+      "변수의 종류와 생명주기",
+      "표준 입출력",
+      "연산자와 우선순위"
+    ]
   },
   {
-    text: '3단계 — 참조 타입과 배열',
-    titles: ['참조와 점 연산자', 'String과 참조 자료형', '래퍼 클래스와 박싱', '배열과 2차원 배열', '향상된 for문과 반복 제어', '배열 복사와 방어적 복사']
+    "text": "3단계 — 메서드와 참조",
+    "titles": [
+      "메서드 선언과 호출",
+      "매개변수와 인수",
+      "메서드 오버로딩",
+      "반환형과 return",
+      "참조와 점 연산자",
+      "String과 참조 자료형"
+    ]
   },
   {
-    text: '4단계 — 클래스와 객체',
-    titles: ['클래스와 접근 제한자', '객체 생성과 초기화 순서', '생성자와 생성자 오버로딩', 'this 참조', '캡슐화와 Getter·Setter', '가변 객체와 불변 객체', 'Object 클래스', 'JVM 메모리와 가비지 컬렉션']
+    "text": "4단계 — 배열과 반복문",
+    "titles": [
+      "배열과 2차원 배열",
+      "향상된 for문과 반복 제어",
+      "배열 복사와 방어적 복사",
+      "정렬 알고리즘과 값 교환"
+    ]
   },
   {
-    text: '5단계 — 객체지향 확장',
-    titles: ['상속 오버라이딩 다형성', 'instanceof와 타입 검사', '추상 클래스와 추상 메서드', '인터페이스', '예외 처리']
+    "text": "5단계 — 클래스와 객체",
+    "titles": [
+      "클래스와 접근 제한자",
+      "객체 생성과 초기화 순서",
+      "생성자와 생성자 오버로딩",
+      "this 참조",
+      "static과 인스턴스 멤버",
+      "캡슐화와 Getter Setter",
+      "가변 객체와 불변 객체",
+      "Object 클래스",
+      "JVM 메모리와 가비지 컬렉션",
+      "DTO와 record"
+    ]
   },
   {
-    text: '6단계 — 현대 Java와 응용',
-    titles: ['switch 표현식과 패턴 매칭', 'DTO와 record', 'sealed 클래스', '중첩 클래스', '자바 IO와 NIO 파일 처리']
+    "text": "6단계 — 상속·다형성·타입 분기",
+    "titles": [
+      "객체지향 설계 복습",
+      "상속 오버라이딩 다형성",
+      "인터페이스",
+      "추상 클래스와 추상 메서드",
+      "instanceof와 타입 검사",
+      "switch 표현식과 패턴 매칭",
+      "sealed 클래스",
+      "중첩 클래스"
+    ]
   },
   {
-    text: '7단계 — 컬렉션과 정렬',
-    titles: ['List와 ListIterator', 'Set 구현체와 중복 판단', 'Comparator와 정렬']
+    "text": "7단계 — 예외 처리",
+    "titles": [
+      "예외 처리"
+    ]
   },
   {
-    text: '8단계 — 스트림과 IO 심화',
-    titles: ['자바 스트림과 IO 핵심']
+    "text": "8단계 — 컬렉션과 비교",
+    "titles": [
+      "List와 ListIterator",
+      "Set 구현체와 중복 판단",
+      "Comparator와 정렬"
+    ]
+  },
+  {
+    "text": "9단계 — 람다·메서드 참조·스트림",
+    "titles": [
+      "람다와 메서드 참조",
+      "스트림 API와 리듀스"
+    ]
+  },
+  {
+    "text": "10단계 — IO·NIO·파일 처리",
+    "titles": [
+      "IO와 NIO 파일 처리",
+      "객체 직렬화와 역직렬화"
+    ]
   }
 ]
 
@@ -237,7 +302,7 @@ function sidebarItemsFor(section) {
         })
       }))
       const unlisted = directRecords
-        .filter(record => !listedTitles.has(titleForRecord(record)))
+        .filter(record => !listedTitles.has(titleForRecord(record)) && titleForRecord(record) !== '자바 스트림과 IO 핵심')
         .map(record => ({ text: titleForRecord(record), link: record.routePath }))
 
       if (unlisted.length > 0) groups.push({ text: '추가 개념', collapsed: true, items: unlisted })

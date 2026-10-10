@@ -1,90 +1,102 @@
-# Java 개념 커리큘럼
+---
+type: index
+last_updated: 2026-10-10
+---
 
-Java를 처음 배우는 순서에 맞춰 실행 구조와 기초 문법부터 객체지향, 현대 Java 문법까지 이어서 학습합니다. 문서 파일의 위치와 이름은 그대로 유지하고 읽는 순서만 정리했습니다.
+# Java
 
-## 1단계 — Java 실행과 첫 코드
+제공한 수업 원문 14개를 주제와 학습 순서에 따라 정리했다. 원문의 금일 학습요약과 핵심 키워드 구역만 제외하고 설명·코드·표·실행 흐름은 유지했다.
 
-1. [JDK JRE JVM](</wiki/01%20%EA%B0%9C%EB%85%90/Java/JDK%20JRE%20JVM>)
-2. [main 메서드 선언 읽기](</wiki/01%20%EA%B0%9C%EB%85%90/Java/main%20%EB%A9%94%EC%84%9C%EB%93%9C%20%EC%84%A0%EC%96%B8%20%EC%9D%BD%EA%B8%B0>)
-3. [기본 자료형과 리터럴](</wiki/01%20%EA%B0%9C%EB%85%90/Java/%EA%B8%B0%EB%B3%B8%20%EC%9E%90%EB%A3%8C%ED%98%95%EA%B3%BC%20%EB%A6%AC%ED%84%B0%EB%9F%B4>)
-4. [변수의 종류와 생명주기](</wiki/01%20%EA%B0%9C%EB%85%90/Java/%EB%B3%80%EC%88%98%EC%9D%98%20%EC%A2%85%EB%A5%98%EC%99%80%20%EC%83%9D%EB%AA%85%EC%A3%BC%EA%B8%B0>)
-5. [형변환과 연산 프로모션](</wiki/01%20%EA%B0%9C%EB%85%90/Java/%ED%98%95%EB%B3%80%ED%99%98%EA%B3%BC%20%EC%97%B0%EC%82%B0%20%ED%94%84%EB%A1%9C%EB%AA%A8%EC%85%98>)
-6. [연산자와 우선순위](</wiki/01%20%EA%B0%9C%EB%85%90/Java/%EC%97%B0%EC%82%B0%EC%9E%90%EC%99%80%20%EC%9A%B0%EC%84%A0%EC%88%9C%EC%9C%84>)
-7. [표준 입출력](</wiki/01%20%EA%B0%9C%EB%85%90/Java/%ED%91%9C%EC%A4%80%20%EC%9E%85%EC%B6%9C%EB%A0%A5>)
+## 1단계 — 실행 환경과 첫 코드
 
-이 단계의 목표는 Java 프로그램이 실행되는 흐름을 알고 변수와 계산 결과를 읽는 것입니다.
+- [JDK JRE JVM](</wiki/01%20%EA%B0%9C%EB%85%90/Java/JDK%20JRE%20JVM>)
+- [JDK 버전과 배포 정책](</wiki/01%20%EA%B0%9C%EB%85%90/Java/JDK%20%EB%B2%84%EC%A0%84%EA%B3%BC%20%EB%B0%B0%ED%8F%AC%20%EC%A0%95%EC%B1%85>)
+- [IntelliJ 프로젝트와 Java API](</wiki/01%20%EA%B0%9C%EB%85%90/Java/IntelliJ%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%EC%99%80%20Java%20API>)
+- [패키지와 식별자 규칙](</wiki/01%20%EA%B0%9C%EB%85%90/Java/%ED%8C%A8%ED%82%A4%EC%A7%80%EC%99%80%20%EC%8B%9D%EB%B3%84%EC%9E%90%20%EA%B7%9C%EC%B9%99>)
+- [main 메서드 선언 읽기](</wiki/01%20%EA%B0%9C%EB%85%90/Java/main%20%EB%A9%94%EC%84%9C%EB%93%9C%20%EC%84%A0%EC%96%B8%20%EC%9D%BD%EA%B8%B0>)
 
-## 2단계 — 메서드
+## 2단계 — 자료형·변수·연산자
 
-8. [메서드 선언과 호출](</wiki/01%20%EA%B0%9C%EB%85%90/Java/%EB%A9%94%EC%84%9C%EB%93%9C%20%EC%84%A0%EC%96%B8%EA%B3%BC%20%ED%98%B8%EC%B6%9C>)
-9. [매개변수와 인수](</wiki/01%20%EA%B0%9C%EB%85%90/Java/%EB%A7%A4%EA%B0%9C%EB%B3%80%EC%88%98%EC%99%80%20%EC%9D%B8%EC%88%98>)
-10. [반환형과 return](</wiki/01%20%EA%B0%9C%EB%85%90/Java/%EB%B0%98%ED%99%98%ED%98%95%EA%B3%BC%20return>)
-11. [static과 인스턴스 멤버](</wiki/01%20%EA%B0%9C%EB%85%90/Java/static%EA%B3%BC%20%EC%9D%B8%EC%8A%A4%ED%84%B4%EC%8A%A4%20%EB%A9%A4%EB%B2%84>)
-12. [메서드 오버로딩](</wiki/01%20%EA%B0%9C%EB%85%90/Java/%EB%A9%94%EC%84%9C%EB%93%9C%20%EC%98%A4%EB%B2%84%EB%A1%9C%EB%94%A9>)
+- [기본 자료형과 리터럴](</wiki/01%20%EA%B0%9C%EB%85%90/Java/%EA%B8%B0%EB%B3%B8%20%EC%9E%90%EB%A3%8C%ED%98%95%EA%B3%BC%20%EB%A6%AC%ED%84%B0%EB%9F%B4>)
+- [형변환과 연산 프로모션](</wiki/01%20%EA%B0%9C%EB%85%90/Java/%ED%98%95%EB%B3%80%ED%99%98%EA%B3%BC%20%EC%97%B0%EC%82%B0%20%ED%94%84%EB%A1%9C%EB%AA%A8%EC%85%98>)
+- [래퍼 클래스와 박싱](</wiki/01%20%EA%B0%9C%EB%85%90/Java/%EB%9E%98%ED%8D%BC%20%ED%81%B4%EB%9E%98%EC%8A%A4%EC%99%80%20%EB%B0%95%EC%8B%B1>)
+- [변수의 종류와 생명주기](</wiki/01%20%EA%B0%9C%EB%85%90/Java/%EB%B3%80%EC%88%98%EC%9D%98%20%EC%A2%85%EB%A5%98%EC%99%80%20%EC%83%9D%EB%AA%85%EC%A3%BC%EA%B8%B0>)
+- [표준 입출력](</wiki/01%20%EA%B0%9C%EB%85%90/Java/%ED%91%9C%EC%A4%80%20%EC%9E%85%EC%B6%9C%EB%A0%A5>)
+- [연산자와 우선순위](</wiki/01%20%EA%B0%9C%EB%85%90/Java/%EC%97%B0%EC%82%B0%EC%9E%90%EC%99%80%20%EC%9A%B0%EC%84%A0%EC%88%9C%EC%9C%84>)
 
-이 단계의 목표는 `접근 제한자 → static 여부 → 반환형 → 메서드명 → 매개변수 → 본문` 순서로 메서드를 직접 작성하는 것입니다.
+## 3단계 — 메서드와 참조
 
-## 3단계 — 참조 타입과 배열
+- [메서드 선언과 호출](</wiki/01%20%EA%B0%9C%EB%85%90/Java/%EB%A9%94%EC%84%9C%EB%93%9C%20%EC%84%A0%EC%96%B8%EA%B3%BC%20%ED%98%B8%EC%B6%9C>)
+- [매개변수와 인수](</wiki/01%20%EA%B0%9C%EB%85%90/Java/%EB%A7%A4%EA%B0%9C%EB%B3%80%EC%88%98%EC%99%80%20%EC%9D%B8%EC%88%98>)
+- [메서드 오버로딩](</wiki/01%20%EA%B0%9C%EB%85%90/Java/%EB%A9%94%EC%84%9C%EB%93%9C%20%EC%98%A4%EB%B2%84%EB%A1%9C%EB%94%A9>)
+- [반환형과 return](</wiki/01%20%EA%B0%9C%EB%85%90/Java/%EB%B0%98%ED%99%98%ED%98%95%EA%B3%BC%20return>)
+- [참조와 점 연산자](</wiki/01%20%EA%B0%9C%EB%85%90/Java/%EC%B0%B8%EC%A1%B0%EC%99%80%20%EC%A0%90%20%EC%97%B0%EC%82%B0%EC%9E%90>)
+- [String과 참조 자료형](</wiki/01%20%EA%B0%9C%EB%85%90/Java/String%EA%B3%BC%20%EC%B0%B8%EC%A1%B0%20%EC%9E%90%EB%A3%8C%ED%98%95>)
 
-13. [참조와 점 연산자](</wiki/01%20%EA%B0%9C%EB%85%90/Java/%EC%B0%B8%EC%A1%B0%EC%99%80%20%EC%A0%90%20%EC%97%B0%EC%82%B0%EC%9E%90>)
-14. [String과 참조 자료형](</wiki/01%20%EA%B0%9C%EB%85%90/Java/String%EA%B3%BC%20%EC%B0%B8%EC%A1%B0%20%EC%9E%90%EB%A3%8C%ED%98%95>)
-15. [래퍼 클래스와 박싱](</wiki/01%20%EA%B0%9C%EB%85%90/Java/%EB%9E%98%ED%8D%BC%20%ED%81%B4%EB%9E%98%EC%8A%A4%EC%99%80%20%EB%B0%95%EC%8B%B1>)
-16. [배열과 2차원 배열](</wiki/01%20%EA%B0%9C%EB%85%90/Java/%EB%B0%B0%EC%97%B4%EA%B3%BC%202%EC%B0%A8%EC%9B%90%20%EB%B0%B0%EC%97%B4>)
-17. [향상된 for문과 반복 제어](</wiki/01%20%EA%B0%9C%EB%85%90/Java/%ED%96%A5%EC%83%81%EB%90%9C%20for%EB%AC%B8%EA%B3%BC%20%EB%B0%98%EB%B3%B5%20%EC%A0%9C%EC%96%B4>)
-18. [배열 복사와 방어적 복사](</wiki/01%20%EA%B0%9C%EB%85%90/Java/%EB%B0%B0%EC%97%B4%20%EB%B3%B5%EC%82%AC%EC%99%80%20%EB%B0%A9%EC%96%B4%EC%A0%81%20%EB%B3%B5%EC%82%AC>)
+## 4단계 — 배열과 반복문
 
-이 단계의 목표는 참조 변수, 배열 전체와 요소 하나를 구분하고 반복문으로 값을 처리하는 것입니다.
+- [배열과 2차원 배열](</wiki/01%20%EA%B0%9C%EB%85%90/Java/%EB%B0%B0%EC%97%B4%EA%B3%BC%202%EC%B0%A8%EC%9B%90%20%EB%B0%B0%EC%97%B4>)
+- [향상된 for문과 반복 제어](</wiki/01%20%EA%B0%9C%EB%85%90/Java/%ED%96%A5%EC%83%81%EB%90%9C%20for%EB%AC%B8%EA%B3%BC%20%EB%B0%98%EB%B3%B5%20%EC%A0%9C%EC%96%B4>)
+- [배열 복사와 방어적 복사](</wiki/01%20%EA%B0%9C%EB%85%90/Java/%EB%B0%B0%EC%97%B4%20%EB%B3%B5%EC%82%AC%EC%99%80%20%EB%B0%A9%EC%96%B4%EC%A0%81%20%EB%B3%B5%EC%82%AC>)
+- [정렬 알고리즘과 값 교환](</wiki/01%20%EA%B0%9C%EB%85%90/Java/%EC%A0%95%EB%A0%AC%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98%EA%B3%BC%20%EA%B0%92%20%EA%B5%90%ED%99%98>)
 
-## 4단계 — 클래스와 객체
+## 5단계 — 클래스와 객체
 
-19. [클래스와 접근 제한자](</wiki/01%20%EA%B0%9C%EB%85%90/Java/%ED%81%B4%EB%9E%98%EC%8A%A4%EC%99%80%20%EC%A0%91%EA%B7%BC%20%EC%A0%9C%ED%95%9C%EC%9E%90>)
-20. [객체 생성과 초기화 순서](</wiki/01%20%EA%B0%9C%EB%85%90/Java/%EA%B0%9D%EC%B2%B4%20%EC%83%9D%EC%84%B1%EA%B3%BC%20%EC%B4%88%EA%B8%B0%ED%99%94%20%EC%88%9C%EC%84%9C>)
-21. [생성자와 생성자 오버로딩](</wiki/01%20%EA%B0%9C%EB%85%90/Java/%EC%83%9D%EC%84%B1%EC%9E%90%EC%99%80%20%EC%83%9D%EC%84%B1%EC%9E%90%20%EC%98%A4%EB%B2%84%EB%A1%9C%EB%94%A9>)
-22. [this 참조](</wiki/01%20%EA%B0%9C%EB%85%90/Java/this%20%EC%B0%B8%EC%A1%B0>)
-23. [캡슐화와 Getter Setter](</wiki/01%20%EA%B0%9C%EB%85%90/Java/%EC%BA%A1%EC%8A%90%ED%99%94%EC%99%80%20Getter%20Setter>)
-24. [가변 객체와 불변 객체](</wiki/01%20%EA%B0%9C%EB%85%90/Java/%EA%B0%80%EB%B3%80%20%EA%B0%9D%EC%B2%B4%EC%99%80%20%EB%B6%88%EB%B3%80%20%EA%B0%9D%EC%B2%B4>)
-25. [Object 클래스](</wiki/01%20%EA%B0%9C%EB%85%90/Java/Object%20%ED%81%B4%EB%9E%98%EC%8A%A4>)
-26. [JVM 메모리와 가비지 컬렉션](</wiki/01%20%EA%B0%9C%EB%85%90/Java/JVM%20%EB%A9%94%EB%AA%A8%EB%A6%AC%EC%99%80%20%EA%B0%80%EB%B9%84%EC%A7%80%20%EC%BB%AC%EB%A0%89%EC%85%98>)
+- [클래스와 접근 제한자](</wiki/01%20%EA%B0%9C%EB%85%90/Java/%ED%81%B4%EB%9E%98%EC%8A%A4%EC%99%80%20%EC%A0%91%EA%B7%BC%20%EC%A0%9C%ED%95%9C%EC%9E%90>)
+- [객체 생성과 초기화 순서](</wiki/01%20%EA%B0%9C%EB%85%90/Java/%EA%B0%9D%EC%B2%B4%20%EC%83%9D%EC%84%B1%EA%B3%BC%20%EC%B4%88%EA%B8%B0%ED%99%94%20%EC%88%9C%EC%84%9C>)
+- [생성자와 생성자 오버로딩](</wiki/01%20%EA%B0%9C%EB%85%90/Java/%EC%83%9D%EC%84%B1%EC%9E%90%EC%99%80%20%EC%83%9D%EC%84%B1%EC%9E%90%20%EC%98%A4%EB%B2%84%EB%A1%9C%EB%94%A9>)
+- [this 참조](</wiki/01%20%EA%B0%9C%EB%85%90/Java/this%20%EC%B0%B8%EC%A1%B0>)
+- [static과 인스턴스 멤버](</wiki/01%20%EA%B0%9C%EB%85%90/Java/static%EA%B3%BC%20%EC%9D%B8%EC%8A%A4%ED%84%B4%EC%8A%A4%20%EB%A9%A4%EB%B2%84>)
+- [캡슐화와 Getter Setter](</wiki/01%20%EA%B0%9C%EB%85%90/Java/%EC%BA%A1%EC%8A%90%ED%99%94%EC%99%80%20Getter%20Setter>)
+- [가변 객체와 불변 객체](</wiki/01%20%EA%B0%9C%EB%85%90/Java/%EA%B0%80%EB%B3%80%20%EA%B0%9D%EC%B2%B4%EC%99%80%20%EB%B6%88%EB%B3%80%20%EA%B0%9D%EC%B2%B4>)
+- [Object 클래스](</wiki/01%20%EA%B0%9C%EB%85%90/Java/Object%20%ED%81%B4%EB%9E%98%EC%8A%A4>)
+- [JVM 메모리와 가비지 컬렉션](</wiki/01%20%EA%B0%9C%EB%85%90/Java/JVM%20%EB%A9%94%EB%AA%A8%EB%A6%AC%EC%99%80%20%EA%B0%80%EB%B9%84%EC%A7%80%20%EC%BB%AC%EB%A0%89%EC%85%98>)
+- [DTO와 record](</wiki/01%20%EA%B0%9C%EB%85%90/Java/DTO%EC%99%80%20record>)
 
-이 단계의 목표는 클래스·객체·참조 변수를 구분하고 안전하게 상태를 초기화하고 변경하는 것입니다.
+## 6단계 — 상속·다형성·타입 분기
 
-## 5단계 — 객체지향 확장
+- [객체지향 설계 복습](</wiki/01%20%EA%B0%9C%EB%85%90/Java/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%20%EC%84%A4%EA%B3%84%20%EB%B3%B5%EC%8A%B5>)
+- [상속 오버라이딩 다형성](</wiki/01%20%EA%B0%9C%EB%85%90/Java/%EC%83%81%EC%86%8D%20%EC%98%A4%EB%B2%84%EB%9D%BC%EC%9D%B4%EB%94%A9%20%EB%8B%A4%ED%98%95%EC%84%B1>)
+- [인터페이스](</wiki/01%20%EA%B0%9C%EB%85%90/Java/%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4>)
+- [추상 클래스와 추상 메서드](</wiki/01%20%EA%B0%9C%EB%85%90/Java/%EC%B6%94%EC%83%81%20%ED%81%B4%EB%9E%98%EC%8A%A4%EC%99%80%20%EC%B6%94%EC%83%81%20%EB%A9%94%EC%84%9C%EB%93%9C>)
+- [instanceof와 타입 검사](</wiki/01%20%EA%B0%9C%EB%85%90/Java/instanceof%EC%99%80%20%ED%83%80%EC%9E%85%20%EA%B2%80%EC%82%AC>)
+- [switch 표현식과 패턴 매칭](</wiki/01%20%EA%B0%9C%EB%85%90/Java/switch%20%ED%91%9C%ED%98%84%EC%8B%9D%EA%B3%BC%20%ED%8C%A8%ED%84%B4%20%EB%A7%A4%EC%B9%AD>)
+- [sealed 클래스](</wiki/01%20%EA%B0%9C%EB%85%90/Java/sealed%20%ED%81%B4%EB%9E%98%EC%8A%A4>)
+- [중첩 클래스](</wiki/01%20%EA%B0%9C%EB%85%90/Java/%EC%A4%91%EC%B2%A9%20%ED%81%B4%EB%9E%98%EC%8A%A4>)
 
-27. [상속 오버라이딩 다형성](</wiki/01%20%EA%B0%9C%EB%85%90/Java/%EC%83%81%EC%86%8D%20%EC%98%A4%EB%B2%84%EB%9D%BC%EC%9D%B4%EB%94%A9%20%EB%8B%A4%ED%98%95%EC%84%B1>)
-28. [instanceof와 타입 검사](</wiki/01%20%EA%B0%9C%EB%85%90/Java/instanceof%EC%99%80%20%ED%83%80%EC%9E%85%20%EA%B2%80%EC%82%AC>)
-29. [추상 클래스와 추상 메서드](</wiki/01%20%EA%B0%9C%EB%85%90/Java/%EC%B6%94%EC%83%81%20%ED%81%B4%EB%9E%98%EC%8A%A4%EC%99%80%20%EC%B6%94%EC%83%81%20%EB%A9%94%EC%84%9C%EB%93%9C>)
-30. [인터페이스](</wiki/01%20%EA%B0%9C%EB%85%90/Java/%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4>)
-31. [예외 처리](</wiki/01%20%EA%B0%9C%EB%85%90/Java/%EC%98%88%EC%99%B8%20%EC%B2%98%EB%A6%AC>)
+## 7단계 — 예외 처리
 
-이 단계의 목표는 하나의 상위 타입으로 여러 구현 객체를 다루고 실제 객체에 맞는 동작이 실행되는 과정을 이해하는 것입니다.
+- [예외 처리](</wiki/01%20%EA%B0%9C%EB%85%90/Java/%EC%98%88%EC%99%B8%20%EC%B2%98%EB%A6%AC>)
 
-## 6단계 — 현대 Java와 응용
+## 8단계 — 컬렉션과 비교
 
-32. [switch 표현식과 패턴 매칭](</wiki/01%20%EA%B0%9C%EB%85%90/Java/switch%20%ED%91%9C%ED%98%84%EC%8B%9D%EA%B3%BC%20%ED%8C%A8%ED%84%B4%20%EB%A7%A4%EC%B9%AD>)
-33. [DTO와 record](</wiki/01%20%EA%B0%9C%EB%85%90/Java/DTO%EC%99%80%20record>)
-34. [sealed 클래스](</wiki/01%20%EA%B0%9C%EB%85%90/Java/sealed%20%ED%81%B4%EB%9E%98%EC%8A%A4>)
-35. [중첩 클래스](</wiki/01%20%EA%B0%9C%EB%85%90/Java/%EC%A4%91%EC%B2%A9%20%ED%81%B4%EB%9E%98%EC%8A%A4>)
-36. [IO와 NIO 파일 처리](</wiki/01%20%EA%B0%9C%EB%85%90/Java/IO%EC%99%80%20NIO%20%ED%8C%8C%EC%9D%BC%20%EC%B2%98%EB%A6%AC>)
+- [List와 ListIterator](</wiki/01%20%EA%B0%9C%EB%85%90/Java/List%EC%99%80%20ListIterator>)
+- [Set 구현체와 중복 판단](</wiki/01%20%EA%B0%9C%EB%85%90/Java/Set%20%EA%B5%AC%ED%98%84%EC%B2%B4%EC%99%80%20%EC%A4%91%EB%B3%B5%20%ED%8C%90%EB%8B%A8>)
+- [Comparator와 정렬](</wiki/01%20%EA%B0%9C%EB%85%90/Java/Comparator%EC%99%80%20%EC%A0%95%EB%A0%AC>)
 
-이 단계는 앞선 문법과 객체지향을 이해한 뒤 학습합니다. Java 버전에 따라 사용할 수 있는 문법이 다르므로 각 문서의 적용 버전을 확인합니다.
+## 9단계 — 람다·메서드 참조·스트림
 
-## 7단계 — 컬렉션과 정렬
+- [람다와 메서드 참조](</wiki/01%20%EA%B0%9C%EB%85%90/Java/%EB%9E%8C%EB%8B%A4%EC%99%80%20%EB%A9%94%EC%84%9C%EB%93%9C%20%EC%B0%B8%EC%A1%B0>)
+- [스트림 API와 리듀스](</wiki/01%20%EA%B0%9C%EB%85%90/Java/%EC%8A%A4%ED%8A%B8%EB%A6%BC%20API%EC%99%80%20%EB%A6%AC%EB%93%80%EC%8A%A4>)
 
-37. [List와 ListIterator](</wiki/01%20%EA%B0%9C%EB%85%90/Java/List%EC%99%80%20ListIterator>)
-38. [Set 구현체와 중복 판단](</wiki/01%20%EA%B0%9C%EB%85%90/Java/Set%20%EA%B5%AC%ED%98%84%EC%B2%B4%EC%99%80%20%EC%A4%91%EB%B3%B5%20%ED%8C%90%EB%8B%A8>)
-39. [Comparator와 정렬](</wiki/01%20%EA%B0%9C%EB%85%90/Java/Comparator%EC%99%80%20%EC%A0%95%EB%A0%AC>)
+## 10단계 — IO·NIO·파일 처리
 
-이 단계의 목표는 컬렉션 구현체에 따른 순서와 중복 판단 기준을 구분하고, Comparator로 정렬 기준을 직접 정의하는 것입니다.
+- [IO와 NIO 파일 처리](</wiki/01%20%EA%B0%9C%EB%85%90/Java/IO%EC%99%80%20NIO%20%ED%8C%8C%EC%9D%BC%20%EC%B2%98%EB%A6%AC>)
+- [객체 직렬화와 역직렬화](</wiki/01%20%EA%B0%9C%EB%85%90/Java/%EA%B0%9D%EC%B2%B4%20%EC%A7%81%EB%A0%AC%ED%99%94%EC%99%80%20%EC%97%AD%EC%A7%81%EB%A0%AC%ED%99%94>)
 
-## 8단계 — 스트림과 IO 심화
+## 원문 목록
 
-40. [자바 스트림과 IO 핵심](</wiki/01%20%EA%B0%9C%EB%85%90/Java/%EC%9E%90%EB%B0%94%20%EC%8A%A4%ED%8A%B8%EB%A6%BC%EA%B3%BC%20IO%20%ED%95%B5%EC%8B%AC>)
-
-이 단계의 목표는 기본형 스트림과 `reduce`·`collect`의 처리 흐름을 이해하고, 바이트·문자·버퍼 스트림과 파일 입출력을 안전하게 사용하는 것입니다.
-
-## 앞으로 들어올 내용
-
-다음 내용은 실제 수업 자료가 들어올 때 알맞은 단계에 추가합니다.
-
-- 조건문과 반복문 기초
-- 제네릭
+- [2026-08-23 자바 실행 구조와 기초 문법](</sources/2026-08-23%20%EC%9E%90%EB%B0%94%20%EC%8B%A4%ED%96%89%20%EA%B5%AC%EC%A1%B0%EC%99%80%20%EA%B8%B0%EC%B4%88%20%EB%AC%B8%EB%B2%95>)
+- [2026-08-23 자바 참조와 자료형 기초](</sources/2026-08-23%20%EC%9E%90%EB%B0%94%20%EC%B0%B8%EC%A1%B0%EC%99%80%20%EC%9E%90%EB%A3%8C%ED%98%95%20%EA%B8%B0%EC%B4%88>)
+- [2026-08-24 main 메서드 학습 회고](</sources/2026-08-24%20main%20%EB%A9%94%EC%84%9C%EB%93%9C%20%ED%95%99%EC%8A%B5%20%ED%9A%8C%EA%B3%A0>)
+- [2026-08-24 자바 메서드와 연산자 기초](</sources/2026-08-24%20%EC%9E%90%EB%B0%94%20%EB%A9%94%EC%84%9C%EB%93%9C%EC%99%80%20%EC%97%B0%EC%82%B0%EC%9E%90%20%EA%B8%B0%EC%B4%88>)
+- [2026-09-22 Java 컬렉션 다형성 Comparator 정리](</sources/2026-09-22%20Java%20%EC%BB%AC%EB%A0%89%EC%85%98%20%EB%8B%A4%ED%98%95%EC%84%B1%20Comparator%20%EC%A0%95%EB%A6%AC>)
+- [2026-08-26 Java 객체 생성자 캡슐화 복습](</sources/%EC%9E%90%EB%B0%94%20%EB%B0%B1%EC%97%94%EB%93%9C%20%EC%88%98%EC%97%85/2026-08-26%20Java%20%EA%B0%9D%EC%B2%B4%20%EC%83%9D%EC%84%B1%EC%9E%90%20%EC%BA%A1%EC%8A%90%ED%99%94%20%EB%B3%B5%EC%8A%B5>)
+- [2026-08-27 자바 메소드와 객체 생성](</sources/%EC%9E%90%EB%B0%94%20%EB%B0%B1%EC%97%94%EB%93%9C%20%EC%88%98%EC%97%85/2026-08-27%20%EC%9E%90%EB%B0%94%20%EB%A9%94%EC%86%8C%EB%93%9C%EC%99%80%20%EA%B0%9D%EC%B2%B4%20%EC%83%9D%EC%84%B1>)
+- [2026-08-31 Java 배열 반복문 패턴 매칭 복습](</sources/%EC%9E%90%EB%B0%94%20%EB%B0%B1%EC%97%94%EB%93%9C%20%EC%88%98%EC%97%85/2026-08-31%20Java%20%EB%B0%B0%EC%97%B4%20%EB%B0%98%EB%B3%B5%EB%AC%B8%20%ED%8C%A8%ED%84%B4%20%EB%A7%A4%EC%B9%AD%20%EB%B3%B5%EC%8A%B5>)
+- [2026-09-03 자바 배열과 객체지향 핵심](</sources/%EC%9E%90%EB%B0%94%20%EB%B0%B1%EC%97%94%EB%93%9C%20%EC%88%98%EC%97%85/2026-09-03%20%EC%9E%90%EB%B0%94%20%EB%B0%B0%EC%97%B4%EA%B3%BC%20%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%20%ED%95%B5%EC%8B%AC>)
+- [2026-09-10 자바 상속과 객체 설계](</sources/%EC%9E%90%EB%B0%94%20%EB%B0%B1%EC%97%94%EB%93%9C%20%EC%88%98%EC%97%85/2026-09-10%20%EC%9E%90%EB%B0%94%20%EC%83%81%EC%86%8D%EA%B3%BC%20%EA%B0%9D%EC%B2%B4%20%EC%84%A4%EA%B3%84>)
+- [2026-09-14 자바 상속과 다형성 핵심 정리](</sources/%EC%9E%90%EB%B0%94%20%EB%B0%B1%EC%97%94%EB%93%9C%20%EC%88%98%EC%97%85/2026-09-14%20%EC%9E%90%EB%B0%94%20%EC%83%81%EC%86%8D%EA%B3%BC%20%EB%8B%A4%ED%98%95%EC%84%B1%20%ED%95%B5%EC%8B%AC%20%EC%A0%95%EB%A6%AC>)
+- [2026-09-15 자바 예외 처리 진행상황 및 핵심 복습](</sources/%EC%9E%90%EB%B0%94%20%EB%B0%B1%EC%97%94%EB%93%9C%20%EC%88%98%EC%97%85/2026-09-15%20%EC%9E%90%EB%B0%94%20%EC%98%88%EC%99%B8%20%EC%B2%98%EB%A6%AC%20%EC%A7%84%ED%96%89%EC%83%81%ED%99%A9%20%EB%B0%8F%20%ED%95%B5%EC%8B%AC%20%EB%B3%B5%EC%8A%B5>)
+- [2026-09-17 자바 IO와 NIO 파일 처리](</sources/%EC%9E%90%EB%B0%94%20%EB%B0%B1%EC%97%94%EB%93%9C%20%EC%88%98%EC%97%85/2026-09-17%20%EC%9E%90%EB%B0%94%20IO%EC%99%80%20NIO%20%ED%8C%8C%EC%9D%BC%20%EC%B2%98%EB%A6%AC>)
+- [2026-09-27 자바 스트림과 IO 핵심](</sources/%EC%9E%90%EB%B0%94%20%EB%B0%B1%EC%97%94%EB%93%9C%20%EC%88%98%EC%97%85/2026-09-27%20%EC%9E%90%EB%B0%94%20%EC%8A%A4%ED%8A%B8%EB%A6%BC%EA%B3%BC%20IO%20%ED%95%B5%EC%8B%AC>)

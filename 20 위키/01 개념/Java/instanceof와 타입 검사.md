@@ -1,64 +1,157 @@
 ---
 type: concept
-aliases: [instanceof, 타입 검사]
-knowledge_type: foundation
-classification_reason: 상속과 다형성에서 참조 대상의 런타임 타입을 안전하게 확인하는 문법이다.
+aliases: []
+knowledge_type: practical-core
+classification_reason: "제공된 수업 자료에서 객체 설계와 데이터 처리에 사용하는 주제다."
 difficulty: 초급
 status: growing
-prerequisites:
-  - "[[20 위키/01 개념/Java/참조와 점 연산자]]"
-related: ["[[20 위키/01 개념/Java/switch 표현식과 패턴 매칭]]", "[[20 위키/01 개념/Java/상속 오버라이딩 다형성]]"]
-sources: ["[[20 위키/03 출처 노트/2026-08-26 Java 객체 생성자 캡슐화 복습]]", "[[20 위키/03 출처 노트/2026-08-31 Java 배열 반복문 패턴 매칭 복습]]", "[[20 위키/03 출처 노트/2026-09-03 자바 배열과 객체지향 핵심]]"]
-created: 2026-08-26
-updated: 2026-09-14
+curriculum_stage: 6
+prerequisites: []
+related: []
+sources:
+  - "[[10 원문/자바 백엔드 수업/2026-08-26 Java 객체 생성자 캡슐화 복습]]"
+  - "[[10 원문/자바 백엔드 수업/2026-08-31 Java 배열 반복문 패턴 매칭 복습]]"
+  - "[[10 원문/자바 백엔드 수업/2026-09-14 자바 상속과 다형성 핵심 정리]]"
+created: 2026-10-10
+updated: 2026-10-10
 ---
 
 # instanceof와 타입 검사
 
-## 한 문장 설명
+## 2026-08-26 Java 객체 생성자 캡슐화 복습
 
-`instanceof`는 참조 대상 객체가 지정한 타입으로 취급될 수 있는지 검사하고 `boolean`을 반환한다.
+### 5. instanceof
+
+`instanceof`는 참조 변수가 가리키는 실제 객체가 특정 타입으로 취급될 수 있는지 확인하며 결과는 `boolean`이다.
 
 ```java
-Animal animal = new Dog();
-
-System.out.println(animal instanceof Animal); // true
-System.out.println(animal instanceof Dog);    // true
+Person p1 = new Person();
+System.out.println(p1 instanceof Person); // true
 ```
 
-`null instanceof Person`은 예외가 아니라 `false`다.
+```java
+class Animal { }
+class Dog extends Animal { }
 
-참조 변수의 선언 타입과 실제 객체 타입은 다를 수 있다.
+Dog d = new Dog();
+System.out.println(d instanceof Dog);    // true
+System.out.println(d instanceof Animal); // true
+```
+
+
+## 2026-08-31 Java 배열 반복문 패턴 매칭 복습
+
+### 10. instanceof
+
+`instanceof`는:
+
+> **참조 변수가 실제로 가리키고 있는 객체가 특정 타입인지 검사하는 연산자**
+
+이다.
 
 ```java
 Object obj = "hello";
-System.out.println(obj instanceof String); // true
+
+System.out.println(obj instanceof String);
 ```
 
-Java 16 이상에서는 검사와 형변환을 한 번에 하는 패턴 매칭을 사용할 수 있다.
+결과:
+
+```text
+true
+```
+
+왜?
+
+```text
+obj
+ ↓
+"hello"
+ ↓
+String 객체
+```
+
+이기 때문이다.
+
+반대로:
 
 ```java
-if (obj instanceof String text) {
-    System.out.println(text.toUpperCase());
+obj instanceof Integer
+```
+
+결과:
+
+```text
+false
+```
+
+#### instanceof의 결과
+
+항상:
+
+```text
+true 또는 false
+```
+
+즉 `boolean`이다.
+
+그래서 보통 `if`와 같이 사용한다.
+
+```java
+if (obj instanceof String) {
+    System.out.println("String입니다.");
 }
 ```
 
-## 실무에서는 어떻게 쓰이나
+---
 
-안전한 타입 변환이나 패턴 매칭에 사용할 수 있다. 다만 수많은 `instanceof` 분기로 객체 종류를 계속 확인한다면 다형성으로 설계를 개선할 수 있는지 검토한다.
 
-`getClass()`는 실제 클래스가 정확히 무엇인지 `Class` 객체로 확인할 때 사용하고, `instanceof`는 상위 타입·인터페이스 관계까지 포함해 해당 타입으로 취급 가능한지 확인한다. `getClass()`를 호출할 대상이 `null`이면 `NullPointerException`이 발생하지만 `null instanceof Type`은 `false`다.
+### 12. 패턴 매칭 instanceof
 
-## 반복 학습 이력
+예전 방식:
 
-- 2026-08-26 — 실제 객체 타입 검사 최초 정리
-- 2026-08-31 — 패턴 변수와 선언 타입·실제 타입 차이 재확인
-- 2026-09-03 — 배열 타입 판별과 `getClass()` 차이 재확인
-- 2026-09-14 — 안전한 다운캐스팅과 `타입 검사 + 패턴 변수 생성` 흐름 재확인
+```java
+if (obj instanceof String) {
+    String str = (String) obj;
 
-## 출처
+    System.out.println(str.toUpperCase());
+}
+```
 
-- [[20 위키/03 출처 노트/2026-08-26 Java 객체 생성자 캡슐화 복습]]
-- [[20 위키/03 출처 노트/2026-08-31 Java 배열 반복문 패턴 매칭 복습]]
-- [[20 위키/03 출처 노트/2026-09-03 자바 배열과 객체지향 핵심]]
-- [[20 위키/03 출처 노트/2026-09-14 자바 상속과 다형성 핵심 정리]]
+요즘 방식:
+
+```java
+if (obj instanceof String str) {
+    System.out.println(str.toUpperCase());
+}
+```
+
+```java
+obj instanceof String str
+```
+
+의 뜻:
+
+```text
+① obj가 String 객체인가?
+② 맞으면 String 변수 str로 사용할 수 있게 한다.
+```
+
+---
+
+
+## 2026-09-14 자바 상속과 다형성 핵심 정리
+
+### 5. 다운캐스팅과 instanceof
+
+```java
+Parent parent = new Child();
+
+if (parent instanceof Child child) {
+    child.childOnlyMethod();
+}
+```
+
+실제 객체 타입이 맞지 않으면 `ClassCastException`이 발생할 수 있으므로 `instanceof`로 타입 검사와 다운캐스팅을 함께 수행한다.
+
+

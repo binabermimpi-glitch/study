@@ -1,50 +1,95 @@
 ---
 type: concept
-aliases: [java.lang.Object, toString, equals, hashCode, getClass]
+aliases: []
 knowledge_type: practical-core
-classification_reason: 모든 Java 클래스 계층의 루트이며 객체 비교와 표현 규칙의 기반이다.
+classification_reason: "제공된 수업 자료에서 객체 설계와 데이터 처리에 사용하는 주제다."
 difficulty: 초급
 status: growing
-prerequisites:
-  - "[[20 위키/01 개념/Java/클래스와 접근 제한자]]"
-related:
-  - "[[20 위키/01 개념/Java/instanceof와 타입 검사]]"
-sources: ["[[20 위키/03 출처 노트/2026-08-27 자바 메소드와 객체 생성]]", "[[20 위키/03 출처 노트/2026-09-14 자바 상속과 다형성 핵심 정리]]"]
-created: 2026-08-27
-updated: 2026-09-14
+curriculum_stage: 5
+prerequisites: []
+related: []
+sources:
+  - "[[10 원문/자바 백엔드 수업/2026-08-26 Java 객체 생성자 캡슐화 복습]]"
+  - "[[10 원문/자바 백엔드 수업/2026-08-27 자바 메소드와 객체 생성]]"
+  - "[[10 원문/자바 백엔드 수업/2026-09-14 자바 상속과 다형성 핵심 정리]]"
+created: 2026-10-10
+updated: 2026-10-10
 ---
 
 # Object 클래스
 
-## 한 문장 설명
+## 2026-08-26 Java 객체 생성자 캡슐화 복습
 
-`java.lang.Object`는 Java 클래스 계층의 최상위 클래스이며 모든 객체가 공통으로 갖는 기본 메소드를 정의한다.
+### 7. identityHashCode와 객체 주소
 
-| 메소드 | 역할과 주의점 |
+```java
+System.out.println(System.identityHashCode(hong));
+```
+
+- `System.identityHashCode(hong)`은 객체의 identity 기반 해시 코드를 `int` 값으로 반환한다.
+- 이 값은 실제 메모리 주소가 아니다.
+- Java 일반 코드에서는 JVM이 관리하는 객체의 실제 메모리 주소를 직접 확인하지 않는다.
+- 두 참조가 같은 객체를 가리키는지 확인할 때는 `==`를 사용할 수 있다.
+
+```java
+Human h1 = new Human("hong", 100);
+Human h2 = h1;
+System.out.println(h1 == h2); // true
+```
+
+
+## 2026-08-27 자바 메소드와 객체 생성
+
+### Object와 객체 생성
+
+> 자바의 모든 클래스는 명시하지 않아도 `Object` 클래스를 최상위 상위 클래스로 상속하며, 객체 생성은 힙 영역에 인스턴스를 만들고 참조 변수에 주소를 저장하는 과정입니다.
+
+`Object`는 자바 클래스 계층 구조의 최상위 루트 클래스입니다. 개발자가 `extends Object`를 직접 작성하지 않아도, 클래스를 선언하면 내부적으로 `Object`를 상속하는 구조가 적용됩니다.
+
+```java
+class UserClass {
+    // 내부적으로 Object를 상속합니다.
+}
+```
+
+`Object` 클래스는 모든 객체가 공통적으로 사용할 수 있는 기본 기능을 제공합니다. 대표적으로 객체 정보 확인, 문자열 표현, 동등성 비교, 해시 코드 확인과 관련된 메소드가 있습니다.
+
+| 주요 메소드 | 역할 |
 |---|---|
-| `toString()` | 객체의 문자열 표현. 의미 있는 출력을 위해 재정의 가능 |
-| `equals()` | 논리적 동등성 비교. 필요하면 `hashCode()`와 함께 재정의 |
-| `hashCode()` | 해시 기반 컬렉션에서 사용하는 값 |
-| `getClass()` | 실행 중 객체의 런타임 클래스 정보 반환 |
-| `clone()` | `protected` 메소드이며 복제 계약과 `Cloneable`에 주의 |
+| `toString()` | 객체를 문자열로 표현합니다. |
+| `getClass()` | 실행 중인 객체의 클래스 정보를 반환합니다. |
+| `hashCode()` | 객체의 해시 코드 값을 반환합니다. |
+| `equals()` | 두 객체의 동등성을 비교합니다. |
+| `clone()` | 객체 복제를 위한 기능을 제공합니다. |
 
-## 상속 표현 주의
+객체는 `new` 연산자를 통해 힙 영역에 동적으로 생성됩니다. 힙 영역에 생성된 객체의 시작 주소는 참조 변수에 저장되며, 참조 변수는 객체 자체가 아니라 객체의 주소를 보관합니다.
 
-다른 부모 클래스를 명시하지 않은 클래스는 `Object`를 직접 상속한다. 부모를 명시한 클래스는 그 부모를 직접 상속하고, 상속 계층의 최상위에서 결국 `Object`와 연결된다.
+```java
+UserClass user = new UserClass();
+System.out.println(user.toString());
+```
 
-## 실무에서는 어떻게 쓰이나
+위 코드에서 `user`는 참조 변수이며, `new UserClass()`는 힙 영역에 객체를 생성합니다. 이후 `user.toString()`처럼 점 연산자를 사용하면 참조 변수가 보관한 주소를 기준으로 객체의 멤버를 찾아 접근합니다.
 
-DTO·엔터티·값 객체의 `equals()`와 `hashCode()` 계약, 로그에 출력할 `toString()`을 설계할 때 중요하다. 비밀번호 같은 민감정보를 `toString()`에 포함하지 않는다.
+`toString()`의 기본 구현은 일반적으로 클래스 이름과 해시 코드 기반의 식별 정보를 문자열로 반환합니다. 객체에 의미 있는 정보를 출력하려면 `toString()`을 오버라이딩하여 원하는 문자열 형식으로 재정의할 수 있습니다.
 
-## equals와 hashCode 계약
 
-논리적으로 같은 객체를 판단하도록 `equals()`를 재정의했다면 일반적으로 같은 필드를 기준으로 `hashCode()`도 함께 재정의한다. `equals()`가 `true`인 두 객체는 반드시 같은 해시 코드를 반환해야 HashSet과 HashMap에서 일관되게 동작한다.
+## 2026-09-14 자바 상속과 다형성 핵심 정리
 
-## 반복 학습 이력
+### 6. Object의 equals(), hashCode(), toString()
 
-- 2026-09-14 — `equals()`·`hashCode()` 계약과 `toString()` 재정의 목적 재확인
+모든 클래스는 최상위 클래스인 Object를 상속하므로 `equals()`, `hashCode()`, `toString()`, `getClass()` 등을 사용할 수 있다.
 
-## 출처
+```java
+@Override
+public boolean equals(Object obj) {
+    if (!(obj instanceof Person other)) {
+        return false;
+    }
+    return name.equals(other.name) && age == other.age;
+}
+```
 
-- [[20 위키/03 출처 노트/2026-08-27 자바 메소드와 객체 생성]]
-- [[20 위키/03 출처 노트/2026-09-14 자바 상속과 다형성 핵심 정리]]
+`equals()`를 재정의했다면 일반적으로 `hashCode()`도 같은 기준으로 재정의해야 한다. `equals()`가 true인 객체는 hashCode도 같아야 한다. 이는 HashSet과 HashMap에서 중요하다. `toString()`은 객체를 사람이 읽기 좋은 문자열로 표현하도록 재정의한다.
+
+

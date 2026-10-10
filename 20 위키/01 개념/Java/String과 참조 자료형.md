@@ -1,68 +1,212 @@
 ---
 type: concept
-aliases: [String, 문자열, 참조 자료형]
-knowledge_type: practical-core
-classification_reason: 문자열은 거의 모든 Java 백엔드 프로그램의 입력, 출력과 데이터 처리에서 사용된다.
-difficulty: 입문
+aliases: []
+knowledge_type: foundation
+classification_reason: "Java 실행과 문법을 이해하기 위한 학습 토대다."
+difficulty: 초급
 status: growing
-prerequisites: ["[[20 위키/01 개념/Java/기본 자료형과 리터럴]]", "[[20 위키/01 개념/Java/참조와 점 연산자]]"]
-related: ["[[20 위키/01 개념/Java/가변 객체와 불변 객체]]"]
-sources: ["[[20 위키/03 출처 노트/2026-08-23 자바 참조와 자료형 기초]]", "[[20 위키/03 출처 노트/2026-08-31 Java 배열 반복문 패턴 매칭 복습]]"]
-created: 2026-08-23
-updated: 2026-09-10
+curriculum_stage: 3
+prerequisites: []
+related: []
+sources:
+  - "[[10 원문/2026-08-23 자바 참조와 자료형 기초]]"
+  - "[[10 원문/자바 백엔드 수업/2026-08-31 Java 배열 반복문 패턴 매칭 복습]]"
+  - "[[10 원문/자바 백엔드 수업/2026-09-10 자바 상속과 객체 설계]]"
+created: 2026-10-10
+updated: 2026-10-10
 ---
 
 # String과 참조 자료형
 
-## 한 문장 설명
+## 2026-08-23 자바 참조와 자료형 기초
 
-`String`은 문자열을 표현하는 클래스이며 기본 자료형이 아니라 참조 자료형이다.
+### 문자열과 참조 자료형
+
+> String은 참조 타입이지만 문자열 리터럴을 사용하여 간편하게 객체를 생성하고 사용할 수 있습니다.
+
+문자열은 문자 하나 이상이 연결된 데이터이며, 자바에서는 `String` 클래스로 처리합니다. `String`은 객체의 주소를 참조하는 자료형이지만 문자열 리터럴을 사용하여 기본 타입처럼 선언하고 사용할 수 있습니다.
 
 ```java
 String first = "Java";
-String message = first.concat(" Backend");
+String second = " Programming";
+String message = first.concat(second);
+
 System.out.println(message);
 ```
 
-## 핵심 원리
+문자열 연결에는 `concat()` 메소드를 사용할 수 있으며, 이후에는 `+` 연산자와 문자열 빌더 계열 도구의 차이도 함께 다룰 수 있습니다. 문자열은 불변 객체이므로 연결, 치환, 분할 등의 작업에서 새 객체 생성 여부를 고려해야 합니다.
 
-- 문자열 리터럴 덕분에 기본형처럼 간단히 선언할 수 있지만 실제 타입은 클래스다.
-- `String` 객체는 생성 후 내용이 바뀌지 않는 불변 객체다.
-- 문자열을 변경하는 것처럼 보이는 연산은 일반적으로 새 문자열 결과를 만든다.
-
-## 흔한 실수
-
-- 문자열 내용을 `==`로 비교한다. 내용 비교에는 보통 `equals()`를 사용한다.
-- 반복문에서 문자열을 매우 많이 이어 붙이며 중간 객체를 계속 만든다.
-- 참조가 `null`일 가능성을 확인하지 않고 메소드를 호출한다.
-
-## 길이와 빈 문자열 확인
-
-- `text.length()`는 문자열의 길이를 반환하는 메서드다.
-- `text.isEmpty()`는 길이가 0일 때만 `true`다.
-- `text.isBlank()`는 빈 문자열이거나 공백 문자로만 구성되었을 때 `true`다. `isBlank()`는 Java 11부터 사용할 수 있다.
+여러 줄 텍스트는 텍스트 블록 문법을 사용할 수 있습니다. 텍스트 블록은 큰따옴표 세 개로 시작하고 끝나며, 여러 줄의 문자열을 비교적 읽기 쉬운 형태로 작성할 수 있습니다.
 
 ```java
-System.out.println("".isEmpty());  // true
-System.out.println(" ".isEmpty()); // false
-System.out.println(" ".isBlank()); // true
+String text = """
+        AAA
+        BBB
+        CCC
+        """;
+
+System.out.println(text);
 ```
 
-## 실무에서는 어떻게 쓰이나
+기본 자료형은 값 자체를 직접 저장하지만, 참조 자료형은 객체가 위치한 주소를 통해 대상에 접근합니다. `String`, 배열, 클래스 타입은 대표적인 참조 자료형이며, 점 연산자를 통해 객체가 제공하는 기능을 호출합니다.
 
-HTTP 요청값, JSON 데이터, 로그, 데이터베이스의 문자 데이터 등 거의 모든 백엔드 작업에서 사용된다.
 
-## String Pool과 비교
+## 2026-08-31 Java 배열 반복문 패턴 매칭 복습
 
-동일한 문자열 리터럴은 String Pool의 같은 객체를 공유할 수 있지만 `new String("ABC")`는 별도 객체를 만든다. 따라서 `==` 결과를 내용 비교의 근거로 삼지 않고 `equals()`를 사용한다. 상수 표현식의 문자열 결합은 컴파일 과정에서 합쳐질 수 있지만 변수가 포함된 결합의 참조 동일성은 전제하지 않는다.
+### 8. 배열 length와 String length()
 
-## 반복 학습 이력
+배열:
 
-- 2026-09-10 — String Pool, `new String()`, `==`와 `equals()` 차이 재확인
+```java
+int[] nums = {10, 20, 30};
 
-## 출처
+nums.length
+```
 
-- [[20 위키/03 출처 노트/2026-08-23 자바 참조와 자료형 기초]]
-- [[20 위키/03 출처 노트/2026-08-26 Java 객체 생성자 캡슐화 복습]]
-- [[20 위키/03 출처 노트/2026-08-31 Java 배열 반복문 패턴 매칭 복습]]
-- [[20 위키/03 출처 노트/2026-09-10 자바 상속과 객체 설계]]
+String:
+
+```java
+String text = "hello";
+
+text.length()
+```
+
+차이:
+
+```text
+배열   → length
+String → length()
+```
+
+왜?
+
+#### 배열의 length
+
+배열 객체가 가지고 있는 **특별한 길이 값**이다.
+
+```java
+nums.length
+```
+
+→ 값을 확인
+
+그래서 `()`가 없다.
+
+#### String의 length()
+
+String 클래스에 정의되어 있는 **메서드**이다.
+
+```java
+text.length()
+```
+
+→ 메서드를 실행
+
+그래서 `()`가 있다.
+
+비슷하게:
+
+```java
+text.isEmpty()
+text.toUpperCase()
+text.toLowerCase()
+```
+
+전부 메서드이므로 `()`가 붙는다.
+
+---
+
+
+### 9. isEmpty()와 isBlank()
+
+```java
+String a = "";
+String b = " ";
+```
+
+#### isEmpty()
+
+문자열 길이가 0인가?
+
+```java
+a.isEmpty();   // true
+b.isEmpty();   // false
+```
+
+`" "`에는 공백 문자 1개가 있기 때문이다.
+
+#### isBlank()
+
+내용이 없거나 공백뿐인가?
+
+```java
+a.isBlank();   // true
+b.isBlank();   // true
+```
+
+정리:
+
+```text
+""      → isEmpty true / isBlank true
+" "     → isEmpty false / isBlank true
+"java"  → 둘 다 false
+```
+
+---
+
+
+## 2026-09-10 자바 상속과 객체 설계
+
+### 문자열 풀과 비교 연산
+
+> 문자열 리터럴은 String Pool에서 공유될 수 있으며, 참조형에서 `==`는 같은 객체를 참조하는지 비교하고 `equals()`는 객체의 논리적 내용이 같은지를 비교합니다.
+
+자바의 문자열 리터럴은 String Pool에서 관리됩니다.
+
+동일한 문자열 리터럴을 여러 변수에 대입하면 기존 문자열 객체를 함께 참조할 수 있습니다.
+
+```java
+String str1 = "ABC";
+String str2 = "ABC";
+
+System.out.println(str1 == str2);      // true
+System.out.println(str1.equals(str2)); // true
+```
+
+반면 `new String()`을 사용하면 별도의 `String` 객체가 생성됩니다.
+
+```java
+String str1 = "ABC";
+String str2 = new String("ABC");
+
+System.out.println(str1 == str2);      // false
+System.out.println(str1.equals(str2)); // true
+```
+
+여기서 중요한 점은 다음과 같습니다.
+
+* `==` : 두 참조가 같은 객체를 가리키는지 비교
+* `equals()` : 객체의 논리적인 내용 비교
+* `new String()` : 별도의 문자열 객체 생성
+* 문자열 내용 비교에는 일반적으로 `equals()` 사용
+
+문자열 리터럴끼리의 결합은 컴파일 과정에서 하나의 문자열 리터럴로 최적화될 수 있습니다.
+
+```java
+String a = "AB" + "C";
+String b = "ABC";
+
+System.out.println(a == b); // true가 될 수 있음
+```
+
+반면 변수와 문자열을 결합하면 실행 시점에 문자열 연결 작업이 발생할 수 있으므로 참조 동일성을 전제로 작성하면 안 됩니다.
+
+```java
+String a = "AB";
+String b = a + "C";
+String c = "ABC";
+
+System.out.println(b.equals(c)); // true
+```
+
+

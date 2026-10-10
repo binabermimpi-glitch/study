@@ -1,64 +1,77 @@
 ---
 type: concept
-aliases: [DTO, Data Transfer Object, record, VO]
+aliases: []
 knowledge_type: practical-core
-classification_reason: Spring 백엔드의 계층·API 사이에서 데이터를 전달할 때 자주 사용된다.
+classification_reason: "제공된 수업 자료에서 객체 설계와 데이터 처리에 사용하는 주제다."
 difficulty: 초급
 status: growing
-prerequisites:
-  - "[생성자와 생성자 오버로딩](</wiki/01%20%EA%B0%9C%EB%85%90/Java/%EC%83%9D%EC%84%B1%EC%9E%90%EC%99%80%20%EC%83%9D%EC%84%B1%EC%9E%90%20%EC%98%A4%EB%B2%84%EB%A1%9C%EB%94%A9>)"
-  - "[가변 객체와 불변 객체](</wiki/01%20%EA%B0%9C%EB%85%90/Java/%EA%B0%80%EB%B3%80%20%EA%B0%9D%EC%B2%B4%EC%99%80%20%EB%B6%88%EB%B3%80%20%EA%B0%9D%EC%B2%B4>)"
-related:
-  - "[캡슐화와 Getter Setter](</wiki/01%20%EA%B0%9C%EB%85%90/Java/%EC%BA%A1%EC%8A%90%ED%99%94%EC%99%80%20Getter%20Setter>)"
-sources: ["[2026-08-27 자바 메소드와 객체 생성](</wiki/03%20%EC%B6%9C%EC%B2%98%20%EB%85%B8%ED%8A%B8/2026-08-27%20%EC%9E%90%EB%B0%94%20%EB%A9%94%EC%86%8C%EB%93%9C%EC%99%80%20%EA%B0%9D%EC%B2%B4%20%EC%83%9D%EC%84%B1>)"]
-created: 2026-08-27
-updated: 2026-09-14
+curriculum_stage: 5
+prerequisites: []
+related: []
+sources:
+  - "[2026-08-27 자바 메소드와 객체 생성](</sources/%EC%9E%90%EB%B0%94%20%EB%B0%B1%EC%97%94%EB%93%9C%20%EC%88%98%EC%97%85/2026-08-27%20%EC%9E%90%EB%B0%94%20%EB%A9%94%EC%86%8C%EB%93%9C%EC%99%80%20%EA%B0%9D%EC%B2%B4%20%EC%83%9D%EC%84%B1>)"
+  - "[2026-09-14 자바 상속과 다형성 핵심 정리](</sources/%EC%9E%90%EB%B0%94%20%EB%B0%B1%EC%97%94%EB%93%9C%20%EC%88%98%EC%97%85/2026-09-14%20%EC%9E%90%EB%B0%94%20%EC%83%81%EC%86%8D%EA%B3%BC%20%EB%8B%A4%ED%98%95%EC%84%B1%20%ED%95%B5%EC%8B%AC%20%EC%A0%95%EB%A6%AC>)"
+created: 2026-10-10
+updated: 2026-10-10
 ---
 
 # DTO와 record
 
-## DTO
+## 2026-08-27 자바 메소드와 객체 생성
 
-DTO(Data Transfer Object)는 계층이나 프로세스 사이에서 데이터를 전달하기 위한 객체다. DTO의 목적은 전달이며 반드시 setter를 가져야 하는 것은 아니다.
+### DTO와 record 타입
 
-```java
-public record MemberResponse(
-        String id,
-        String name,
-        int age
-) {}
-```
+> DTO는 계층 간 데이터 전달을 위한 객체이며, `record`는 불변 데이터 객체를 간결하게 정의할 수 있는 자바 문법입니다.
 
-## record의 특징
+DTO는 Data Transfer Object의 약자로, 계층 간에 데이터를 전달하기 위한 객체입니다. 일반적으로 여러 필드와 생성자, getter, setter를 포함하며 데이터 보관과 전달에 초점을 둡니다.
 
-- 컴포넌트에 대응하는 `private final` 필드와 접근자 등이 자동 제공된다.
-- 정규 생성자 또는 compact constructor로 검증할 수 있다.
-- record 클래스 자체는 암시적으로 final이라 다른 클래스가 상속할 수 없다.
-- 컴포넌트 참조를 다른 값으로 바꿀 수 없지만 참조 대상까지 깊게 불변인 것은 아니다.
+일반 클래스로 DTO를 구현하면 필드 선언, 생성자, getter, setter를 반복해서 작성해야 합니다. 데이터 변경이 필요한 가변 객체라면 일반 클래스와 setter 기반 구현이 적합할 수 있습니다.
 
 ```java
-public record MemberRequest(String name, int age) {
-    public MemberRequest {
-        if (age < 0) {
-            throw new IllegalArgumentException("나이는 음수일 수 없습니다.");
-        }
+public class MemberDto {
+    private String id;
+    private String password;
+    private String name;
+
+    public MemberDto(String id, String password, String name) {
+        this.id = id;
+        this.password = password;
+        this.name = name;
     }
 }
 ```
 
-## DTO와 VO
+`record`는 데이터 중심 객체를 간결하게 선언하기 위한 타입입니다. 레코드 컴포넌트를 선언하면 생성자와 접근자 성격의 메소드가 자동으로 제공되며, 구성 요소는 변경할 수 없는 불변 상태로 다뤄집니다.
 
-DTO는 전달 역할을 강조한다. VO(Value Object)는 값의 의미, 동등성과 불변성을 강조하는 표현으로 자주 쓰이지만 팀과 문맥에 따라 용어 사용이 다를 수 있으므로 프로젝트의 정의를 확인한다.
+```java
+public record MemberRecord(
+    String id,
+    String password,
+    String name,
+    int age
+) {
+}
+```
 
-## Spring 연결
+- 일반 DTO는 setter를 통해 상태를 변경할 수 있는 가변 객체로 구성할 수 있습니다.
+- `record`의 컴포넌트는 기본적으로 불변 상태로 취급됩니다.
+- `record`는 데이터 전달용 객체의 반복 코드를 줄이는 데 유용합니다.
+- 데이터의 변경 여부와 도메인 요구사항에 따라 일반 클래스와 `record`를 선택해야 합니다.
 
-요청 DTO와 응답 DTO를 엔터티와 분리하면 API 계약과 내부 데이터 모델의 변경 영향을 줄일 수 있다. 비밀번호를 응답 DTO에 포함하지 않는 등 노출 범위를 명확히 정한다.
+DTO와 VO는 현업에서 혼용되는 경우도 있지만, 일반적으로 DTO는 데이터 전달 목적의 객체를 뜻하며 VO는 값 자체의 의미와 불변성을 강조하는 객체로 이해할 수 있습니다.
 
-## 반복 학습 이력
 
-- 2026-09-14 — record 접근자와 생성자·`equals()`·`hashCode()`·`toString()` 자동 제공 재확인
+## 2026-09-14 자바 상속과 다형성 핵심 정리
 
-## 출처
+### 10. record
 
-- [2026-08-27 자바 메소드와 객체 생성](</wiki/03%20%EC%B6%9C%EC%B2%98%20%EB%85%B8%ED%8A%B8/2026-08-27%20%EC%9E%90%EB%B0%94%20%EB%A9%94%EC%86%8C%EB%93%9C%EC%99%80%20%EA%B0%9D%EC%B2%B4%20%EC%83%9D%EC%84%B1>)
-- [2026-09-14 자바 상속과 다형성 핵심 정리](</wiki/03%20%EC%B6%9C%EC%B2%98%20%EB%85%B8%ED%8A%B8/2026-09-14%20%EC%9E%90%EB%B0%94%20%EC%83%81%EC%86%8D%EA%B3%BC%20%EB%8B%A4%ED%98%95%EC%84%B1%20%ED%95%B5%EC%8B%AC%20%EC%A0%95%EB%A6%AC>)
+```java
+record AnimalInfo(String name, int age) {
+}
+
+record Dog(AnimalInfo info, int walkCount) implements Animal {
+}
+```
+
+record는 데이터를 저장하는 클래스를 간단히 작성하는 문법이며 생성자, 접근 메서드, `equals()`, `hashCode()`, `toString()` 등의 주요 기능을 자동 제공한다. 접근할 때는 `dog.info()`, `dog.info().name()`, `dog.walkCount()`처럼 사용한다.
+
