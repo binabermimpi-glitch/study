@@ -1,0 +1,26 @@
+---
+type: source
+source_type: class-note
+title: "자바 제네릭과 Collections 사용자 정의 정렬"
+author: "사용자 제공"
+source_date: ""
+ingested: 2026-10-11
+reliability: 확인 필요
+raw_file: "[[10 원문/자바 백엔드 수업/2026-10-11 자바 제네릭과 Collections 사용자 정의 정렬]]"
+related_concepts: []
+---
+
+# 자바 제네릭과 Collections 사용자 정의 정렬 출처 노트
+
+## 원문 정보
+
+- 원문 파일: [[10 원문/자바 백엔드 수업/2026-10-11 자바 제네릭과 Collections 사용자 정의 정렬|자바 제네릭과 Collections 사용자 정의 정렬]]
+- 자료 유형: 사용자 정리 자료
+
+## 기존 위키에 반영한 내용
+
+- [[20 위키/01 개념/Java/자바 제네릭과 Collections 사용자 정의 정렬]]에 설명·코드·표·문제·해설 전체를 보존했다.
+
+## 신뢰도와 주의점
+
+- 사용자 제공 내용을 임의로 교정하지 않았다.

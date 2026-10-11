@@ -310,16 +310,12 @@ export default {
                   "collapsed": false,
                   "items": [
                     {
-                      "text": "List와 ListIterator",
-                      "link": "/wiki/01 개념/Java/List와 ListIterator"
+                      "text": "자바 컬렉션 프레임워크와 자료구조",
+                      "link": "/wiki/01 개념/Java/자바 컬렉션 프레임워크와 자료구조"
                     },
                     {
-                      "text": "Set 구현체와 중복 판단",
-                      "link": "/wiki/01 개념/Java/Set 구현체와 중복 판단"
-                    },
-                    {
-                      "text": "Comparator와 정렬",
-                      "link": "/wiki/01 개념/Java/Comparator와 정렬"
+                      "text": "자바 제네릭과 Collections 사용자 정의 정렬",
+                      "link": "/wiki/01 개념/Java/자바 제네릭과 Collections 사용자 정의 정렬"
                     }
                   ]
                 },
@@ -747,8 +743,16 @@ export default {
               "link": "/wiki/03 출처 노트/2026-08-23 자바 실행 구조와 기초 문법"
             },
             {
+              "text": "자바 제네릭과 Collections 사용자 정의 정렬 출처 노트",
+              "link": "/wiki/03 출처 노트/2026-10-11 자바 제네릭과 Collections 사용자 정의 정렬"
+            },
+            {
               "text": "자바 참조와 자료형 기초 — 출처 노트",
               "link": "/wiki/03 출처 노트/2026-08-23 자바 참조와 자료형 기초"
+            },
+            {
+              "text": "자바 컬렉션 프레임워크와 자료구조 출처 노트",
+              "link": "/wiki/03 출처 노트/2026-10-11 자바 컬렉션 프레임워크와 자료구조"
             },
             {
               "text": "정보처리기사 데이터 모델링과 정규화 — 출처 노트",
@@ -1014,6 +1018,14 @@ export default {
             {
               "text": "Java 복습 — 내가 헷갈렸던 부분 총정리",
               "link": "/sources/자바 백엔드 수업/2026-08-31 Java 배열 반복문 패턴 매칭 복습"
+            },
+            {
+              "text": "PART 1. 자바 컬렉션 프레임워크와 자료구조",
+              "link": "/sources/자바 백엔드 수업/2026-10-11 자바 컬렉션 프레임워크와 자료구조"
+            },
+            {
+              "text": "PART 2. 자바 제네릭과 Collections 사용자 정의 정렬",
+              "link": "/sources/자바 백엔드 수업/2026-10-11 자바 제네릭과 Collections 사용자 정의 정렬"
             }
           ]
         },

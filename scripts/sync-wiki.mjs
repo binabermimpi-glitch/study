@@ -225,9 +225,8 @@ const javaCurriculumGroups = [
   {
     "text": "8단계 — 컬렉션과 비교",
     "titles": [
-      "List와 ListIterator",
-      "Set 구현체와 중복 판단",
-      "Comparator와 정렬"
+      "자바 컬렉션 프레임워크와 자료구조",
+      "자바 제네릭과 Collections 사용자 정의 정렬"
     ]
   },
   {
@@ -302,7 +301,7 @@ function sidebarItemsFor(section) {
         })
       }))
       const unlisted = directRecords
-        .filter(record => !listedTitles.has(titleForRecord(record)) && titleForRecord(record) !== '자바 스트림과 IO 핵심')
+        .filter(record => !listedTitles.has(titleForRecord(record)) && !['자바 스트림과 IO 핵심', 'List와 ListIterator', 'Set 구현체와 중복 판단', 'Comparator와 정렬'].includes(titleForRecord(record)))
         .map(record => ({ text: titleForRecord(record), link: record.routePath }))
 
       if (unlisted.length > 0) groups.push({ text: '추가 개념', collapsed: true, items: unlisted })

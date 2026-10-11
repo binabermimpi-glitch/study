@@ -70,9 +70,8 @@ last_updated: 2026-10-10
 
 ## 8단계 — 컬렉션과 비교
 
-- [List와 ListIterator](</wiki/01%20%EA%B0%9C%EB%85%90/Java/List%EC%99%80%20ListIterator>)
-- [Set 구현체와 중복 판단](</wiki/01%20%EA%B0%9C%EB%85%90/Java/Set%20%EA%B5%AC%ED%98%84%EC%B2%B4%EC%99%80%20%EC%A4%91%EB%B3%B5%20%ED%8C%90%EB%8B%A8>)
-- [Comparator와 정렬](</wiki/01%20%EA%B0%9C%EB%85%90/Java/Comparator%EC%99%80%20%EC%A0%95%EB%A0%AC>)
+- [자바 컬렉션 프레임워크와 자료구조](</wiki/01%20%EA%B0%9C%EB%85%90/Java/%EC%9E%90%EB%B0%94%20%EC%BB%AC%EB%A0%89%EC%85%98%20%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC%EC%99%80%20%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0>)
+- [자바 제네릭과 Collections 사용자 정의 정렬](</wiki/01%20%EA%B0%9C%EB%85%90/Java/%EC%9E%90%EB%B0%94%20%EC%A0%9C%EB%84%A4%EB%A6%AD%EA%B3%BC%20Collections%20%EC%82%AC%EC%9A%A9%EC%9E%90%20%EC%A0%95%EC%9D%98%20%EC%A0%95%EB%A0%AC>)
 
 ## 9단계 — 람다·메서드 참조·스트림
 

@@ -1,37 +1,11 @@
 ---
 type: concept
-aliases: []
 knowledge_type: practical-core
-classification_reason: "제공된 수업 자료에서 객체 설계와 데이터 처리에 사용하는 주제다."
-difficulty: 초급
+classification_reason: "새 8단계 자료로 안내하는 기존 링크다."
 status: growing
-curriculum_stage: 8
-prerequisites: []
-related: []
-sources:
-  - "[2026-09-22 Java 컬렉션 다형성 Comparator 정리](</sources/2026-09-22%20Java%20%EC%BB%AC%EB%A0%89%EC%85%98%20%EB%8B%A4%ED%98%95%EC%84%B1%20Comparator%20%EC%A0%95%EB%A6%AC>)"
-created: 2026-10-10
-updated: 2026-10-10
+difficulty: 초급
 ---
 
 # List와 ListIterator
 
-## Java 컬렉션 다형성 Comparator 정리
-
-### Java 컬렉션 · 다형성 · Comparator 정리
-
-
-### 1. ListIterator의 previous()
-
-- 현재 커서 바로 앞 요소를 반환하고 커서를 뒤로 한 칸 이동한다.
-- 항상 맨 끝에서 시작하는 것이 아니라 현재 커서 위치부터 역방향으로 이동한다.
-
-예: `[Java, SQL]`을 `next()`로 끝까지 순회한 상태
-
-```java
-while (it.hasPrevious()) {
-    System.out.println(it.previous()); // SQL → Java
-}
-```
-
-
+8단계 자료가 교체되었습니다. [자바 컬렉션 프레임워크와 자료구조](</wiki/01%20%EA%B0%9C%EB%85%90/Java/%EC%9E%90%EB%B0%94%20%EC%BB%AC%EB%A0%89%EC%85%98%20%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC%EC%99%80%20%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0>)에서 새 내용을 확인하세요.
