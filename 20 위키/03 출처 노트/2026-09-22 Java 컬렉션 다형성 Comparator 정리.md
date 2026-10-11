@@ -16,9 +16,9 @@ status: processed
 
 - 4번 Java 문서 영어 표현 → [[20 위키/06 나만의 요약/Java/Java API 선언문 읽기]]
 - 6번 메서드 참조·람다·익명 클래스 비교 → [[20 위키/06 나만의 요약/Java/Java API 선언문 읽기]]
-- 1번 ListIterator → [[20 위키/01 개념/Java/List와 ListIterator]]
-- 2·3·7번 Set과 다형성 → [[20 위키/01 개념/Java/Set 구현체와 중복 판단]]
-- 5·8·9·10번 비교 규칙 → [[20 위키/01 개념/Java/Comparator와 정렬]]
+- 1번 ListIterator → [[10 원문/2026-09-22 Java 컬렉션 다형성 Comparator 정리|기존 원문에서 확인]]
+- 2·3·7번 Set과 다형성 → [[10 원문/2026-09-22 Java 컬렉션 다형성 Comparator 정리|기존 원문에서 확인]]
+- 5·8·9·10번 비교 규칙 → [[10 원문/2026-09-22 Java 컬렉션 다형성 Comparator 정리|기존 원문에서 확인]]
 
 ## 수록 범위
 

@@ -16,9 +16,9 @@ status: processed
 
 - 4번 Java 문서 영어 표현 → [Java API 선언문 읽기](</wiki/06%20%EB%82%98%EB%A7%8C%EC%9D%98%20%EC%9A%94%EC%95%BD/Java/Java%20API%20%EC%84%A0%EC%96%B8%EB%AC%B8%20%EC%9D%BD%EA%B8%B0>)
 - 6번 메서드 참조·람다·익명 클래스 비교 → [Java API 선언문 읽기](</wiki/06%20%EB%82%98%EB%A7%8C%EC%9D%98%20%EC%9A%94%EC%95%BD/Java/Java%20API%20%EC%84%A0%EC%96%B8%EB%AC%B8%20%EC%9D%BD%EA%B8%B0>)
-- 1번 ListIterator → [List와 ListIterator](</wiki/01%20%EA%B0%9C%EB%85%90/Java/List%EC%99%80%20ListIterator>)
-- 2·3·7번 Set과 다형성 → [Set 구현체와 중복 판단](</wiki/01%20%EA%B0%9C%EB%85%90/Java/Set%20%EA%B5%AC%ED%98%84%EC%B2%B4%EC%99%80%20%EC%A4%91%EB%B3%B5%20%ED%8C%90%EB%8B%A8>)
-- 5·8·9·10번 비교 규칙 → [Comparator와 정렬](</wiki/01%20%EA%B0%9C%EB%85%90/Java/Comparator%EC%99%80%20%EC%A0%95%EB%A0%AC>)
+- 1번 ListIterator → [기존 원문에서 확인](</sources/2026-09-22%20Java%20%EC%BB%AC%EB%A0%89%EC%85%98%20%EB%8B%A4%ED%98%95%EC%84%B1%20Comparator%20%EC%A0%95%EB%A6%AC>)
+- 2·3·7번 Set과 다형성 → [기존 원문에서 확인](</sources/2026-09-22%20Java%20%EC%BB%AC%EB%A0%89%EC%85%98%20%EB%8B%A4%ED%98%95%EC%84%B1%20Comparator%20%EC%A0%95%EB%A6%AC>)
+- 5·8·9·10번 비교 규칙 → [기존 원문에서 확인](</sources/2026-09-22%20Java%20%EC%BB%AC%EB%A0%89%EC%85%98%20%EB%8B%A4%ED%98%95%EC%84%B1%20Comparator%20%EC%A0%95%EB%A6%AC>)
 
 ## 수록 범위
 
