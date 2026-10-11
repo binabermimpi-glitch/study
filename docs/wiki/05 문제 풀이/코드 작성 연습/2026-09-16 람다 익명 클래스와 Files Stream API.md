@@ -10,7 +10,7 @@ updated: 2026-09-16
 
 ## 1. 함수형 인터페이스 4개
 
-### Consumer\<T>
+### Consumer\&lt;T&gt;
 
 ```text
 Consumer<T>
@@ -37,7 +37,7 @@ Consumer<String> c = new Consumer<String>() {
 };
 ```
 
-### Predicate\<T>
+### Predicate\&lt;T&gt;
 
 ```text
 Predicate<T>
@@ -64,7 +64,7 @@ Predicate<Integer> p = new Predicate<Integer>() {
 };
 ```
 
-### Function\<T, R>
+### Function\&lt;T, R&gt;
 
 ```text
 Function<T, R>
@@ -91,7 +91,7 @@ Function<String, Integer> f = new Function<String, Integer>() {
 };
 ```
 
-### Supplier\<T>
+### Supplier\&lt;T&gt;
 
 ```text
 Supplier<T>

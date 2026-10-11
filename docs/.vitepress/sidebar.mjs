@@ -65,36 +65,8 @@ export default {
               "collapsed": true,
               "items": [
                 {
-                  "text": "관계 데이터 모델 기본 용어",
-                  "link": "/wiki/01 개념/Database/관계 데이터 모델 기본 용어"
-                },
-                {
-                  "text": "관계대수와 관계해석",
-                  "link": "/wiki/01 개념/Database/관계대수와 관계해석"
-                },
-                {
-                  "text": "데이터 모델링 단계",
-                  "link": "/wiki/01 개념/Database/데이터 모델링 단계"
-                },
-                {
-                  "text": "데이터베이스 키",
-                  "link": "/wiki/01 개념/Database/데이터베이스 키"
-                },
-                {
-                  "text": "무결성 제약조건",
-                  "link": "/wiki/01 개념/Database/무결성 제약조건"
-                },
-                {
-                  "text": "반정규화와 물리 설계",
-                  "link": "/wiki/01 개념/Database/반정규화와 물리 설계"
-                },
-                {
-                  "text": "정규화와 이상 현상",
-                  "link": "/wiki/01 개념/Database/정규화와 이상 현상"
-                },
-                {
-                  "text": "ER 모델과 ER 다이어그램",
-                  "link": "/wiki/01 개념/Database/ER 모델과 ER 다이어그램"
+                  "text": "1장. MySQL 기초와 관계형 데이터베이스 설계",
+                  "link": "/wiki/01 개념/Database/1장. MySQL 기초와 관계형 데이터베이스 설계"
                 }
               ]
             },
@@ -559,6 +531,10 @@ export default {
           "collapsed": false,
           "items": [
             {
+              "text": "1장. MySQL 기초와 관계형 데이터베이스 설계 출처 노트",
+              "link": "/wiki/03 출처 노트/2026-10-11 1장. MySQL 기초와 관계형 데이터베이스 설계"
+            },
+            {
               "text": "2020년 4회 정보처리기사 실기 정리",
               "link": "/wiki/03 출처 노트/2026-09-06 2020년 4회 정보처리기사 실기 정리"
             },
@@ -849,6 +825,16 @@ export default {
             {
               "text": "네트워크 공부 02 이더넷 NIC와 케이블",
               "link": "/sources/네트워크 공부/2026-09-20 네트워크 공부 02"
+            }
+          ]
+        },
+        {
+          "text": "데이터베이스",
+          "collapsed": false,
+          "items": [
+            {
+              "text": "1장. MySQL 기초와 관계형 데이터베이스 설계",
+              "link": "/sources/데이터베이스/2026-10-11 1장. MySQL 기초와 관계형 데이터베이스 설계"
             }
           ]
         },

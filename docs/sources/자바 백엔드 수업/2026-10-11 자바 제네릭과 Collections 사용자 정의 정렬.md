@@ -37,7 +37,7 @@ names.add("김철수");
 // names.add(100); // 컴파일 오류
 ```
 
-List<String>은 String 타입의 요소를 저장하도록 제한한다.
+List&lt;String&gt;은 String 타입의 요소를 저장하도록 제한한다.
 
 ```java
 String name = names.get(0);
@@ -252,7 +252,7 @@ class Box<T extends Number & Comparable<T>> {
 
 의미:
 
-T는 Number의 하위 타입이면서 Comparable<T>를 구현해야 한다.
+T는 Number의 하위 타입이면서 Comparable&lt;T&gt;를 구현해야 한다.
 
 여러 경계를 사용할 경우 클래스 경계가 있다면 클래스가 먼저 와야 한다.
 
@@ -292,7 +292,7 @@ true
 public static <T> void print(T value)
 ```
 
-- <T>: 메서드 타입 매개변수 선언
+- &lt;T&gt;: 메서드 타입 매개변수 선언
 - void: 반환 타입
 - T value: 매개변수 타입
 
@@ -306,7 +306,7 @@ static 메서드는 클래스에 선언된 타입 매개변수 T를 그대로 �
 
 > 와일드카드는 정확한 타입을 특정하지 않고 일정한 타입 범위를 허용하는 문법이다.
 
-### 5-1. List<Object>와 List<String>
+### 5-1. List&lt;Object&gt;와 List&lt;String&gt;
 
 다음 코드는 컴파일 오류가 발생한다.
 
@@ -316,7 +316,7 @@ List<String> strings = new ArrayList<>();
 List<Object> objects = strings;
 ```
 
-String은 Object의 하위 타입이지만, List<String>이 List<Object>의 하위 타입인 것은 아니다.
+String은 Object의 하위 타입이지만, List&lt;String&gt;이 List&lt;Object&gt;의 하위 타입인 것은 아니다.
 
 이를 제네릭의 불공변성이라고 한다.
 
@@ -976,7 +976,7 @@ first.getName().compareTo(second.getName())
 
 getName()의 반환 타입은 String이다.
 
-String은 Comparable<String>을 구현하고 있다.
+String은 Comparable&lt;String&gt;을 구현하고 있다.
 
 따라서 String의 compareTo()를 이용할 수 있다.
 
@@ -1002,7 +1002,7 @@ Collections.sort(addresses, new Comparator<Address>() {
 });
 ```
 
-new Comparator<Address>() { ... }는 Comparator 인터페이스 자체를 직접 생성하는 것이 아니다.
+new Comparator&lt;Address&gt;() { ... }는 Comparator 인터페이스 자체를 직접 생성하는 것이 아니다.
 
 Comparator를 구현하는 이름 없는 클래스를 정의하면서 그 객체를 생성하는 것이다.
 
@@ -1471,7 +1471,7 @@ class Box<T> {
 
 T는 컴파일 과정에서 타입 소거가 적용되므로 직접 생성할 구체적인 생성자를 알 수 없다.
 
-필요하다면 Class<T>, Supplier<T> 같은 객체 생성 정보를 전달받는 방식을 사용할 수 있다.
+필요하다면 Class&lt;T&gt;, Supplier&lt;T&gt; 같은 객체 생성 정보를 전달받는 방식을 사용할 수 있다.
 
 ---
 
