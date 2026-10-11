@@ -137,7 +137,18 @@ for (const record of records) {
   unresolvedLinks.push(...unresolved)
 
   fs.mkdirSync(path.dirname(record.destinationFile), { recursive: true })
-  fs.writeFileSync(record.destinationFile, converted, 'utf8')
+  let inFence = false
+  const displayMarkdown = converted.split('\n').map(line => {
+    if (/^\s*(```|~~~)/.test(line)) {
+      inFence = !inFence
+      return line
+    }
+    if (inFence) return line
+    return line.split(/(`+[^`]*`+)/).map((part, index) => index % 2 ? part :
+      part.replace(/<(?:[A-Z][A-Za-z]*(?:\s*,\s*[A-Za-z]+)?)>/g,
+        value => value.replace('<', '&lt;').replace('>', '&gt;'))).join('')
+  }).join('\n')
+  fs.writeFileSync(record.destinationFile, displayMarkdown, 'utf8')
 }
 
 function titleForRecord(record) {
