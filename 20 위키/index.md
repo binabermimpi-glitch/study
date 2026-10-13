@@ -131,3 +131,4 @@ last_updated: 2026-10-10
 ## Database 학습 자료
 
 - [[20 위키/01 개념/Database/1장. MySQL 기초와 관계형 데이터베이스 설계]]
+- [[20 위키/01 개념/Database/2장. MySQL 조인, 서브쿼리와 SQL 고급 기능]]

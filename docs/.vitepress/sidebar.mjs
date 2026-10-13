@@ -67,6 +67,10 @@ export default {
                 {
                   "text": "1장. MySQL 기초와 관계형 데이터베이스 설계",
                   "link": "/wiki/01 개념/Database/1장. MySQL 기초와 관계형 데이터베이스 설계"
+                },
+                {
+                  "text": "2장. MySQL 조인, 서브쿼리와 SQL 고급 기능",
+                  "link": "/wiki/01 개념/Database/2장. MySQL 조인, 서브쿼리와 SQL 고급 기능"
                 }
               ]
             },
@@ -699,6 +703,10 @@ export default {
               "link": "/wiki/03 출처 노트/2026-10-10 2026년 2회 정보처리기사 실기 정리"
             },
             {
+              "text": "2장. MySQL 조인, 서브쿼리와 SQL 고급 기능 출처 노트",
+              "link": "/wiki/03 출처 노트/2026-10-13 2장. MySQL 조인, 서브쿼리와 SQL 고급 기능"
+            },
+            {
               "text": "메서드 작성 1~4 오답과 교정",
               "link": "/wiki/03 출처 노트/2026-09-13 메서드 작성 1-4 오답과 교정"
             },
@@ -839,6 +847,10 @@ export default {
             {
               "text": "1장. MySQL 기초와 관계형 데이터베이스 설계",
               "link": "/sources/데이터베이스/2026-10-11 1장. MySQL 기초와 관계형 데이터베이스 설계"
+            },
+            {
+              "text": "2장. MySQL 조인, 서브쿼리와 SQL 고급 기능",
+              "link": "/sources/데이터베이스/2026-10-13 2장. MySQL 조인, 서브쿼리와 SQL 고급 기능"
             }
           ]
         },
