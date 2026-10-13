@@ -291,8 +291,16 @@ function sidebarItemsFor(section) {
         const languageBase = `${codeBase}/${language}`
         const languageIndex = sectionRecords.find(record => record.destinationRelative === `wiki/${languageBase}/index.md`)
         const items = sectionRecords
-          .filter(record => record.destinationRelative.startsWith(`wiki/${languageBase}/`) && !record.destinationRelative.endsWith('/index.md'))
+          .filter(record => path.posix.dirname(record.destinationRelative) === `wiki/${languageBase}` && !record.destinationRelative.endsWith('/index.md'))
           .map(record => ({ text: titleForRecord(record), link: record.routePath }))
+        if (language === 'C언어') {
+          const essentialBase = `wiki/${languageBase}/필수개념`
+          const essentialIndex = sectionRecords.find(record => record.destinationRelative === `${essentialBase}/index.md`)
+          const essentialItems = sectionRecords
+            .filter(record => record.destinationRelative.startsWith(`${essentialBase}/`) && !record.destinationRelative.endsWith('/index.md'))
+            .map(record => ({ text: titleForRecord(record), link: record.routePath }))
+          if (essentialItems.length) items.unshift({ text: '필수개념', ...(essentialIndex ? { link: essentialIndex.routePath } : {}), collapsed: false, items: essentialItems })
+        }
         return { text: language, ...(languageIndex ? { link: languageIndex.routePath } : {}), collapsed: true, items }
       })
       const codeItem = { text: '정보처리기사 코드 문제', ...(codeIndex ? { link: codeIndex.routePath } : {}), collapsed: false, items: languages }
