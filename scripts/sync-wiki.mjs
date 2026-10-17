@@ -305,7 +305,13 @@ function sidebarItemsFor(section) {
       })
       const codeItem = { text: '정보처리기사 코드 문제', ...(codeIndex ? { link: codeIndex.routePath } : {}), collapsed: false, items: languages }
       const sqld = filesByTitle.get('SQLD')
-      return [...mainItems, codeItem, ...(sqld ? [sqld] : [])]
+      const theoryBase = 'wiki/04 자격증/정처기감자 이론정리'
+      const theoryIndex = sectionRecords.find(record => record.destinationRelative === `${theoryBase}/index.md`)
+      const theoryItems = sectionRecords
+        .filter(record => record.destinationRelative.startsWith(`${theoryBase}/`) && !record.destinationRelative.endsWith('/index.md'))
+        .map(record => ({ text: titleForRecord(record), link: record.routePath }))
+      const theoryMenu = theoryItems.length ? [{ text: '정처기감자 이론정리', ...(theoryIndex ? { link: theoryIndex.routePath } : {}), collapsed: false, items: theoryItems }] : []
+      return [...theoryMenu, ...mainItems, codeItem, ...(sqld ? [sqld] : [])]
     }
 
     if (section.destination === 'wiki' && relativeDirectory === '01 개념/Java') {
