@@ -145,6 +145,7 @@ for (const record of records) {
     }
     if (inFence) return line
     if (record.sourceRelative.includes('다시볼 이론 1')) {
+      if (/^\s*\{.*\}\s*$/.test(line)) return '`' + line.trim() + '`'
       return line.split(/(`+[^`]*`+)/).map((part, index) => index % 2 ? part : part.replaceAll('<', '&lt;').replaceAll('>', '&gt;')).join('')
     }
     return line.split(/(`+[^`]*`+)/).map((part, index) => index % 2 ? part :
