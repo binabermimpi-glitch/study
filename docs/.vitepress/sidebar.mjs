@@ -409,7 +409,12 @@ export default {
                   "text": "Python",
                   "link": "/wiki/04 자격증/정보처리기사 코드 문제/Python/",
                   "collapsed": true,
-                  "items": []
+                  "items": [
+                    {
+                      "text": "기초개념 (1)",
+                      "link": "/wiki/04 자격증/정보처리기사 코드 문제/Python/기초개념 (1)"
+                    }
+                  ]
                 },
                 {
                   "text": "Java",
@@ -815,6 +820,10 @@ export default {
             {
               "text": "main 메서드 학습 회고 — 출처 노트",
               "link": "/wiki/03 출처 노트/2026-08-24 main 메서드 학습 회고"
+            },
+            {
+              "text": "Python 기초개념 (1) 출처 노트",
+              "link": "/wiki/03 출처 노트/2026-10-18 Python 기초개념 (1)"
             }
           ]
         }
@@ -1055,6 +1064,10 @@ export default {
                 {
                   "text": "Java 헷갈리는 핵심 개념 정리",
                   "link": "/sources/자격증/정보처리기사/2026-10-18 헷갈리는 자바 개념"
+                },
+                {
+                  "text": "Python 기초개념 Part 1 — 기본 문법과 딕셔너리",
+                  "link": "/sources/자격증/정보처리기사/2026-10-18 Python 기초개념 (1)"
                 }
               ]
             },

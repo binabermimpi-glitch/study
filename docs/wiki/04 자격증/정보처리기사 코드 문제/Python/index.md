@@ -1,3 +1,5 @@
 # Python 코드 문제
 
 정보처리기사 실기의 Python 코드 문제를 모으는 공간입니다.
+
+- [기초개념 (1)](</wiki/04%20%EC%9E%90%EA%B2%A9%EC%A6%9D/%EC%A0%95%EB%B3%B4%EC%B2%98%EB%A6%AC%EA%B8%B0%EC%82%AC%20%EC%BD%94%EB%93%9C%20%EB%AC%B8%EC%A0%9C/Python/%EA%B8%B0%EC%B4%88%EA%B0%9C%EB%85%90%20(1)>)
