@@ -417,6 +417,10 @@ export default {
                     {
                       "text": "기초개념(2)",
                       "link": "/wiki/04 자격증/정보처리기사 코드 문제/Python/기초개념(2)"
+                    },
+                    {
+                      "text": "코드기초(1)",
+                      "link": "/wiki/04 자격증/정보처리기사 코드 문제/Python/코드기초(1)"
                     }
                   ]
                 },
@@ -832,6 +836,10 @@ export default {
             {
               "text": "Python 기초개념(2) 출처 노트",
               "link": "/wiki/03 출처 노트/2026-10-18 Python 기초개념(2)"
+            },
+            {
+              "text": "Python 코드기초(1) 출처 노트",
+              "link": "/wiki/03 출처 노트/2026-10-19 Python 코드기초(1)"
             }
           ]
         }
@@ -1080,6 +1088,10 @@ export default {
                 {
                   "text": "Python 기초개념 Part 2 — 리스트·문자열·언패킹·기본 함수",
                   "link": "/sources/자격증/정보처리기사/2026-10-18 Python 기초개념(2)"
+                },
+                {
+                  "text": "Python 코드 실행 결과 문제 20선",
+                  "link": "/sources/자격증/정보처리기사/2026-10-19 Python 코드기초(1)"
                 }
               ]
             },
